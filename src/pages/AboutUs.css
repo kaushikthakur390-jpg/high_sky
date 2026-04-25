@@ -1,0 +1,594 @@
+.about-journey-page {
+  overflow-x: hidden;
+  background: #5b2d8e;
+}
+
+.journey-canvas {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 84px 0 40px;
+}
+
+.journey-title {
+  margin: 0 0 44px;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.journey-row {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(560px, 1.2fr);
+  align-items: center;
+  gap: clamp(14px, 2.2vw, 38px);
+  margin-bottom: clamp(24px, 2.6vw, 42px);
+  padding: 0 clamp(6px, 1.6vw, 26px);
+}
+
+.journey-row-1 {
+  margin-bottom: clamp(8px, 1.2vw, 16px);
+}
+
+.journey-row-2,
+.journey-row-4 {
+  grid-template-columns: minmax(560px, 1.2fr) minmax(360px, 0.95fr);
+}
+
+.journey-row-2 {
+  margin-top: clamp(-300px, -18vw, -190px);
+}
+
+.journey-row-3 {
+  margin-top: clamp(-300px, -18vw, -190px);
+}
+
+.journey-row-4 {
+  margin-top: clamp(-280px, -16vw, -170px);
+}
+
+.journey-row-2 .journey-bubble,
+.journey-row-4 .journey-bubble {
+  justify-self: start;
+}
+
+.journey-row-2 .journey-frame,
+.journey-row-4 .journey-frame {
+  justify-self: end;
+}
+
+.journey-row-1 .journey-frame,
+.journey-row-3 .journey-frame {
+  justify-self: start;
+}
+
+.journey-row-1 .journey-bubble,
+.journey-row-3 .journey-bubble {
+  justify-self: end;
+}
+
+.journey-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.journey-frame {
+  width: clamp(340px, 35vw, 560px);
+  max-width: none;
+}
+
+.journey-bubble {
+  width: clamp(520px, 54vw, 920px);
+  max-width: none;
+}
+
+.journey-row-1 .journey-frame,
+.journey-row-3 .journey-frame {
+  transform: translateY(8px);
+}
+
+.journey-row-2 .journey-frame,
+.journey-row-4 .journey-frame {
+  transform: translateY(-6px);
+}
+
+.journey-swoosh {
+  position: absolute;
+  width: clamp(260px, 38vw, 560px);
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.journey-swoosh-top {
+  top: 94px;
+  left: -190px;
+}
+
+.journey-swoosh-bottom {
+  right: -180px;
+  bottom: 98px;
+  transform: rotate(180deg);
+}
+
+.team-divider-section {
+  position: relative;
+  z-index: 3;
+  line-height: 0;
+  background: #ffffff;
+  margin-top: clamp(-190px, -10vw, -100px);
+}
+
+.journey-row-4 {
+  position: relative;
+  margin-bottom: -24px;
+}
+
+.journey-ribbon {
+  position: absolute;
+  width: clamp(980px, 72vw, 1400px);
+  right: -38vw;
+  top: -20px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.team-divider-wave {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 16vw, 230px);
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+.about-team-section {
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  padding: 78px 24px 90px;
+}
+
+.about-team-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #ffffff;
+}
+
+.about-team-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about-team-title {
+  text-align: center;
+  color: #5b2d8e;
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 0 44px;
+}
+
+.about-team-lead {
+  display: grid;
+  grid-template-columns: minmax(300px, 420px) minmax(320px, 1fr);
+  gap: clamp(26px, 4vw, 62px);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.about-team-lead-photo {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  justify-self: center;
+}
+
+.about-team-lead-copy h3 {
+  margin: 0 0 8px;
+  color: #f3a414;
+  font-size: clamp(1.35rem, 2.2vw, 2.8rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.about-team-lead-copy h4 {
+  margin: 0 0 14px;
+  color: #5b2d8e;
+  font-size: clamp(1.2rem, 2vw, 2.3rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.about-team-lead-copy p {
+  margin: 0;
+  color: #4d2a78;
+  font-size: clamp(0.95rem, 1.45vw, 1.8rem);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.about-team-grid-wrap {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.about-team-grid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-solutions-section {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+ padding: clamp(140px, 11vw, 220px) 0 clamp(300px, 20vw, 500px);
+}
+
+.about-solutions-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+  pointer-events: none;
+  top:50px;
+}
+
+.about-solutions-cards {
+  position: relative;
+  display: block;
+  width: min(95%, 1700px);
+  margin: 0 auto clamp(20px, 2.2vw, 34px);
+  height: auto;
+  top:300px;
+  z-index: 1;
+}
+
+.about-moments-section {
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  padding: clamp(60px, 7vw, 100px) 24px clamp(70px, 8vw, 120px);
+}
+
+.about-moments-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-moments-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.about-moments-title {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #2f6f3c;
+  font-size: clamp(1.7rem, 2.8vw, 2.9rem);
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.about-moments-slider-wrap {
+  display: grid;
+  grid-template-columns: 56px 1fr 56px;
+  gap: clamp(12px, 2vw, 26px);
+  align-items: center;
+}
+
+.about-moments-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.about-moments-image {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.about-moments-arrow {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 999px;
+  background: #5b2d8e;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.about-moments-arrow:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+@media (max-width: 900px) {
+  .journey-canvas {
+    padding: 72px 12px 34px;
+  }
+
+  .journey-row,
+  .journey-row-2,
+  .journey-row-3,
+  .journey-row-4 {
+    margin-top: 0;
+  }
+
+  .journey-row,
+  .journey-row-2,
+  .journey-row-4 {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .journey-row .journey-frame,
+  .journey-row .journey-bubble,
+  .journey-row-2 .journey-frame,
+  .journey-row-2 .journey-bubble,
+  .journey-row-4 .journey-frame,
+  .journey-row-4 .journey-bubble {
+    justify-self: center;
+    transform: none;
+  }
+
+  .journey-frame {
+    width: min(80vw, 460px);
+  }
+
+  .journey-bubble {
+    width: 100%;
+    position:relative;
+    left:100px;
+  }
+
+  .journey-swoosh-top {
+    top: 64px;
+    left: -122px;
+  }
+
+  .journey-swoosh-bottom {
+    right: -122px;
+    bottom: 52px;
+  }
+
+  .team-divider-section {
+    margin-top: -56px;
+  }
+
+  .team-divider-wave {
+    height: 120px;
+  }
+
+  .journey-ribbon {
+    width: 130vw;
+    right: -72vw;
+    top: 0;
+    opacity: 0.92;
+  }
+
+  .about-team-section {
+    padding: 48px 14px 52px;
+  }
+
+  .about-team-title {
+    margin-bottom: 26px;
+  }
+
+  .about-team-lead {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 320px;
+  }
+
+  .about-team-lead-copy {
+    text-align: center;
+  }
+
+  .about-solutions-cards {
+    width: min(96%, 620px);
+    margin: 0 auto 16px;
+  }
+
+  .about-solutions-section {
+    padding: clamp(82px, 15vw, 124px) 0 72px;
+  }
+
+  .about-moments-section {
+    padding: 34px 12px 44px;
+  }
+
+  .about-moments-title {
+    margin-bottom: 14px;
+    font-size: clamp(1.25rem, 6vw, 1.85rem);
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 40px 1fr 40px;
+    gap: 8px;
+  }
+
+  .about-moments-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.35rem;
+  }
+
+  .about-moments-image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 430px) {
+  .journey-canvas {
+    padding: 34px 0 22px;
+  }
+
+  .journey-title {
+    margin: 0 0 20px;
+    margin-top: 100px;
+    font-size: 2.1rem;
+    letter-spacing: 0.4px;
+  }
+
+  .journey-row,
+  .journey-row-2,
+  .journey-row-3,
+  .journey-row-4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .journey-row,
+  .journey-row-3 {
+    grid-template-columns: 122px minmax(0, 1fr);
+  }
+
+  .journey-row-2,
+  .journey-row-4 {
+    grid-template-columns: minmax(0, 1fr) 122px;
+  }
+
+  .journey-frame {
+    width: 122px;
+  }
+
+  .journey-bubble {
+    width: 100%;
+    position:relative;
+    left:45px;
+  }
+
+  .journey-row .journey-frame,
+  .journey-row .journey-bubble,
+  .journey-row-2 .journey-frame,
+  .journey-row-2 .journey-bubble,
+  .journey-row-3 .journey-frame,
+  .journey-row-3 .journey-bubble,
+  .journey-row-4 .journey-frame,
+  .journey-row-4 .journey-bubble {
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .journey-ribbon {
+    width: 170%;
+    right: -74%;
+    top: 0;
+  }
+
+  .team-divider-section {
+    margin-top: -18px;
+  }
+
+  .team-divider-wave {
+    height: 62px;
+  }
+
+  .about-team-section {
+    padding: 24px 12px 34px;
+  }
+
+  .about-team-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .about-team-lead {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 168px;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 0.86rem;
+    margin-bottom: 2px;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.82rem;
+    margin-bottom: 0;
+  }
+
+  .about-team-lead-copy p {
+    display: none;
+  }
+
+  .about-team-grid-wrap {
+    max-width: 260px;
+  }
+
+  .about-solutions-section {
+    padding: 84px 0 72px;
+    min-height: 470px;
+  }
+
+  .about-solutions-bg {
+    top: 0;
+  }
+
+  .about-solutions-cards {
+    width: min(112%, 470px);
+    top: 24px;
+    transform: translateX(-2%);
+    margin-bottom: 0;
+  }
+
+  .about-moments-section {
+    padding: 28px 10px 36px;
+  }
+
+  .about-moments-title {
+    font-size: 1.22rem;
+  }
+}

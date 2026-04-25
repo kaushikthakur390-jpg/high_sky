@@ -1,0 +1,214 @@
+.programs-page { overflow-x: hidden; }
+
+.programs-hero {
+  background: #5b2d8e;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.programs-hero-content {
+  text-align: center;
+  padding: 60px 40px 30px;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.programs-hero-cloud-top {
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+  background: #5b2d8e;
+}
+
+.programs-hero-cloud-top svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.programs-main-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.35;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Decorative circles */
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.deco-c1 { width: 220px; height: 220px; top: 5%; left: -70px; }
+.deco-c2 { width: 180px; height: 180px; top: 28%; right: -50px; background: rgba(139,0,58,0.35); }
+.deco-c3 { width: 140px; height: 140px; bottom: 22%; right: 50px; background: rgba(139,0,58,0.3); }
+
+.deco-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: #f5c23d;
+}
+
+.deco-d1 { width: 18px; height: 18px; top: 22%; right: 10%; }
+.deco-d2 { width: 12px; height: 12px; bottom: 28%; left: 6%; }
+
+/* Programs list */
+.programs-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.prog-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.prog-mascot {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  z-index: 1;
+  margin-right: -12px;
+  border: 3px solid rgba(255,255,255,0.8);
+  overflow: hidden;
+}
+
+.prog-mascot img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+
+.prog-bar {
+  flex: 1;
+  background: #fff;
+  border-radius: 22px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+  min-height: 116px;
+  justify-content: center;
+}
+
+.prog-row.expanded .prog-bar {
+  min-height: 220px;
+}
+
+.prog-info strong {
+  display: block;
+  font-size: 0.96rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.prog-sub {
+  font-size: 0.64rem;
+  font-weight: 700;
+  margin-top: 2px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.prog-learn {
+  font-size: 0.78rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 14px;
+  transition: color 0.2s;
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.prog-learn:hover { color: #5b2d8e; }
+
+.prog-desc {
+  margin-top: 14px;
+  color: #111;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  font-weight: 600;
+  max-width: 92%;
+}
+
+/* Enrolled Now Section Background */
+.programs-enroll-section {
+  background: #5b2d8e;
+}
+
+/* CTA */
+.programs-cta-wrap {
+  text-align: center;
+  padding: 24px 0 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.programs-enroll-btn {
+  display: inline-block;
+  background: #f5a623;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 6px 20px rgba(245,166,35,0.4);
+  color: white !important;
+}
+
+.programs-enroll-btn:hover {
+  background: #e08c10;
+  transform: scale(1.04);
+}
+
+.programs-cloud-bottom {
+  line-height: 0;
+  margin-top: -1px;
+  position: relative;
+  z-index: 2;
+  background: #5b2d8e;
+}
+
+.programs-cloud-bottom svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .programs-list-wrap { padding: 0 12px 20px; max-width: 100%; }
+  .programs-main-title { font-size: 1.3rem; }
+  .prog-mascot { width: 60px; height: 60px; }
+  .prog-mascot img { width: 50px; height: 50px; }
+  .prog-info strong { font-size: 0.78rem; }
+}

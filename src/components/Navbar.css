@@ -1,0 +1,259 @@
+.navbar {
+  position: relative;
+  z-index: 40;
+  background: transparent;
+  box-shadow: none;
+  isolation: isolate;
+  margin-bottom: -124px;
+}
+
+.navbar-inner {
+  position: absolute;
+  top: clamp(18px, 2.2vw, 34px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, 100%);
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+}
+
+.navbar-logo {
+  position: relative;
+  z-index: 1003;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-links {
+  position: relative;
+  z-index: 1003;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.navbar-links li a {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #222;
+  padding: 8px 0;
+  text-decoration: none;
+  letter-spacing: 0;
+  transition: color 0.2s;
+  display: block;
+  white-space: nowrap;
+  line-height: 1;
+}
+.nav-cloud {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  transform: none;
+  line-height: 0;
+  z-index: 21;
+  pointer-events: none;
+  background: #f5a623;
+}
+
+.navbar.route-about-us .nav-cloud {
+  background: #5b2d8e;
+}
+
+.navbar.route-our-programs .nav-cloud {
+  background: #5b2d8e;
+}
+
+.navbar.route-parents-hub .nav-cloud {
+  background: #4a1e7a;
+}
+
+.navbar.route-consultation .nav-cloud,
+.navbar.route-contact-us .nav-cloud {
+  background: #5b2d8e;
+}
+
+
+.nav-cloud img {
+  display: block;
+  width: 100%;
+  height: clamp(155px, 13vw, 190px);
+  object-fit: cover;
+  object-position: bottom center;
+  filter: none;
+  background: transparent;
+}
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: #5b2d8e;
+}
+
+.navbar-links li a.uddeshya-link {
+  color: #f5a623;
+  font-weight: 800;
+}
+
+.navbar-links li a.uddeshya-link.active,
+.navbar-links li a.uddeshya-link:hover {
+  color: #e8940e;
+}
+
+.btn-nav-consult {
+  background: transparent !important;
+  color: #f5a623 !important;
+  border: 2px solid #f5a623 !important;
+  border-radius: 50px !important;
+  padding: 12px 22px !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-nav-consult:hover {
+  background: #f5a623 !important;
+  color: #fff !important;
+}
+
+.btn-nav-contact {
+  background: #5b2d8e !important;
+  color: #fff !important;
+  border-radius: 14px !important;
+  padding: 12px 18px !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-nav-contact:hover {
+  background: #3d1a6e !important;
+}
+
+/* Hamburger */
+.hamburger {
+  position: relative;
+  z-index: 1003;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #5b2d8e;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+@media (max-width: 900px) {
+  .navbar-inner {
+    top: 10px;
+    padding: 0 16px;
+  }
+  .navbar-logo img { height: 50px; }
+  .nav-cloud {
+    width: 100vw;
+  }
+  .nav-cloud img {
+    height: 130px;
+    object-position: bottom center;
+  }
+  .hamburger { display: flex; }
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  .navbar-links.show { display: flex; }
+  .navbar-links li { width: 100%; }
+  .navbar-links li a { padding: 10px 0; width: 100%; font-size: 0.85rem; }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    margin-bottom: -88px;
+  }
+
+  .navbar-inner {
+    top: 6px;
+    padding: 0 12px;
+  }
+
+  .nav-cloud img {
+    height: 92px;
+    object-position: bottom center;
+  }
+
+  .navbar-logo img {
+    height: 44px;
+  }
+
+  .hamburger {
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .hamburger span {
+    width: 18px;
+    height: 2px;
+    background: #f5a623;
+    border-radius: 99px;
+  }
+
+  .navbar-links {
+    top: calc(100% + 6px);
+    left: 10px;
+    right: 10px;
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .navbar-links li a {
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    padding: 9px 0;
+  }
+
+  .btn-nav-consult,
+  .btn-nav-contact {
+    text-align: center;
+    font-size: 0.72rem !important;
+  }
+}
