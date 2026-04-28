@@ -24,15 +24,17 @@
 .journey-row {
   position: relative;
   z-index: 2;
+  --journey-edge-bleed: clamp(14px, 1.8vw, 30px);
   display: grid;
   grid-template-columns: minmax(360px, 0.95fr) minmax(560px, 1.2fr);
   align-items: center;
   gap: clamp(14px, 2.2vw, 38px);
   margin-bottom: clamp(24px, 2.6vw, 42px);
-  padding: 0 clamp(6px, 1.6vw, 26px);
+  padding: 0;
 }
 
 .journey-row-1 {
+  margin-top: clamp(-90px, -4.2vw, -34px);
   margin-bottom: clamp(8px, 1.2vw, 16px);
 }
 
@@ -91,12 +93,22 @@
 
 .journey-row-1 .journey-frame,
 .journey-row-3 .journey-frame {
-  transform: translateY(8px);
+  transform: translateX(calc(-1 * var(--journey-edge-bleed))) translateY(8px);
 }
 
 .journey-row-2 .journey-frame,
 .journey-row-4 .journey-frame {
-  transform: translateY(-6px);
+  transform: translateX(var(--journey-edge-bleed)) translateY(-6px);
+}
+
+.journey-row-1 .journey-bubble,
+.journey-row-3 .journey-bubble {
+  transform: translateX(var(--journey-edge-bleed));
+}
+
+.journey-row-2 .journey-bubble,
+.journey-row-4 .journey-bubble {
+  transform: translateX(calc(-1 * var(--journey-edge-bleed)));
 }
 
 .journey-swoosh {
@@ -129,16 +141,24 @@
 
 .journey-row-4 {
   position: relative;
-  margin-bottom: -24px;
+  margin-bottom: clamp(64px, 8vw, 120px);
+  isolation: isolate;
 }
 
 .journey-ribbon {
   position: absolute;
-  width: clamp(980px, 72vw, 1400px);
-  right: -38vw;
-  top: -20px;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
   z-index: 0;
   pointer-events: none;
+}
+
+.journey-row-4 .journey-bubble,
+.journey-row-4 .journey-frame {
+  position: relative;
+  z-index: 1;
 }
 
 .team-divider-wave {
@@ -401,8 +421,9 @@
   }
 
   .journey-ribbon {
-    width: 130vw;
-    right: -72vw;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     opacity: 0.92;
   }
@@ -519,8 +540,9 @@
   }
 
   .journey-ribbon {
-    width: 170%;
-    right: -74%;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
   }
 

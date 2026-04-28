@@ -6,16 +6,17 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 0;
+  padding-top: -90px;
 }
 
 .programs-hero-content {
   text-align: center;
-  padding: 60px 40px 30px;
+  padding: 40px 40px 30px;
   position: relative;
   z-index: 2;
   background: transparent;
-  margin-top: 0;
-  padding-bottom: 20px;
+  margin-top: 180px;
+  
 }
 
 .programs-hero-cloud-top {
@@ -62,10 +63,10 @@
 
 /* Programs list */
 .programs-list-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 640px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 24px 20px;
   position: relative;
@@ -75,6 +76,7 @@
 .prog-row {
   display: flex;
   align-items: flex-start;
+  min-width: 0;
 }
 
 .prog-mascot {
@@ -103,17 +105,17 @@
   flex: 1;
   background: #fff;
   border-radius: 22px;
-  padding: 22px 28px;
+  padding: 20px 20px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   box-shadow: 0 4px 18px rgba(0,0,0,0.14);
-  min-height: 116px;
+  min-height: 128px;
   justify-content: center;
 }
 
 .prog-row.expanded .prog-bar {
-  min-height: 220px;
+  min-height: 250px;
 }
 
 .prog-info strong {
@@ -155,7 +157,14 @@
   font-size: 0.78rem;
   line-height: 1.6;
   font-weight: 600;
-  max-width: 92%;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .programs-list-wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 920px;
+  }
 }
 
 /* Enrolled Now Section Background */
@@ -172,23 +181,26 @@
 }
 
 .programs-enroll-btn {
-  display: inline-block;
-  background: #f5a623;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #f5a623 0%, #c07a5c 46%, #7a4699 78%, #5b2d8e 100%);
   color: #fff;
-  font-weight: 800;
-  font-size: 0.95rem;
-  padding: 14px 40px;
-  border-radius: 50px;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  min-height: 50px;
+  width: min(100%, 520px);
+  padding: 12px 30px;
+  border-radius: 12px;
   text-decoration: none;
-  letter-spacing: 0.5px;
-  transition: background 0.2s, transform 0.15s;
-  box-shadow: 0 6px 20px rgba(245,166,35,0.4);
+  letter-spacing: 0.3px;
+  transition: filter 0.2s;
   color: white !important;
 }
 
 .programs-enroll-btn:hover {
-  background: #e08c10;
-  transform: scale(1.04);
+  filter: brightness(1.03);
 }
 
 .programs-cloud-bottom {
@@ -206,7 +218,11 @@
 }
 
 @media (max-width: 768px) {
-  .programs-list-wrap { padding: 0 12px 20px; max-width: 100%; }
+  .programs-list-wrap {
+    grid-template-columns: 1fr;
+    padding: 0 12px 20px;
+    max-width: 100%;
+  }
   .programs-main-title { font-size: 1.3rem; }
   .prog-mascot { width: 60px; height: 60px; }
   .prog-mascot img { width: 50px; height: 50px; }

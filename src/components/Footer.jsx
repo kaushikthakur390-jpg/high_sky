@@ -57,7 +57,7 @@ export default function Footer() {
             <h4 className="footer-heading">Contact Us</h4>
             <div className="footer-contact-list">
               <div className="footer-contact-item">
-                <FaPhone className="footer-icon" />
+                <FaPhone style={{ transform: "scaleX(-1)" }} className="footer-icon" />
                 <span>+91 9100814615/ +91 6309275708</span>
               </div>
               <div className="footer-contact-item">

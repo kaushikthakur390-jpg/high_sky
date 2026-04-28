@@ -88,12 +88,6 @@ export default function OurPrograms() {
         <div className="deco-circle deco-c3"></div>
         <div className="deco-dot deco-d1"></div>
         <div className="deco-dot deco-d2"></div>
-
-        <div className="programs-hero-cloud-top">
-           <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,50 Q60,80 120,45 Q180,10 240,52 Q300,94 360,48 Q420,2 480,50 Q540,98 600,50 Q660,2 720,50 Q780,98 840,50 Q900,2 960,52 Q1020,98 1080,50 Q1140,5 1200,50 Q1260,95 1320,48 Q1380,2 1440,50 L1440,0 Z" fill="#fff"/>
-          </svg>
-        </div>
         <div className="programs-hero-content">
           <h1 className="programs-main-title">
             Shaping Futures: Discover Our<br />Child-Centric Programs

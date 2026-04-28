@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import cloudnav from '../assets/pages/home/navcloud.png';
+
+import cloudnav from '../assets/pages/home/navcloud_fix.png';
+import logoHighSky from '../assets/pages/home/logo_high_sky.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,9 +31,9 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="navbar-logo">
           <img
-            src="https://highskycdc.in/wp-content/uploads/2024/01/Logo.png"
+            src={logoHighSky}
             alt="High Sky CDC Logo"
-            onError={(e) => { e.target.src = 'https://highskycdc.in/wp-content/uploads/elementor/thumbs/Logo-qvdpz0jvzq3k0brmkhw56yx0r0vlf83p2hm9kqxy0.png'; e.target.onerror = null; }}
+            className="navbar-logo-img"
           />
         </Link>
 

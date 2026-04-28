@@ -60,12 +60,12 @@ const commitmentBlocks = [
 ];
 
 const uniqueFeatures = [
-  { img: uni1, title: 'MULTIDISCIPLINARY\nAPPROACH', desc: 'Our team includes occupational therapists, speech pathologists, and special educators who collaborate closely for every child. This integrated planning helps us design therapy goals that are practical, connected, and tailored to each child\'s unique developmental profile.' },
-  { img: uni2, title: 'EVIDENCE-BASED\nPRACTICES', desc: 'We use current research and proven therapeutic methods to guide each session with purpose. Progress is reviewed regularly so interventions stay engaging, measurable, and aligned with the best possible outcomes for children and families.' },
-  { img: uni3, title: 'NEURODIVERSITY\nACCEPTANCE', desc: 'We celebrate the strengths of every child and create an inclusive environment where differences are respected. By building confidence, self-awareness, and belonging, we help children grow into their authentic selves with pride.' },
-  { img: uni4, title: 'HOLISTIC\nDEVELOPMENT', desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child model supports meaningful development that carries into school, home routines, and everyday life.' },
-  { img: uni5, title: 'CAREGIVER-CHILD\nPARTNERSHIPS', desc: 'We believe parents and caregivers are essential partners in every milestone. Through guidance, home strategies, and regular collaboration, we help families confidently support their child\'s progress outside the therapy room.' },
-  { img: uni6, title: 'HIGH-TECH\nEQUIPMENT', desc: 'Our centre features advanced therapeutic tools, sensory resources, and child-friendly learning setups. These resources make sessions safer, more interactive, and better suited to each child\'s learning style and sensory needs.' },
+  { img: uni1, title: 'MULTIDISCIPLINARY APPROACH', desc: 'Our team includes occupational therapists, speech pathologists, and special educators who collaborate closely for every child. This integrated planning helps us design therapy goals that are practical, connected, and tailored to each child\'s unique developmental profile.' },
+  { img: uni2, title: 'EVIDENCE-BASED PRACTICES', desc: 'We use current research and proven therapeutic methods to guide each session with purpose. Progress is reviewed regularly so interventions stay engaging, measurable, and aligned with the best possible outcomes for children and families.' },
+  { img: uni3, title: 'NEURODIVERSITY ACCEPTANCE', desc: 'We celebrate the strengths of every child and create an inclusive environment where differences are respected. By building confidence, self-awareness, and belonging, we help children grow into their authentic selves with pride.' },
+  { img: uni4, title: 'HOLISTIC DEVELOPMENT', desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child model supports meaningful development that carries into school, home routines, and everyday life.' },
+  { img: uni5, title: 'CAREGIVER-CHILD PARTNERSHIPS', desc: 'We believe parents and caregivers are essential partners in every milestone. Through guidance, home strategies, and regular collaboration, we help families confidently support their child\'s progress outside the therapy room.' },
+  { img: uni6, title: 'HIGH-TECH EQUIPMENT', desc: 'Our centre features advanced therapeutic tools, sensory resources, and child-friendly learning setups. These resources make sessions safer, more interactive, and better suited to each child\'s learning style and sensory needs.' },
 ];
 
 const programs = [
@@ -308,7 +308,7 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
               <div className="testi-stars">★★★★★</div>
             </div>
           </div>
-          <Link to="/contact" className="btn-orange mt-4">BOOK A CONSULTATION TODAY &gt;</Link>
+          <Link to="/consultation" className="hero-video-cta testimonials-cta">BOOK A CONSULTATION TODAY &gt;</Link>
         </div>
         
         {/* The bottom cloud before the footer */}
