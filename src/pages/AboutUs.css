@@ -362,62 +362,94 @@
   filter: brightness(1.08);
 }
 
-@media (max-width: 900px) {
+/* ─────────────────────────────────────────────────────
+   ABOUT US MOBILE — BASE LAYER (< 768px)
+   ───────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+
+  /* --- Journey Canvas --- */
   .journey-canvas {
-    padding: 72px 12px 34px;
+    padding: 30px 0 20px;
   }
 
+  .journey-title {
+    font-size: 1.8rem;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Each row: two-column fluid flex layout */
   .journey-row,
+  .journey-row-1,
   .journey-row-2,
   .journey-row-3,
   .journey-row-4 {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 2vw;
+    margin-top: clamp(-180px, -24vw, -60px);
+    margin-bottom: 0px;
+    gap: 0;
+  }
+  
+  .journey-row-1 {
     margin-top: 0;
   }
 
+  /* Let all rows follow their natural DOM order (which is already alternating) */
   .journey-row,
+  .journey-row-1,
   .journey-row-2,
+  .journey-row-3,
   .journey-row-4 {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-bottom: 16px;
+    flex-direction: row;
   }
 
-  .journey-row .journey-frame,
-  .journey-row .journey-bubble,
-  .journey-row-2 .journey-frame,
-  .journey-row-2 .journey-bubble,
-  .journey-row-4 .journey-frame,
-  .journey-row-4 .journey-bubble {
-    justify-self: center;
-    transform: none;
-  }
-
+  /* Frame image - scales with viewport */
   .journey-frame {
-    width: min(80vw, 460px);
+    width: 40vw;
+    max-width: 220px;
+    height: auto;
+    position: relative;
+    z-index: 2; /* On top of bubble */
+    flex-shrink: 0;
   }
 
+  /* Bubble image - scales with viewport */
   .journey-bubble {
-    width: 100%;
-    position:relative;
-    left:100px;
+    width: 66vw;
+    max-width: 360px;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Under frame */
+    flex-shrink: 0;
   }
 
-  .journey-swoosh-top {
-    top: 64px;
-    left: -122px;
+  /* Reset desktop transforms and apply vertical stagger to frames */
+  .journey-row .journey-frame,
+  .journey-row-1 .journey-frame,
+  .journey-row-2 .journey-frame,
+  .journey-row-3 .journey-frame,
+  .journey-row-4 .journey-frame {
+    transform: translateY(-4vw);
+    justify-self: auto;
   }
 
-  .journey-swoosh-bottom {
-    right: -122px;
-    bottom: 52px;
+  /* Pull bubbles under frames to create horizontal overlap */
+  .journey-row .journey-bubble,
+  .journey-row-1 .journey-bubble,
+  .journey-row-3 .journey-bubble {
+    margin-left: -10vw;
+    transform: none;
+    justify-self: auto;
   }
 
-  .team-divider-section {
-    margin-top: -56px;
-  }
-
-  .team-divider-wave {
-    height: 120px;
+  .journey-row-2 .journey-bubble,
+  .journey-row-4 .journey-bubble {
+    margin-right: -10vw;
+    transform: none;
+    justify-self: auto;
   }
 
   .journey-ribbon {
@@ -425,47 +457,176 @@
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    opacity: 0.92;
+    opacity: 0.9;
   }
 
+  .team-divider-section {
+    margin-top: -18px;
+  }
+
+  .team-divider-wave {
+    height: 60px;
+  }
+
+  /* --- Team Section --- */
   .about-team-section {
-    padding: 48px 14px 52px;
+    padding: 24px 12px 34px;
   }
 
   .about-team-title {
-    margin-bottom: 26px;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
   }
 
   .about-team-lead {
     grid-template-columns: 1fr;
-    gap: 18px;
-    margin-bottom: 30px;
+    gap: 10px;
+    margin-bottom: 14px;
   }
 
   .about-team-lead-photo {
-    max-width: 320px;
+    max-width: 180px;
+    margin: 0 auto;
   }
 
   .about-team-lead-copy {
     text-align: center;
   }
 
-  .about-solutions-cards {
-    width: min(96%, 620px);
-    margin: 0 auto 16px;
+  .about-team-lead-copy h3 {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
   }
 
+  .about-team-lead-copy h4 {
+    font-size: 0.86rem;
+    margin-bottom: 4px;
+  }
+
+  .about-team-lead-copy p {
+    font-size: 0.72rem;
+  }
+
+  .about-team-grid-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* --- Solutions Section --- */
   .about-solutions-section {
-    padding: clamp(82px, 15vw, 124px) 0 72px;
+    padding: 72px 0 60px;
+    min-height: 400px;
   }
 
+  .about-solutions-bg {
+    top: 0;
+  }
+
+  .about-solutions-cards {
+    width: min(108%, 430px);
+    top: 20px;
+    transform: translateX(-2%);
+    margin-bottom: 0;
+  }
+
+  /* --- Moments Section --- */
   .about-moments-section {
-    padding: 34px 12px 44px;
+    padding: 28px 10px 36px;
   }
 
   .about-moments-title {
-    margin-bottom: 14px;
-    font-size: clamp(1.25rem, 6vw, 1.85rem);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 36px 1fr 36px;
+    gap: 6px;
+  }
+
+  .about-moments-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .about-moments-image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   320px — Small phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 1.6rem;
+    margin-top: 80px;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 0.82rem;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.78rem;
+  }
+
+  .about-team-lead-copy p {
+    display: none;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   360px — Standard Android phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-solutions-cards {
+    width: min(108%, 460px);
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   414px — iPhone Plus / larger Android phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 414px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 2rem;
+    margin-top: 90px;
+  }
+
+  .journey-canvas {
+    padding: 34px 0 24px;
+  }
+
+  .about-team-section {
+    padding: 30px 16px 44px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 200px;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 1rem;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.9rem;
+  }
+
+  .about-team-lead-copy p {
+    display: block;
+    font-size: 0.76rem;
+  }
+
+  .about-solutions-cards {
+    width: min(108%, 500px);
+    top: 28px;
   }
 
   .about-moments-slider-wrap {
@@ -476,55 +637,53 @@
   .about-moments-arrow {
     width: 40px;
     height: 40px;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
-  .about-moments-image {
-    aspect-ratio: 16 / 9;
+  .about-moments-title {
+    font-size: 1.3rem;
   }
 }
 
-@media (min-width: 421px) and (max-width: 430px) {
+/* ─────────────────────────────────────────────────────
+   768px — Tablets (iPad portrait)
+   ───────────────────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 900px) {
   .journey-canvas {
-    padding: 34px 0 22px;
+    padding: 60px 0 30px;
   }
 
   .journey-title {
-    margin: 0 0 20px;
-    margin-top: 100px;
-    font-size: 2.1rem;
-    letter-spacing: 0.4px;
-  }
-
-  .journey-row,
-  .journey-row-2,
-  .journey-row-3,
-  .journey-row-4 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    padding: 0 10px;
-    gap: 6px;
-    align-items: center;
+    font-size: 2.4rem;
+    margin-top: 90px;
   }
 
   .journey-row,
   .journey-row-3 {
-    grid-template-columns: 122px minmax(0, 1fr);
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 16px;
+    margin-top: clamp(-60px, -6vw, -30px);
+    margin-bottom: 16px;
+    padding: 0 16px;
   }
 
   .journey-row-2,
   .journey-row-4 {
-    grid-template-columns: minmax(0, 1fr) 122px;
+    grid-template-columns: minmax(0, 1fr) 200px;
+    gap: 16px;
+    margin-top: clamp(-120px, -10vw, -60px);
+    margin-bottom: 16px;
+    padding: 0 16px;
   }
 
   .journey-frame {
-    width: 122px;
+    width: 200px;
   }
 
   .journey-bubble {
     width: 100%;
-    position:relative;
-    left:45px;
+    position: static;
+    left: auto;
   }
 
   .journey-row .journey-frame,
@@ -539,78 +698,68 @@
     transform: none;
   }
 
-  .journey-ribbon {
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-  }
-
   .team-divider-section {
-    margin-top: -18px;
+    margin-top: -56px;
   }
 
   .team-divider-wave {
-    height: 62px;
+    height: 100px;
   }
 
   .about-team-section {
-    padding: 24px 12px 34px;
-  }
-
-  .about-team-title {
-    font-size: 1.8rem;
-    margin-bottom: 16px;
+    padding: 40px 20px 52px;
   }
 
   .about-team-lead {
-    gap: 10px;
-    margin-bottom: 12px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
   }
 
   .about-team-lead-photo {
-    max-width: 168px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
-  .about-team-lead-copy h3 {
-    font-size: 0.86rem;
-    margin-bottom: 2px;
-  }
-
-  .about-team-lead-copy h4 {
-    font-size: 0.82rem;
-    margin-bottom: 0;
-  }
-
-  .about-team-lead-copy p {
-    display: none;
+  .about-team-lead-copy {
+    text-align: center;
   }
 
   .about-team-grid-wrap {
-    max-width: 260px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .about-solutions-section {
-    padding: 84px 0 72px;
-    min-height: 470px;
-  }
-
-  .about-solutions-bg {
-    top: 0;
+    padding: clamp(90px, 13vw, 140px) 0 80px;
   }
 
   .about-solutions-cards {
-    width: min(112%, 470px);
-    top: 24px;
-    transform: translateX(-2%);
-    margin-bottom: 0;
+    width: min(96%, 680px);
+    top: 60px;
   }
 
   .about-moments-section {
-    padding: 28px 10px 36px;
+    padding: 34px 16px 48px;
   }
 
   .about-moments-title {
-    font-size: 1.22rem;
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    margin-bottom: 16px;
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 44px 1fr 44px;
+    gap: 10px;
+  }
+
+  .about-moments-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+  }
+
+  .about-moments-image {
+    aspect-ratio: 16 / 9;
   }
 }

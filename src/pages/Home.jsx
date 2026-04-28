@@ -200,10 +200,16 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
       <section className="commitment-section">
         <div className="commitment-container">
           <div className="commitment-text-stack">
-            {commitmentBlocks.map((block) => (
-              <article className="commitment-text-block" key={block.title}>
-                <h2 className="commitment-heading">{block.title}</h2>
-                <p className="commitment-desc">{block.text}</p>
+            {commitmentBlocks.map((block, i) => (
+              <article className={`commitment-text-block commitment-block-${block.type}`} key={block.title}>
+                {/* Mobile-only inline photo — hidden on desktop */}
+                <div className="commitment-inline-photo" aria-hidden="true">
+                  <img src={commitmentFrames[i]} alt="" />
+                </div>
+                <div className="commitment-block-content">
+                  <h2 className="commitment-heading">{block.title}</h2>
+                  <p className="commitment-desc">{block.text}</p>
+                </div>
               </article>
             ))}
           </div>

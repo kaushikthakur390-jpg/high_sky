@@ -253,52 +253,35 @@
 
 .whatsapp-float:hover { transform: scale(1.1); }
 
-@media (max-width: 768px) {
-  .footer-body { padding: 22px 20px 24px; }
-  .footer-columns { grid-template-columns: 1fr; gap: 24px; }
-  .footer-plant-left,
-  .footer-plant-right {
-    display: none;
-  }
-  .scroll-to-top { right: 18px; }
-  .footer-heading { font-size: 1.3rem; }
-  .footer-links li a { font-size: 0.95rem; }
-  .footer-contact-item { font-size: 0.95rem; }
-  .footer-icon { font-size: 1rem; }
-  .btn-tour {
-    min-width: 100%;
-    min-height: 62px;
-    font-size: 0.96rem;
-  }
-  .footer-social-title { font-size: 1.05rem; }
-  .footer-socials a {
-    font-size: 1.3rem;
-    width: 36px;
-    height: 36px;
-  }
-  .footer-copyright { font-size: 0.74rem; }
-}
-
-@media (max-width: 600px) {
+/* ─────────────────────────────────────────────────────
+   FOOTER MOBILE — BASE LAYER (< 768px)
+   ───────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
   .footer-wave-top svg {
-    height: 40px;
+    height: 50px;
   }
 
   .footer-body {
     background: #f7b500;
-    padding: 22px 16px 20px;
+    padding: 24px 18px 22px;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-plant-left,
+  .footer-plant-right {
+    display: none;
   }
 
   .scroll-to-top {
     display: none;
   }
 
-  .footer-columns {
-    gap: 18px;
-  }
-
   .footer-heading {
-    font-size: 1.16rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -313,89 +296,272 @@
   }
 
   .footer-links li a {
-    font-size: 0.76rem;
+    font-size: 0.82rem;
   }
 
   .btn-tour {
-    min-width: 214px;
-    min-height: 44px;
-    margin: 8px auto 0;
+    min-width: 220px;
+    min-height: 48px;
+    margin: 10px auto 0;
     border-radius: 999px;
-    font-size: 0.68rem;
+    font-size: 0.76rem;
     line-height: 1.2;
-    padding: 8px 14px;
+    padding: 10px 16px;
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
   }
 
   .footer-contact-list {
-    gap: 8px;
+    gap: 10px;
   }
 
   .footer-contact-item {
-    font-size: 0.72rem;
-    gap: 8px;
+    font-size: 0.8rem;
+    gap: 10px;
     line-height: 1.25;
   }
 
   .footer-icon {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     margin-top: 3px;
   }
 
   .footer-bottom {
-    margin-top: 16px;
-    padding-top: 14px;
+    margin-top: 18px;
+    padding-top: 16px;
   }
 
   .footer-social-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 8px;
   }
 
   .footer-socials {
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 12px;
+    margin-bottom: 12px;
   }
 
   .footer-socials a {
-    width: 24px;
-    height: 24px;
-    font-size: 0.88rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
   }
 
   .footer-copyright {
-    font-size: 0.54rem;
+    font-size: 0.62rem;
     opacity: 0.9;
   }
 
+  .whatsapp-float {
+    width: 46px;
+    height: 46px;
+    bottom: 20px;
+    right: 14px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   320px — Small phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .footer-body {
+    padding: 20px 14px 18px;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.74rem;
+  }
+
+  .btn-tour {
+    font-size: 0.68rem;
+    min-height: 44px;
+  }
+
+  .footer-contact-item {
+    font-size: 0.72rem;
+  }
+
+  .footer-socials a {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.56rem;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   360px — Standard Android phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .footer-body {
+    padding: 22px 16px 20px;
+  }
+
+  .footer-heading {
+    font-size: 1.16rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.78rem;
+  }
+
+  .btn-tour {
+    font-size: 0.72rem;
+    min-height: 46px;
+  }
+
+  .footer-contact-item {
+    font-size: 0.76rem;
+  }
+
+  .footer-socials a {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.58rem;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   414px — iPhone Plus / larger Android
+   ───────────────────────────────────────────────────── */
+@media (min-width: 414px) and (max-width: 767.98px) {
+  .footer-body {
+    padding: 26px 20px 22px;
+  }
+
+  .footer-heading {
+    font-size: 1.3rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.86rem;
+  }
+
+  .btn-tour {
+    font-size: 0.82rem;
+    min-height: 52px;
+    max-width: 360px;
+  }
+
+  .footer-contact-item {
+    font-size: 0.84rem;
+  }
+
+  .footer-icon {
+    font-size: 1rem;
+  }
+
+  .footer-social-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.64rem;
+  }
+
+  /* Show decorative plants at larger phone sizes */
   .footer-plant-left,
   .footer-plant-right {
     display: block;
     top: auto;
-    bottom: 72px;
+    bottom: 70px;
   }
 
   .footer-plant-left {
-    left: -28px;
+    left: -30px;
   }
 
   .footer-plant-right {
-    right: -34px;
+    right: -36px;
   }
 
   .footer-plant-left img {
-    width: 86px;
-    opacity: 0.92;
+    width: 88px;
+    opacity: 0.9;
   }
 
   .footer-plant-right img {
     width: 96px;
-    opacity: 0.92;
+    opacity: 0.9;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   768px — Tablets
+   ───────────────────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 900px) {
+  .footer-body {
+    padding: 28px 36px 30px;
   }
 
-  .whatsapp-float {
-    width: 44px;
-    height: 44px;
-    bottom: 18px;
-    right: 14px;
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-plant-left,
+  .footer-plant-right {
+    display: none;
+  }
+
+  .footer-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.95rem;
+  }
+
+  .footer-contact-item {
+    font-size: 0.95rem;
+  }
+
+  .footer-icon {
+    font-size: 1rem;
+  }
+
+  .btn-tour {
+    min-width: 100%;
+    min-height: 62px;
+    font-size: 0.96rem;
+    border-radius: 12px;
+  }
+
+  .footer-social-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-socials a {
+    font-size: 1.4rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-copyright {
+    font-size: 0.78rem;
+  }
+
+  .scroll-to-top {
+    right: 18px;
+    display: flex;
   }
 }
