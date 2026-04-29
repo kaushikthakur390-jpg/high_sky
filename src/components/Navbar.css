@@ -165,16 +165,17 @@
    ───────────────────────────────────────────────────── */
 @media (max-width: 767.98px) {
   .navbar {
-    margin-bottom: -90px;
+    margin-bottom: -100px;
   }
 
   .navbar-inner {
     top: 8px;
-    padding: 0 14px;
+    padding: 0 20px;
   }
 
   .nav-cloud {
     width: 100vw;
+    top:-5px;
   }
 
   .nav-cloud img {
@@ -183,7 +184,7 @@
   }
 
   .navbar-logo-img {
-    height: 52px;
+    height: 100px;
   }
 
   /* Show hamburger on mobile */
@@ -218,10 +219,12 @@
 
   .navbar-links.show {
     display: flex;
+    
   }
 
   .navbar-links li {
     width: 100%;
+
   }
 
   .navbar-links li a {
@@ -247,7 +250,7 @@
    ───────────────────────────────────────────────────── */
 @media (min-width: 320px) and (max-width: 767.98px) {
   .navbar {
-    margin-bottom: -86px;
+    margin-bottom: -94px;
   }
 
   .nav-cloud img {
@@ -255,7 +258,7 @@
   }
 
   .navbar-logo-img {
-    height: 48px;
+    height: 90px;
   }
 
   .hamburger span {
@@ -269,7 +272,7 @@
    ───────────────────────────────────────────────────── */
 @media (min-width: 360px) and (max-width: 767.98px) {
   .navbar {
-    margin-bottom: -88px;
+    margin-bottom: -98px;
   }
 
   .nav-cloud img {
@@ -277,7 +280,7 @@
   }
 
   .navbar-logo-img {
-    height: 52px;
+    height: 100px;
   }
 
   .hamburger span {
@@ -291,7 +294,7 @@
    ───────────────────────────────────────────────────── */
 @media (min-width: 414px) and (max-width: 767.98px) {
   .navbar {
-    margin-bottom: -96px;
+    margin-bottom: -106px;
   }
 
   .nav-cloud img {
@@ -299,7 +302,7 @@
   }
 
   .navbar-logo-img {
-    height: 58px;
+    height: 110px;
   }
 
   .hamburger {

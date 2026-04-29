@@ -199,3 +199,24 @@ input, select, textarea, button {
   align-items: center;
   justify-content: center;
 }
+
+/* ===== FIX SUB-PIXEL RENDER GAPS ON DIVIDERS ===== */
+.hero-cloud-divider img,
+.unique-top-divider-img,
+.unique-cloud-divider-img,
+.testimonials-cloud-top svg,
+.testimonials-cloud-bottom svg,
+.footer-wave-top svg {
+  display: block;
+  width: 100%;
+}
+
+.hero-cloud-divider,
+.unique-cloud-top,
+.unique-cloud-divider,
+.testimonials-cloud-top,
+.testimonials-cloud-bottom,
+.footer-wave-top {
+  margin-top: -2px;
+  margin-bottom: -2px;
+}

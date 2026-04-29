@@ -184,23 +184,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #f5a623 0%, #c07a5c 46%, #7a4699 78%, #5b2d8e 100%);
-  color: #fff;
+  background: #f5a623;
+  color: #fff !important;
   font-weight: 900;
   font-size: 1rem;
   text-transform: uppercase;
   min-height: 50px;
   width: min(100%, 520px);
   padding: 12px 30px;
-  border-radius: 12px;
+  border-radius: 999px;
   text-decoration: none;
   letter-spacing: 0.3px;
   transition: filter 0.2s;
-  color: white !important;
 }
 
 .programs-enroll-btn:hover {
-  filter: brightness(1.03);
+  filter: brightness(1.1);
 }
 
 .programs-cloud-bottom {

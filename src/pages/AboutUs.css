@@ -379,85 +379,68 @@
     letter-spacing: 0.5px;
   }
 
-  /* Each row: two-column fluid flex layout */
+  /* Base row: flex layout */
   .journey-row,
   .journey-row-1,
   .journey-row-2,
   .journey-row-3,
   .journey-row-4 {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 0 2vw;
-    margin-top: clamp(-180px, -24vw, -60px);
-    margin-bottom: 0px;
+    padding: 0;
     gap: 0;
+    margin-bottom: 0;
+    margin-top: -65px;
+    position: relative;
+    width: 100%;
   }
-  
+
   .journey-row-1 {
     margin-top: 0;
   }
 
-  /* Let all rows follow their natural DOM order (which is already alternating) */
-  .journey-row,
-  .journey-row-1,
-  .journey-row-2,
-  .journey-row-3,
-  .journey-row-4 {
-    flex-direction: row;
-  }
-
-  /* Frame image - scales with viewport */
-  .journey-frame {
-    width: 40vw;
-    max-width: 220px;
-    height: auto;
-    position: relative;
-    z-index: 2; /* On top of bubble */
-    flex-shrink: 0;
-  }
-
-  /* Bubble image - scales with viewport */
-  .journey-bubble {
-    width: 66vw;
-    max-width: 360px;
-    height: auto;
-    position: relative;
-    z-index: 1; /* Under frame */
-    flex-shrink: 0;
-  }
-
-  /* Reset desktop transforms and apply vertical stagger to frames */
-  .journey-row .journey-frame,
+  /*
+   * .journey-row img { width: 100% } has specificity [0,1,1].
+   * We need [0,2,0]+ to override it. Double-class selectors win.
+   */
   .journey-row-1 .journey-frame,
   .journey-row-2 .journey-frame,
   .journey-row-3 .journey-frame,
   .journey-row-4 .journey-frame {
-    transform: translateY(-4vw);
+    width: 40vw;
+    flex-shrink: 0;
+    transform: translateY(-10px);
     justify-self: auto;
+    margin: 0;
   }
 
-  /* Pull bubbles under frames to create horizontal overlap */
-  .journey-row .journey-bubble,
   .journey-row-1 .journey-bubble,
-  .journey-row-3 .journey-bubble {
-    margin-left: -10vw;
-    transform: none;
-    justify-self: auto;
-  }
-
   .journey-row-2 .journey-bubble,
+  .journey-row-3 .journey-bubble,
   .journey-row-4 .journey-bubble {
-    margin-right: -10vw;
+    flex: 1 1 0%;
+    min-width: 0;
     transform: none;
     justify-self: auto;
+    margin: 0;
   }
 
-  .journey-ribbon {
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    opacity: 0.9;
+  /* Rows 1 & 3: frame starts at left screen edge */
+  .journey-row-1 .journey-frame,
+  .journey-row-3 .journey-frame {
+    margin-left: -1vw;
+  }
+
+  /* Rows 2 & 4: frame ends at right screen edge */
+  .journey-row-2 .journey-frame,
+  .journey-row-4 .journey-frame {
+    margin-right: -1vw;
+  }
+
+  .journey-ribbon,
+  .journey-swoosh {
+    display: none;
   }
 
   .team-divider-section {
