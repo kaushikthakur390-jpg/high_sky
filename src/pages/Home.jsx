@@ -83,6 +83,13 @@ const programs = [
     link: '/our-programs',
     cta: 'LEARN MORE'
   },
+    {
+    name: 'BEHAVIOUR THERAPY',
+    description: 'Transform challenging behaviors into positive outcomes with our proven behavior therapy techniques.',
+    image: behaviorProgramCard,
+    link: '/our-programs',
+    cta: 'LEARN MORE'
+  },
   {
     name: 'SPEECH THERAPY',
     description: "Enhance your child's daily living skills and independence through personalized sessions tailored to their needs.",
@@ -90,13 +97,7 @@ const programs = [
     link: '/our-programs',
     cta: 'LEARN MORE'
   },
-  {
-    name: 'BEHAVIOUR THERAPY',
-    description: 'Transform challenging behaviors into positive outcomes with our proven behavior therapy techniques.',
-    image: behaviorProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
+
   {
     name: 'SPECIAL EDUCATION',
     description: "Unlock your child's full potential with individualized special education programs tailored to their learning style.",
@@ -140,7 +141,7 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
           <div className="hero-left">
             <h1 className="hero-welcome">WELCOME TO HIGH SKY CDC</h1>
             <p className="hero-subtitle">
-              where every sky is limitless &amp; every child is exceptional
+From Small steps to wide skies, supporting every child to rise
             </p>
             <Link to="/consultation" className="hero-cta">
               BOOK YOUR CONSULTATION TODAY &gt;
@@ -163,7 +164,7 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
         <div className="hero-video-wrap">
           <div className="hero-video-copy">
             <p>
-              Welcome to high sky child developement centrer, A place where every childs unique
+              Welcome to High sky child developement centre, A place where every childs unique
               abilities are not just recognized but celebrated.
             </p>
             <p>
@@ -179,7 +180,7 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
               <img src={screen} alt="Screen" className="hero-screen-img" />
               <div className="hero-video-inner">
                 <iframe
-                  src="https://www.youtube.com/embed/S75Zh55Srd4"
+                  src="https://www.youtube.com/embed/m_Maaj7-esE?si=hmk0y_UjISCGdFnC"
                   title="High Sky CDC"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

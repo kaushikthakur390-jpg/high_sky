@@ -85,10 +85,10 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="footer-social-title">FOLLOW US ON SOCIAL MEDIA</p>
           <div className="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.facebook.com/PriyankaGupta.ot.Highsky/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fpriyankagupta.highsky.ot%2F&source=omni_redirect" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.youtube.com/@priyankas-occupational_therapy" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
+            <a href="https://www.linkedin.com/in/dr-priyanka-gupta-4a1036301/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
           <p className="footer-copyright">© 2024 High Sky Child Development Centre. All rights reserved.</p>
         </div>

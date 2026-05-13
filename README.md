@@ -1,16 +1,16 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Change the caption and add the quote in home page(done)
+- ⁠Picture of Ma’am ( Vineet will get back)
+- ⁠Spelling Mistake of Child development Centre in the home page paragraph(done)
+- ⁠Change the video of the projector (About the High Sky)(done)
+- ⁠Make the Logo Larger
+- ⁠Adjust the cloud properly
+- ⁠Change in Photo of (Commitment / Where we are headed / Our Pillars)
+- ⁠D/W B/W Prices and therapies from different centre ( Need to give data )
+- ⁠Change the arrangement ( Add behaviour above speech therapy) (done)
+- ⁠Image of Occupation theory etc (Will be given by Vineet)
+- ⁠Pop- up the testimonial profile 
+- ⁠Add Navya Photo and names 
+- ⁠Add the links in Fodder(done)
+- ⁠Add Product page linked to WhatsApp through form 
+- ⁠Google Submit Button (Inquiry not working)
+- ⁠Split both of the branches of high sky in Contact Us (done)
