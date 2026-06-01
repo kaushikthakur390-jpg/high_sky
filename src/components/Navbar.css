@@ -42,6 +42,7 @@
   position: relative;
   z-index: 1003;
   display: flex;
+  left:100px;
   align-items: center;
   gap: 10px;
   list-style: none;
