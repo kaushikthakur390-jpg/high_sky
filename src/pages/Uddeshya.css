@@ -1,0 +1,344 @@
+.uddeshya-page { overflow-x: hidden; }
+
+/* ===== HERO BANNER ===== */
+.uddeshya-hero-banner {
+  width: 100%;
+  line-height: 0; /* remove bottom gap */
+}
+
+.full-width-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-title-svg {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* WHY UDDESHYA */
+.why-uddeshya {
+  background: #fff;
+  padding: 60px 40px;
+}
+
+.ud-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.why-text { flex: 1; }
+
+.ud-section-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.ud-section-title.orange { color: #f5a623; }
+.ud-section-title.white { color: #fff; }
+.ud-section-title.purple { color: #5b2d8e; }
+.ud-section-title.center { text-align: center; }
+
+.why-text p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.why-img {
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.05);
+  background: white;
+  padding: 8px; /* polaroid */
+  transform: rotate(2deg);
+  position: relative;
+}
+
+.why-img::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 60px;
+  height: 25px;
+  background: #2a2a2a;
+  z-index: 5;
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  opacity: 0.9;
+}
+
+.why-img img { width: 100%; height: 300px; object-fit: cover; display: block; border-radius: 2px; }
+
+/* HOW WORKS */
+.how-works-section {
+  background: #3d6e2a;
+  position: relative;
+}
+
+.ud-green-wave-top, .ud-green-wave-bottom {
+  line-height: 0;
+}
+
+.ud-green-wave-top svg, .ud-green-wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.how-works-body { padding: 40px 40px 40px; }
+
+.how-content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.how-img {
+  flex: 0 0 340px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background: white;
+  padding: 8px;
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+.how-img::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 60px;
+  height: 25px;
+  background: #2a2a2a;
+  z-index: 5;
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  opacity: 0.9;
+}
+
+.how-img img { width: 100%; height: 380px; object-fit: cover; display: block; border-radius: 2px; }
+
+.how-text { flex: 1; }
+
+.how-intro {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.step-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.step-num {
+  background: #f5a623;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.82rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-content h4 { color: #ffc107; font-size: 0.88rem; font-weight: 800; margin-bottom: 3px; }
+.step-content p { color: rgba(255,255,255,0.82); font-size: 0.78rem; line-height: 1.6; }
+
+.enroll-now-btn {
+  display: inline-block;
+  background: #f5a623;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 13px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.enroll-now-btn:hover { background: #e08c10; transform: scale(1.03); }
+
+/* TEAM */
+.ud-team-section { background: #fff; padding: 60px 40px; }
+
+.ud-team-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.carousel-slide {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.carousel-slide img { width: 100%; height: 340px; object-fit: cover; display: block; }
+
+.carousel-btn {
+  background: #fff;
+  border: 2px solid #5b2d8e;
+  color: #5b2d8e;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-btn:hover { background: #5b2d8e; color: #fff; }
+
+.ud-team-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.ud-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ud-team-card {
+  background: #f9f5ff;
+  border-radius: 14px;
+  padding: 22px 16px;
+  text-align: center;
+  border: 1px solid #e8d8f8;
+  transition: transform 0.2s;
+}
+
+.ud-team-card:hover { transform: translateY(-5px); }
+
+.ud-team-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f5a623;
+  margin-bottom: 12px;
+}
+
+.ud-team-card h4 { font-size: 0.82rem; font-weight: 800; color: #5b2d8e; margin-bottom: 5px; }
+.ud-team-card p { font-size: 0.7rem; color: #777; }
+
+/* ENROLL FORM */
+.enroll-section {
+  background: linear-gradient(135deg, #3d1a6e, #7b4db8);
+  padding: 60px 40px;
+}
+
+.enroll-title {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 34px;
+  line-height: 1.3;
+}
+
+.enroll-form {
+  max-width: 660px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.enroll-form input,
+.enroll-form textarea {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: #fff;
+  outline: none;
+  font-family: var(--font-main);
+  color: #333;
+  width: 100%;
+}
+
+.enroll-form input:focus,
+.enroll-form textarea:focus { box-shadow: 0 0 0 2px #f5a623; }
+
+.form-row-2 {
+  display: flex;
+  gap: 14px;
+}
+
+.form-row-2 input { flex: 1; }
+
+.enroll-form textarea { resize: vertical; }
+
+.enroll-submit-btn {
+  background: #f5a623;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 48px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  align-self: center;
+}
+
+.enroll-submit-btn:hover { background: #e08c10; transform: scale(1.03); }
+
+@media (max-width: 768px) {
+  .uddeshya-title { font-size: 3.5rem; }
+  .why-content, .how-content { flex-direction: column; }
+  .how-img { flex: none; width: 100%; }
+  .how-img img { height: 240px; }
+  .ud-team-grid { grid-template-columns: repeat(2, 1fr); }
+  .ud-parrot { right: 10px; font-size: 3rem; }
+  .carousel-slide img { height: 220px; }
+  .form-row-2 { flex-direction: column; }
+  .why-uddeshya { padding: 40px 20px; }
+  .how-works-body { padding: 30px 20px; }
+  .ud-team-section { padding: 40px 20px; }
+  .enroll-section { padding: 40px 20px; }
+}

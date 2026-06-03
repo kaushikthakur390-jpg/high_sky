@@ -1,0 +1,16 @@
+- Change the caption and add the quote in home page(done)
+- ⁠Picture of Ma’am ( Vineet will get back)
+- ⁠Spelling Mistake of Child development Centre in the home page paragraph(done)
+- ⁠Change the video of the projector (About the High Sky)(done)
+- ⁠Make the Logo Larger
+- ⁠Adjust the cloud properly
+- ⁠Change in Photo of (Commitment / Where we are headed / Our Pillars)
+- ⁠D/W B/W Prices and therapies from different centre ( Need to give data )
+- ⁠Change the arrangement ( Add behaviour above speech therapy) (done)
+- ⁠Image of Occupation theory etc (Will be given by Vineet)
+- ⁠Pop- up the testimonial profile 
+- ⁠Add Navya Photo and names 
+- ⁠Add the links in Fodder(done)
+- ⁠Add Product page linked to WhatsApp through form 
+- ⁠Google Submit Button (Inquiry not working)
+- ⁠Split both of the branches of high sky in Contact Us (done)

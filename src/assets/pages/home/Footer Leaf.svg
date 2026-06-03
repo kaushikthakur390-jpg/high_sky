@@ -1,0 +1,33 @@
+<svg width="226" height="597" viewBox="0 0 226 597" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_642_1498)">
+<rect width="226" height="597" fill="#FBAE17"/>
+<g filter="url(#filter0_d_642_1498)">
+<path d="M8.63432 264.513C8.63432 264.513 4.3464 208.579 45.2608 165.953C86.1753 123.327 82.5072 121.013 116.179 78.8878C149.366 37.9772 189.189 14.9409 189.189 14.9409C189.189 14.9409 162.075 42.9532 146.582 64.1027C131.089 85.2523 124.241 146.835 93.3037 175.985C62.4496 205.693 28.048 215.927 33.9463 264.767C39.8446 313.607 68.0523 598.565 68.0523 598.565L43.1542 601.107L8.63432 264.513Z" fill="url(#paint0_linear_642_1498)" fill-opacity="0.6"/>
+<path d="M48.8604 405.982C57.794 497.799 68.0517 598.563 68.0517 598.563L43.1536 601.106C41.8519 601.298 40.5501 601.491 40.5501 601.491C40.5501 601.491 39.8096 565.03 22.4105 505.893C31.8355 466.214 41.7569 429.89 48.8604 405.982Z" fill="#B9D696" fill-opacity="0.6"/>
+<path d="M42.5857 601.763C42.5857 601.763 39.1718 470.844 64.5682 372.803C90.6982 275.224 181.442 74.9429 185.606 80.612C189.771 86.2811 155.846 158.157 146.951 214.9C138.707 271.547 143.105 305.752 111.712 381.253C79.5854 456.291 54.1148 490.917 68.0519 598.565L42.5857 601.763Z" fill="url(#paint1_linear_642_1498)" fill-opacity="0.6"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_642_1498" x="4.50562" y="14.9409" width="188.684" height="594.822" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_642_1498"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_642_1498" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_642_1498" x1="-0.628474" y1="88.9222" x2="194.108" y2="544.9" gradientUnits="userSpaceOnUse">
+<stop stop-color="#869D3C"/>
+<stop offset="1" stop-color="#496E29"/>
+</linearGradient>
+<linearGradient id="paint1_linear_642_1498" x1="11.8776" y1="148.222" x2="183.267" y2="549.53" gradientUnits="userSpaceOnUse">
+<stop stop-color="#869D3C"/>
+<stop offset="1" stop-color="#496E29"/>
+</linearGradient>
+<clipPath id="clip0_642_1498">
+<rect width="226" height="597" fill="white"/>
+</clipPath>
+</defs>
+</svg>

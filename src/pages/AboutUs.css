@@ -1,0 +1,750 @@
+.about-journey-page {
+  overflow-x: hidden;
+  background: #5b2d8e;
+}
+
+.journey-canvas {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 84px 0 40px;
+}
+
+.journey-title {
+  margin: 0 0 44px;
+  margin-top: 110px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top:100px;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.journey-row {
+  position: relative;
+  z-index: 2;
+  --journey-edge-bleed: clamp(14px, 1.8vw, 30px);
+  display: grid;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(560px, 1.2fr);
+  align-items: center;
+  gap: clamp(14px, 2.2vw, 38px);
+  margin-bottom: clamp(24px, 2.6vw, 42px);
+  padding: 0;
+}
+
+.journey-row-1 {
+  margin-top: clamp(-90px, -4.2vw, -34px);
+  margin-bottom: clamp(8px, 1.2vw, 16px);
+}
+
+.journey-row-2,
+.journey-row-4 {
+  grid-template-columns: minmax(560px, 1.2fr) minmax(360px, 0.95fr);
+}
+
+.journey-row-2 {
+  margin-top: clamp(-300px, -18vw, -190px);
+}
+
+.journey-row-3 {
+  margin-top: clamp(-300px, -18vw, -190px);
+}
+
+.journey-row-4 {
+  margin-top: clamp(-280px, -16vw, -170px);
+}
+
+.journey-row-2 .journey-bubble,
+.journey-row-4 .journey-bubble {
+  justify-self: start;
+}
+
+.journey-row-2 .journey-frame,
+.journey-row-4 .journey-frame {
+  justify-self: end;
+}
+
+.journey-row-1 .journey-frame,
+.journey-row-3 .journey-frame {
+  justify-self: start;
+}
+
+.journey-row-1 .journey-bubble,
+.journey-row-3 .journey-bubble {
+  justify-self: end;
+}
+
+.journey-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.journey-frame {
+  width: clamp(340px, 35vw, 560px);
+  max-width: none;
+}
+
+.journey-bubble {
+  width: clamp(520px, 54vw, 920px);
+  max-width: none;
+}
+
+.journey-row-1 .journey-frame,
+.journey-row-3 .journey-frame {
+  transform: translateX(calc(-1 * var(--journey-edge-bleed))) translateY(8px);
+}
+
+.journey-row-2 .journey-frame,
+.journey-row-4 .journey-frame {
+  transform: translateX(var(--journey-edge-bleed)) translateY(-6px);
+}
+
+.journey-row-1 .journey-bubble,
+.journey-row-3 .journey-bubble {
+  transform: translateX(var(--journey-edge-bleed));
+}
+
+.journey-row-2 .journey-bubble,
+.journey-row-4 .journey-bubble {
+  transform: translateX(calc(-1 * var(--journey-edge-bleed)));
+}
+
+.journey-swoosh {
+  position: absolute;
+  width: clamp(260px, 38vw, 560px);
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.journey-swoosh-top {
+  top: 94px;
+  left: -190px;
+}
+
+.journey-swoosh-bottom {
+  right: -180px;
+  bottom: 98px;
+  transform: rotate(180deg);
+}
+
+.team-divider-section {
+  position: relative;
+  z-index: 3;
+  line-height: 0;
+  background: #ffffff;
+  margin-top: clamp(-190px, -10vw, -100px);
+}
+
+.journey-row-4 {
+  position: relative;
+  margin-bottom: clamp(64px, 8vw, 120px);
+  isolation: isolate;
+}
+
+.journey-ribbon {
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.journey-row-4 .journey-bubble,
+.journey-row-4 .journey-frame {
+  position: relative;
+  z-index: 1;
+}
+
+.team-divider-wave {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 16vw, 230px);
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+.about-team-section {
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  padding: 78px 24px 90px;
+}
+
+.about-team-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #ffffff;
+}
+
+.about-team-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about-team-title {
+  text-align: center;
+  color: #5b2d8e;
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 0 44px;
+}
+
+.about-team-lead {
+  display: grid;
+  grid-template-columns: minmax(300px, 420px) minmax(320px, 1fr);
+  gap: clamp(26px, 4vw, 62px);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.about-team-lead-photo {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  justify-self: center;
+}
+
+.about-team-lead-copy h3 {
+  margin: 0 0 8px;
+  color: #f3a414;
+  font-size: clamp(1.35rem, 2.2vw, 2.8rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.about-team-lead-copy h4 {
+  margin: 0 0 14px;
+  color: #5b2d8e;
+  font-size: clamp(1.2rem, 2vw, 2.3rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.about-team-lead-copy p {
+  margin: 0;
+  color: #4d2a78;
+  font-size: clamp(0.95rem, 1.45vw, 1.8rem);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.about-team-grid-wrap {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.about-team-grid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-solutions-section {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+ padding: clamp(140px, 11vw, 220px) 0 clamp(300px, 20vw, 500px);
+}
+
+.about-solutions-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+  pointer-events: none;
+  top:50px;
+}
+
+.about-solutions-cards {
+  position: relative;
+  display: block;
+  width: min(95%, 1700px);
+  margin: 0 auto clamp(20px, 2.2vw, 34px);
+  height: auto;
+  top:300px;
+  z-index: 1;
+}
+
+.about-moments-section {
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  padding: clamp(60px, 7vw, 100px) 24px clamp(70px, 8vw, 120px);
+}
+
+.about-moments-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-moments-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.about-moments-title {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #2f6f3c;
+  font-size: clamp(1.7rem, 2.8vw, 2.9rem);
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.about-moments-slider-wrap {
+  display: grid;
+  grid-template-columns: 56px 1fr 56px;
+  gap: clamp(12px, 2vw, 26px);
+  align-items: center;
+}
+
+.about-moments-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.about-moments-image {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.about-moments-arrow {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 999px;
+  background: #5b2d8e;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.about-moments-arrow:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+/* ─────────────────────────────────────────────────────
+   ABOUT US MOBILE — BASE LAYER (< 768px)
+   ───────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+
+  /* --- Journey Canvas --- */
+  .journey-canvas {
+    padding: 30px 0 20px;
+  }
+
+  .journey-title {
+    font-size: 1.8rem;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Base row: flex layout */
+  .journey-row,
+  .journey-row-1,
+  .journey-row-2,
+  .journey-row-3,
+  .journey-row-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 0;
+    margin-bottom: 0;
+    margin-top: -65px;
+    position: relative;
+    width: 100%;
+  }
+
+  .journey-row-1 {
+    margin-top: 0;
+  }
+
+  /*
+   * .journey-row img { width: 100% } has specificity [0,1,1].
+   * We need [0,2,0]+ to override it. Double-class selectors win.
+   */
+  .journey-row-1 .journey-frame,
+  .journey-row-2 .journey-frame,
+  .journey-row-3 .journey-frame,
+  .journey-row-4 .journey-frame {
+    width: 40vw;
+    flex-shrink: 0;
+    transform: translateY(-10px);
+    justify-self: auto;
+    margin: 0;
+  }
+
+  .journey-row-1 .journey-bubble,
+  .journey-row-2 .journey-bubble,
+  .journey-row-3 .journey-bubble,
+  .journey-row-4 .journey-bubble {
+    flex: 1 1 0%;
+    min-width: 0;
+    transform: none;
+    justify-self: auto;
+    margin: 0;
+  }
+
+  /* Rows 1 & 3: frame starts at left screen edge */
+  .journey-row-1 .journey-frame,
+  .journey-row-3 .journey-frame {
+    margin-left: -1vw;
+  }
+
+  /* Rows 2 & 4: frame ends at right screen edge */
+  .journey-row-2 .journey-frame,
+  .journey-row-4 .journey-frame {
+    margin-right: -1vw;
+  }
+
+  .journey-ribbon,
+  .journey-swoosh {
+    display: none;
+  }
+
+  .team-divider-section {
+    margin-top: -18px;
+  }
+
+  .team-divider-wave {
+    height: 60px;
+  }
+
+  /* --- Team Section --- */
+  .about-team-section {
+    padding: 24px 12px 34px;
+  }
+
+  .about-team-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .about-team-lead {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .about-team-lead-copy {
+    text-align: center;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.86rem;
+    margin-bottom: 4px;
+  }
+
+  .about-team-lead-copy p {
+    font-size: 0.72rem;
+  }
+
+  .about-team-grid-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* --- Solutions Section --- */
+  .about-solutions-section {
+    padding: 72px 0 60px;
+    min-height: 400px;
+  }
+
+  .about-solutions-bg {
+    top: 0;
+  }
+
+  .about-solutions-cards {
+    width: min(108%, 430px);
+    top: 20px;
+    transform: translateX(-2%);
+    margin-bottom: 0;
+  }
+
+  /* --- Moments Section --- */
+  .about-moments-section {
+    padding: 28px 10px 36px;
+  }
+
+  .about-moments-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 36px 1fr 36px;
+    gap: 6px;
+  }
+
+  .about-moments-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .about-moments-image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   320px — Small phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 1.6rem;
+    margin-top: 80px;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 0.82rem;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.78rem;
+  }
+
+  .about-team-lead-copy p {
+    display: none;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   360px — Standard Android phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-solutions-cards {
+    width: min(108%, 460px);
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   414px — iPhone Plus / larger Android phones
+   ───────────────────────────────────────────────────── */
+@media (min-width: 414px) and (max-width: 767.98px) {
+  .journey-title {
+    font-size: 2rem;
+    margin-top: 90px;
+  }
+
+  .journey-canvas {
+    padding: 34px 0 24px;
+  }
+
+  .about-team-section {
+    padding: 30px 16px 44px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 200px;
+  }
+
+  .about-team-lead-copy h3 {
+    font-size: 1rem;
+  }
+
+  .about-team-lead-copy h4 {
+    font-size: 0.9rem;
+  }
+
+  .about-team-lead-copy p {
+    display: block;
+    font-size: 0.76rem;
+  }
+
+  .about-solutions-cards {
+    width: min(108%, 500px);
+    top: 28px;
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 40px 1fr 40px;
+    gap: 8px;
+  }
+
+  .about-moments-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .about-moments-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   768px — Tablets (iPad portrait)
+   ───────────────────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 900px) {
+  .journey-canvas {
+    padding: 60px 0 30px;
+  }
+
+  .journey-title {
+    font-size: 2.4rem;
+    margin-top: 90px;
+  }
+
+  .journey-row,
+  .journey-row-3 {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 16px;
+    margin-top: clamp(-60px, -6vw, -30px);
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
+
+  .journey-row-2,
+  .journey-row-4 {
+    grid-template-columns: minmax(0, 1fr) 200px;
+    gap: 16px;
+    margin-top: clamp(-120px, -10vw, -60px);
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
+
+  .journey-frame {
+    width: 200px;
+  }
+
+  .journey-bubble {
+    width: 100%;
+    position: static;
+    left: auto;
+  }
+
+  .journey-row .journey-frame,
+  .journey-row .journey-bubble,
+  .journey-row-2 .journey-frame,
+  .journey-row-2 .journey-bubble,
+  .journey-row-3 .journey-frame,
+  .journey-row-3 .journey-bubble,
+  .journey-row-4 .journey-frame,
+  .journey-row-4 .journey-bubble {
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .team-divider-section {
+    margin-top: -56px;
+  }
+
+  .team-divider-wave {
+    height: 100px;
+  }
+
+  .about-team-section {
+    padding: 40px 20px 52px;
+  }
+
+  .about-team-lead {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .about-team-lead-photo {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-team-lead-copy {
+    text-align: center;
+  }
+
+  .about-team-grid-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-solutions-section {
+    padding: clamp(90px, 13vw, 140px) 0 80px;
+  }
+
+  .about-solutions-cards {
+    width: min(96%, 680px);
+    top: 60px;
+  }
+
+  .about-moments-section {
+    padding: 34px 16px 48px;
+  }
+
+  .about-moments-title {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    margin-bottom: 16px;
+  }
+
+  .about-moments-slider-wrap {
+    grid-template-columns: 44px 1fr 44px;
+    gap: 10px;
+  }
+
+  .about-moments-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+  }
+
+  .about-moments-image {
+    aspect-ratio: 16 / 9;
+  }
+}
