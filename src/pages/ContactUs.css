@@ -40,7 +40,7 @@
 }
 
 .contact-subtitle {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   margin-bottom: 24px;
 }
@@ -71,8 +71,8 @@
   height: 250px;
   object-fit: contain;
   position: relative;
-  left:250px;
-  top:-20px;
+  left: 250px;
+  top: -20px;
 }
 
 /* Decorative elements */
@@ -84,15 +84,26 @@
   z-index: 1;
 }
 
-.contact-deco-dot.yellow { background: #f5c23d; top: 28%; left: 5%; }
-.contact-deco-dot.gray { background: rgba(255,255,255,0.3); top: 55%; right: 8%; width: 10px; height: 10px; }
+.contact-deco-dot.yellow {
+  background: #f5c23d;
+  top: 28%;
+  left: 5%;
+}
+
+.contact-deco-dot.gray {
+  background: rgba(255, 255, 255, 0.3);
+  top: 55%;
+  right: 8%;
+  width: 10px;
+  height: 10px;
+}
 
 .contact-deco-circle.right {
   position: absolute;
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: rgba(139,0,58,0.25);
+  background: rgba(139, 0, 58, 0.25);
   right: -30px;
   bottom: 30%;
   z-index: 1;
@@ -114,7 +125,7 @@
   background: #f9f5ff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 6px 26px rgba(91,45,142,0.12);
+  box-shadow: 0 6px 26px rgba(91, 45, 142, 0.12);
   margin-bottom: 28px;
   opacity: 0;
   transform: translateY(var(--lift));
@@ -132,7 +143,7 @@
 
 .branch-detail.show:hover {
   --lift: -8px;
-  box-shadow: 0 12px 32px rgba(91,45,142,0.18);
+  box-shadow: 0 12px 32px rgba(91, 45, 142, 0.18);
 }
 
 .branch-detail.show:hover .branch-map iframe {
@@ -158,7 +169,7 @@
 
 .branch-label {
   display: inline-block;
-  background: #5b2d8e;
+  background: #a02c7d;
   color: #fff;
   font-size: 0.7rem;
   font-weight: 800;
@@ -182,7 +193,7 @@
 }
 
 .branch-icon {
-  color: #5b2d8e;
+  color: #a02c7d;
   font-size: 1rem;
   flex-shrink: 0;
   margin-top: 3px;
@@ -195,15 +206,40 @@
 }
 
 @media (max-width: 768px) {
-  .contact-hero-inner { flex-direction: column; padding: 50px 20px 30px; }
-  .contact-hero-right { width: auto; align-self: center; }
-  .contact-hero-left h1 { font-size: 2.4rem; }
+  .contact-hero-inner {
+    flex-direction: column;
+    padding: 50px 20px 30px;
+  }
+
+  .contact-hero-right {
+    width: auto;
+    align-self: center;
+  }
+
+  .contact-hero-left h1 {
+    font-size: 2.4rem;
+  }
+
   .contact-mascot {
     width: 140px;
     position: static;
   }
-  .branch-detail { flex-direction: column; }
-  .branch-map { flex: none; width: 100%; height: 200px; }
-  .branch-info { padding: 20px; }
-  .contact-branches { padding: 24px 16px 40px; }
+
+  .branch-detail {
+    flex-direction: column;
+  }
+
+  .branch-map {
+    flex: none;
+    width: 100%;
+    height: 200px;
+  }
+
+  .branch-info {
+    padding: 20px;
+  }
+
+  .contact-branches {
+    padding: 24px 16px 40px;
+  }
 }

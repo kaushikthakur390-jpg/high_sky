@@ -97,7 +97,7 @@
 <stop stop-color="#140028"/>
 <stop offset="0.2667" stop-color="#240A3D" stop-opacity="0.7197"/>
 <stop offset="0.8132" stop-color="#4D2472" stop-opacity="0.1452"/>
-<stop offset="0.9513" stop-color="#582B80" stop-opacity="0"/>
+<stop offset="0.9513" stop-color="#a02c7d" stop-opacity="0"/>
 </radialGradient>
 <clipPath id="clip0_718_156">
 <rect width="402" height="413" fill="white"/>

@@ -2,14 +2,15 @@
   position: relative;
   z-index: 40;
 
-  
+
   isolation: isolate;
   margin-bottom: -190px;
 }
 
 .navbar-inner {
   position: absolute;
-  top: clamp(-30px, -2vw, 0px); /* moved further up */
+  top: clamp(-30px, -2vw, 0px);
+  /* moved further up */
   left: 50%;
   transform: translateX(-50%);
   width: min(1280px, 100%);
@@ -26,7 +27,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  right:122px;
+  right: 122px;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -42,7 +43,7 @@
   position: relative;
   z-index: 1003;
   display: flex;
-  left:100px;
+  left: 100px;
   align-items: center;
   gap: 10px;
   list-style: none;
@@ -60,6 +61,7 @@
   white-space: nowrap;
   line-height: 1;
 }
+
 .nav-cloud {
   position: relative;
   left: 0;
@@ -70,7 +72,7 @@
   line-height: 0;
   z-index: 21;
   pointer-events: none;
-      /* background: linear-gradient(160deg, #f7931e 0%, #f5a623 60%, #ffb833 100%); */
+  /* background: linear-gradient(160deg, #f7931e 0%, #f5a623 60%, #ffb833 100%); */
 }
 
 
@@ -87,9 +89,10 @@
 .navbar.route-parents-hub .nav-cloud img {
   filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.26));
 }
+
 .navbar-links li a:hover,
 .navbar-links li a.active {
-  color: #5b2d8e;
+  color: #A02C7D;
 }
 
 .navbar-links li a.uddeshya-link {
@@ -104,7 +107,7 @@
 
 .btn-nav-consult {
   background: transparent !important;
-  color: #f5a623 !important;
+  color: #f5cf0d !important;
   border: 2px solid #f5a623 !important;
   border-radius: 50px !important;
   padding: 12px 22px !important;
@@ -116,12 +119,12 @@
 }
 
 .btn-nav-consult:hover {
-  background: #f5a623 !important;
+  background: #a02c7d !important;
   color: #fff !important;
 }
 
 .btn-nav-contact {
-  background: #5b2d8e !important;
+  background: #a02c7d !important;
   color: #fff !important;
   border-radius: 14px !important;
   padding: 12px 18px !important;
@@ -133,7 +136,7 @@
 }
 
 .btn-nav-contact:hover {
-  background: #3d1a6e !important;
+  background: #f5cf0d !important;
 }
 
 /* Hamburger */
@@ -153,14 +156,22 @@
   display: block;
   width: 26px;
   height: 3px;
-  background: #5b2d8e;
+  background: #a02c7d;
   border-radius: 2px;
   transition: all 0.3s;
 }
 
-.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
 /* ─────────────────────────────────────────────────────
    NAVBAR MOBILE — BASE LAYER (< 768px)
@@ -177,7 +188,7 @@
 
   .nav-cloud {
     width: 100vw;
-    top:-5px;
+    top: -5px;
   }
 
   .nav-cloud img {
@@ -221,7 +232,7 @@
 
   .navbar-links.show {
     display: flex;
-    
+
   }
 
   .navbar-links li {
@@ -354,7 +365,7 @@
   .hamburger span {
     width: 28px;
     height: 3px;
-    background: #5b2d8e;
+    background: #a02c7d;
   }
 
   .navbar-links {

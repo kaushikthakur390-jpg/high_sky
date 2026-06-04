@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   line-height: 0;
-  background: #5b2d8e;
+  background: #a02c7d;
 }
 
 .footer.footer-route-about-us .footer-wave-top {
@@ -18,7 +18,7 @@
 }
 
 .footer.footer-route-our-programs .footer-wave-top {
-  background: #5b2d8e;
+  background: #A02C7D;
 }
 
 .footer.footer-route-parents-hub .footer-wave-top {
@@ -26,11 +26,11 @@
 }
 
 .footer.footer-route-consultation .footer-wave-top {
-  background: #5b2d8e;
+  background: #A02C7D;
 }
 
 .footer.footer-route-contact-us .footer-wave-top {
-  background: #5b2d8e;
+  background: #A02C7D;
 }
 
 .footer-wave-top svg {
@@ -54,7 +54,7 @@
   top: -34px;
   right: 16px;
   background: transparent;
-  color: #5b2d8e;
+  color: #a02c7d;
   border: none;
   width: 54px;
   height: 54px;
@@ -96,7 +96,9 @@
   margin-bottom: 20px;
 }
 
-.footer-links li { margin-bottom: 6px; }
+.footer-links li {
+  margin-bottom: 6px;
+}
 
 .footer-links li a {
   font-size: 1.04rem;
@@ -106,14 +108,17 @@
   line-height: 1.25;
 }
 
-.footer-links li a:hover { color: #f7e6ff; text-decoration: underline; }
+.footer-links li a:hover {
+  color: #f7e6ff;
+  text-decoration: underline;
+}
 
 .btn-tour {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  color: #5b2d8e !important;
+  color: #a02c7d !important;
   border: none;
   border-radius: 10px;
   min-width: 360px;
@@ -131,7 +136,9 @@
   margin-top: 18px;
 }
 
-.btn-tour:hover { filter: brightness(0.98); }
+.btn-tour:hover {
+  filter: brightness(0.98);
+}
 
 .footer-contact-list {
   display: flex;
@@ -148,8 +155,14 @@
   line-height: 1.2;
 }
 
-.footer-contact-item a { color: #fff; text-decoration: none; }
-.footer-contact-item a:hover { text-decoration: underline; }
+.footer-contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact-item a:hover {
+  text-decoration: underline;
+}
 
 .footer-icon {
   color: #fff;
@@ -197,7 +210,10 @@
   transition: all 0.2s;
 }
 
-.footer-socials a:hover { transform: translateY(-2px); opacity: 0.9; }
+.footer-socials a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
 
 .footer-copyright {
   font-size: 0.92rem;
@@ -246,12 +262,14 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
   transition: transform 0.2s;
   text-decoration: none;
 }
 
-.whatsapp-float:hover { transform: scale(1.1); }
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
 
 /* ─────────────────────────────────────────────────────
    FOOTER MOBILE — BASE LAYER (< 768px)

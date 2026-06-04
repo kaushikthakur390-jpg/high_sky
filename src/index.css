@@ -2,7 +2,7 @@
 
 :root {
   --purple-dark: #3d1a6e;
-  --purple-main: #5b2d8e;
+  --purple-main: #a02c7d;
   --purple-light: #7b4db8;
   --orange: #f5a623;
   --orange-dark: #e8940e;
@@ -17,7 +17,9 @@
   --font-alt: 'Nunito', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,9 +36,21 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, a, li, span, label,
-button, input, select, textarea {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+label,
+button,
+input,
+select,
+textarea {
   font-family: var(--font-main);
 }
 
@@ -54,7 +68,10 @@ ul {
   list-style: none;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   font-family: var(--font-main);
 }
 
@@ -157,7 +174,7 @@ input, select, textarea, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(91,45,142,0.3);
+  box-shadow: 0 4px 16px rgba(91, 45, 142, 0.3);
   transition: transform 0.2s;
 }
 
@@ -180,7 +197,7 @@ input, select, textarea, button {
   justify-content: center;
   font-size: 1.8rem;
   z-index: 999;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
 }
 

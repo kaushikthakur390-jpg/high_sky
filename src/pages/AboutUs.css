@@ -1,6 +1,6 @@
 .about-journey-page {
   overflow-x: hidden;
-  background: #5b2d8e;
+  background: #A02C7D;
 }
 
 .journey-canvas {
@@ -13,11 +13,11 @@
 
 .journey-title {
   margin: 0 0 44px;
-  margin-top: 110px;
+  margin-top: 50px;
   text-align: center;
   color: #fff;
   position: relative;
-  top:100px;
+  top: 100px;
   font-size: clamp(2rem, 3.4vw, 3rem);
   font-weight: 900;
   letter-spacing: 1px;
@@ -199,7 +199,7 @@
 
 .about-team-title {
   text-align: center;
-  color: #5b2d8e;
+  color: #a02c7d;
   font-size: clamp(2rem, 3.4vw, 3.5rem);
   font-weight: 900;
   letter-spacing: 1px;
@@ -233,7 +233,7 @@
 
 .about-team-lead-copy h4 {
   margin: 0 0 14px;
-  color: #5b2d8e;
+  color: #a02c7d;
   font-size: clamp(1.2rem, 2vw, 2.3rem);
   line-height: 1.1;
   font-weight: 900;
@@ -262,7 +262,7 @@
   position: relative;
   overflow: hidden;
   background: #ffffff;
- padding: clamp(140px, 11vw, 220px) 0 clamp(300px, 20vw, 500px);
+  padding: clamp(140px, 11vw, 220px) 0 clamp(300px, 20vw, 500px);
 }
 
 .about-solutions-bg {
@@ -274,7 +274,7 @@
   object-position: top center;
   z-index: 0;
   pointer-events: none;
-  top:50px;
+  top: 50px;
 }
 
 .about-solutions-cards {
@@ -283,7 +283,7 @@
   width: min(95%, 1700px);
   margin: 0 auto clamp(20px, 2.2vw, 34px);
   height: auto;
-  top:300px;
+  top: 300px;
   z-index: 1;
 }
 
@@ -348,7 +348,7 @@
   height: 56px;
   border: 0;
   border-radius: 999px;
-  background: #5b2d8e;
+  background: #a02c7d;
   color: #fff;
   font-size: 2rem;
   line-height: 1;
@@ -569,7 +569,7 @@
   .journey-title {
     font-size: 1.75rem;
   }
-  
+
   .about-solutions-cards {
     width: min(108%, 460px);
   }

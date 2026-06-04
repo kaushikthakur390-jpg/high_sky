@@ -7,7 +7,7 @@ import birdRed from "../assets/pages/home/red_bird.png"; // Assuming it's red_bi
 import projector from '../assets/shared/mascots/projector.png';
 import screen from '../assets/shared/mascots/screen.png';
 import cloudDivider from '../assets/pages/home/Frame 19.png';
-import frameDivider from '../assets/pages/home/Vector 2.png';
+import frameDivider from '../assets/pages/home/sectiondiff.png';
 import sectionDividerThree from '../assets/pages/home/SECTION 3.png';
 import commitmentFrame1 from '../assets/pages/home/homeframe1.png';
 import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
@@ -42,20 +42,20 @@ const commitmentBlocks = [
     type: 'left',
     title: 'OUR COMMITMENT',
     img: commitPic1,
-    text: 'AT HIGH SKY CHILD DEVELOPMENT CENTRE, OUR MISSION IS TO NURTURE AND EMPOWER CHILDREN WITH UNIQUE LEARNING AND DEVELOPMENTAL NEEDS. WE ARE DEDICATED TO PROVIDING COMPREHENSIVE, INDIVIDUALIZED THERAPY AND SUPPORT SERVICES THAT FOSTER GROWTH, INDEPENDENCE, AND A SENSE OF BELONGING FOR EVERY CHILD.'
+    text: 'We are dedicated to empowering young minds in a nurturing, engaging, and inclusive environment. Our mission is to foster every child’s growth by offering personalized learning experiences that promote their cognitive, social, and emotional development.'
   },
   {
     type: 'right',
     title: 'WHERE WE\'RE HEADED!',
 
     img: commitPic2,
-    text: 'OUR VISION IS TO BECOME THE PREMIER CHILD DEVELOPMENT CENTRE IN HYDERABAD, RENOWNED FOR OUR INNOVATIVE APPROACH TO EARLY CHILDHOOD EDUCATION AND OUR COMMITMENT TO HELPING EVERY CHILD THRIVE. WE STRIVE TO SET THE STANDARD FOR EXCELLENCE IN DEVELOPMENTAL PROGRAMS, SUPPORTING CHILDREN WITH DIVERSE NEEDS AND ABILITIES.'
+    text: 'Our vision is to become the premier child development centre in Hyderabad, renowned for our innovative approach to early childhood education and our commitment to helping every child thrive. We strive to set the standard for excellence in developmental programs, supporting children with diverse needs and empowering families along the journey.'
   },
   {
     type: 'left',
     title: 'OUR PILLARS',
     img: commitPic3,
-    text: 'WE BELIEVE THAT EVERY CHILD IS UNIQUE, AND WE ARE PASSIONATE ABOUT DESIGNING INDIVIDUALIZED PROGRAMS THAT HIGHLIGHT THEIR STRENGTHS, ADDRESS THEIR CHALLENGES, AND IGNITE A LIFELONG LOVE OF LEARNING. OUR CHILD-CENTRIC APPROACH PRIORITIZES HOLISTIC DEVELOPMENT, MAKING US THE TRUSTED CHOICE FOR PARENTS SEEKING QUALITY EARLY EDUCATION AND INTERVENTION SERVICES IN HYDERABAD.'
+    text: 'We believe that every child is unique, and we are passionate about designing individualized programs that highlight their strengths, address their challenges, and ignite a lifelong love of learning. Our child-centric approach prioritizes holistic development, making us the trusted choice for parents seeking quality early education and intervention services in Hyderabad.'
   }
 ];
 
@@ -83,7 +83,7 @@ const programs = [
     link: '/our-programs',
     cta: 'LEARN MORE'
   },
-    {
+  {
     name: 'BEHAVIOUR THERAPY',
     description: 'Transform challenging behaviors into positive outcomes with our proven behavior therapy techniques.',
     image: behaviorProgramCard,
@@ -119,18 +119,18 @@ const programs = [
     link: '/our-programs',
     cta: 'LEARN MORE'
   },
-    // {
-    //   name: 'UDDESHYA : OUR SCHOOL READINESS PROGRAM',
-    //   description: 'Prepare your child for academic success with our comprehensive school readiness program.',
-    //   image: uddeshyaProgramCard,
-    //   link: '/uddeshya',
-    //   cta: 'ENROLL NOW'
-    // },
+  // {
+  //   name: 'UDDESHYA : OUR SCHOOL READINESS PROGRAM',
+  //   description: 'Prepare your child for academic success with our comprehensive school readiness program.',
+  //   image: uddeshyaProgramCard,
+  //   link: '/uddeshya',
+  //   cta: 'ENROLL NOW'
+  // },
 ];
 
 const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
 
- export default function Home() {
+export default function Home() {
   return (
     <div className="home-page">
       {/* <div className="home-top-nav-cloud" aria-hidden="true" /> */}
@@ -141,7 +141,7 @@ const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
           <div className="hero-left">
             <h1 className="hero-welcome">WELCOME TO HIGH SKY CDC</h1>
             <p className="hero-subtitle">
-From Small steps to wide skies, supporting every child to rise
+              From Small steps to wide skies, supporting every child to rise
             </p>
             <Link to="/consultation" className="hero-cta">
               BOOK YOUR CONSULTATION TODAY &gt;
@@ -153,10 +153,10 @@ From Small steps to wide skies, supporting every child to rise
           <img src={heroPhoto} alt="Children in therapy session" className="hero-photo" />
         </div>
 
-      <HeroCarousel />
+        <HeroCarousel />
 
       </section>
-        
+
       {/* Floating Screen Graphic overlap (Moved outside to prevent absolute position overlap) */}
       <div className="hero-video-overlap">
         <div className="hero-video-wrap">
@@ -295,7 +295,7 @@ From Small steps to wide skies, supporting every child to rise
               />
             </div>
           </div>
-          
+
           <div className="testimonials-scrolls">
             <div className="testimonial-paper">
               <img src={pic4} alt="Avatar" className="testi-avatar" />
@@ -315,9 +315,9 @@ From Small steps to wide skies, supporting every child to rise
           </div>
           <Link to="/consultation" className="hero-video-cta testimonials-cta">BOOK A CONSULTATION TODAY &gt;</Link>
         </div>
-        
+
         {/* The bottom cloud before the footer */}
-          {/* <div className="testimonials-cloud-bottom">
+        {/* <div className="testimonials-cloud-bottom">
             <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0,90 L0,44 Q60,10 120,44 Q180,78 240,35 Q300,-8 360,40 Q420,84 480,36 Q540,-12 600,40 Q660,90 720,40 Q780,-10 840,40 Q900,88 960,38 Q1020,-10 1080,42 Q1140,90 1200,42 Q1260,-6 1320,42 Q1380,88 1440,44 L1440,90 Z" fill="#ffb833" />
             </svg>
