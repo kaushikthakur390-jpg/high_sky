@@ -45,7 +45,7 @@
   position: relative;
   padding-bottom: 100px;
   top: 10px;
-  right: 100px;
+  left: -60px;
 }
 
 .hero-welcome {
@@ -239,10 +239,10 @@
 }
 
 .hero-video-copy p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 0 22px;
   position: relative;
-  left: -200px;
+
   max-width: 600px;
   font-family: 'Amaranth', sans-serif;
 }
@@ -251,7 +251,7 @@
   display: inline-block;
   margin-top: 10px;
   position: relative;
-  left: -200px;
+
 
   background: linear-gradient(90deg,
       #ffbd3a 18%,
@@ -330,7 +330,7 @@
 .hero-screen-frame {
   position: relative;
   top: 60px;
-  left: 125px;
+  left: 100px;
   border-radius: 12px;
 
 }
@@ -357,30 +357,29 @@
 
 /* ===== COMMITMENT SECTION ===== */
 .commitment-section {
-  padding: 160px 40px 60px;
+  padding: 160px 40px 240px;
   /* Extra top padding to clear the floating screen */
   background: #fff;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .commitment-container {
   max-width: 1240px;
   margin: 0 auto;
   position: relative;
-  min-height: 1300px;
 }
 
 .commitment-text-stack {
-  width: min(680px, 54%);
+  width: min(680px, 58%);
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 50px;
   padding-top: 6px;
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 86px;
+  gap: 180px;
   text-align: center;
 }
 
@@ -406,10 +405,9 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  z-index: 1;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   pointer-events: none;
 }
 
@@ -425,7 +423,6 @@
 
 .commitment-polaroid {
   position: absolute;
-  width: min(420px, 38vw);
 }
 
 .commitment-frame-img {
@@ -437,20 +434,23 @@
 }
 
 .commitment-polaroid-1 {
-  top: -4px;
-  left: 8px;
+  width: 275px;
+  top: 10px;
+  left: 20px;
   transform: rotate(-4deg);
 }
 
 .commitment-polaroid-2 {
-  top: 248px;
-  right: 8px;
+  width: 315px;
+  top: 380px;
+  right: -20px;
   transform: rotate(14deg);
 }
 
 .commitment-polaroid-3 {
-  left: 24px;
-  bottom: 24px;
+  width: 352px;
+  top: 800px;
+  left: -10px;
   transform: rotate(-7deg);
 }
 
@@ -468,6 +468,15 @@
   height: clamp(190px, 18vw, 255px);
   object-fit: cover;
   display: block;
+}
+
+.achievements-banner {
+  display: block;
+  width: 100%;
+  max-width: 1240px;
+  margin: 120px auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 .commitment-heading {
@@ -493,7 +502,7 @@
 .mascot-bird-red {
   position: absolute;
   right: -110px;
-  bottom: -66px;
+  bottom: -160px;
   height: 200px;
   width: 240px;
   z-index: 10;
@@ -514,6 +523,17 @@
   background: #a02c7d;
   position: relative;
   margin-top: 0;
+}
+
+.unique-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #a02c7d;
+  z-index: 5;
 }
 
 .unique-cloud-top {
@@ -1141,7 +1161,16 @@
   .commitment-inline-photo {
     display: block;
     flex-shrink: 0;
+  }
+
+  .commitment-text-block:nth-child(1) .commitment-inline-photo {
+    width: 80px;
+  }
+  .commitment-text-block:nth-child(2) .commitment-inline-photo {
     width: 110px;
+  }
+  .commitment-text-block:nth-child(3) .commitment-inline-photo {
+    width: 115px;
   }
 
   .commitment-inline-photo img {
@@ -1187,6 +1216,10 @@
     margin: 0;
     color: #a02c7d;
     font-weight: 800;
+  }
+
+  .achievements-banner {
+    margin-top: 40px;
   }
 
   .mascot-bird-red {
@@ -1862,7 +1895,7 @@
 
   /* --- COMMITMENT --- */
   .commitment-section {
-    padding: 120px 40px 60px;
+    padding: 120px 40px 200px;
   }
 
   .commitment-container {
@@ -1871,7 +1904,7 @@
 
   .commitment-text-stack {
     width: min(720px, 100%);
-    gap: 52px;
+    gap: 120px;
   }
 
   .commitment-heading {
@@ -1886,40 +1919,43 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
+    left: 0;
+    width: 100%;
+    transform: none;
     display: block;
     pointer-events: none;
+    z-index: 5;
   }
 
   .commitment-polaroid {
     position: absolute;
-    width: min(340px, 36vw);
   }
 
   .commitment-polaroid-1 {
-    top: -4px;
-    left: 8px;
+    width: 214px;
+    top: 10px;
+    left: 10px;
     transform: rotate(-4deg);
   }
 
   .commitment-polaroid-2 {
-    top: 248px;
-    right: 8px;
+    width: 245px;
+    top: 260px;
+    right: 0px;
     transform: rotate(14deg);
   }
 
   .commitment-polaroid-3 {
-    left: 24px;
-    bottom: 24px;
+    width: 274px;
+    top: 560px;
+    left: 0px;
     transform: rotate(-7deg);
   }
 
   .mascot-bird-red {
     display: block;
     right: 6px;
-    bottom: -30px;
+    bottom: -100px;
     width: 120px;
     height: auto;
   }

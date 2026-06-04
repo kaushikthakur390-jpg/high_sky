@@ -12,6 +12,7 @@ import sectionDividerThree from '../assets/pages/home/SECTION 3.png';
 import commitmentFrame1 from '../assets/pages/home/homeframe1.png';
 import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
 import commitmentFrame3 from '../assets/pages/home/Frame 50.png';
+import treatedkids from '../assets/pages/home/Group 258.png';
 
 // Program mascots
 import otProgramCard from '../assets/pages/home/ot-1.png';
@@ -220,7 +221,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-
+          <img src={treatedkids} alt="achievements" className="achievements-banner" />
           <img src={birdRed} alt="Red bird mascot" className="mascot-bird-red" />
         </div>
       </section>
