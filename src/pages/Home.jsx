@@ -14,15 +14,15 @@ import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
 import commitmentFrame3 from '../assets/pages/home/Frame 50.png';
 import treatedkids from '../assets/pages/home/Group 258.png';
 
-// Program mascots
-import otProgramCard from '../assets/pages/home/ot-1.png';
-import physioProgramCard from '../assets/pages/home/physio-1.png';
-import speechProgramCard from '../assets/pages/home/st-5.png';
-import behaviorProgramCard from '../assets/pages/home/bt-1.png';
-import specialEducationProgramCard from '../assets/pages/home/SE-2.png';
-import socialSkillProgramCard from '../assets/pages/home/SST-7.png';
-import groupTherapyProgramCard from '../assets/pages/home/GT-2.png';
-// import uddeshyaProgramCard from '../assets/pages/home/udd8-1.png';
+// Program cards — full banner images (Group 262-270)
+import prog262 from '../assets/pages/home/Group 262.png';
+import prog263 from '../assets/pages/home/Group 263.png';
+import prog264 from '../assets/pages/home/Group 264.png';
+import prog265 from '../assets/pages/home/Group 265.png';
+import prog266 from '../assets/pages/home/Group 266.png';
+import prog267 from '../assets/pages/home/Group 267.png';
+import prog268 from '../assets/pages/home/Group 268.png';
+import prog270 from '../assets/pages/home/Group 270.png';
 // Photo assets - Real therapy session photos
 import heroPhoto from '../assets/pages/home/Frame 18.png';
 import commitPic1 from '../assets/pages/home/Group 218.jpg';
@@ -70,63 +70,15 @@ const uniqueFeatures = [
 ];
 
 const programs = [
-  {
-    name: 'OCCUPATIONAL THERAPY',
-    description: "Boost your child's independence with expert occupational therapy designed for their unique needs.",
-    image: otProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  {
-    name: 'PHYSIOTHERAPY',
-    description: "Revitalize your child's mobility and strength with tailored physiotherapy sessions that deliver results.",
-    image: physioProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  {
-    name: 'BEHAVIOUR THERAPY',
-    description: 'Transform challenging behaviors into positive outcomes with our proven behavior therapy techniques.',
-    image: behaviorProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  {
-    name: 'SPEECH THERAPY',
-    description: "Enhance your child's daily living skills and independence through personalized sessions tailored to their needs.",
-    image: speechProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-
-  {
-    name: 'SPECIAL EDUCATION',
-    description: "Unlock your child's full potential with individualized special education programs tailored to their learning style.",
-    image: specialEducationProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  {
-    name: 'GROUP THERAPY',
-    description: 'Foster social connections and personal growth through engaging group therapy sessions and teamwork.',
-    image: groupTherapyProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  {
-    name: 'SOCIAL SKILL TRAINING',
-    description: 'Empower your child with essential social skills through targeted training and confidence-building activities.',
-    image: socialSkillProgramCard,
-    link: '/our-programs',
-    cta: 'LEARN MORE'
-  },
-  // {
-  //   name: 'UDDESHYA : OUR SCHOOL READINESS PROGRAM',
-  //   description: 'Prepare your child for academic success with our comprehensive school readiness program.',
-  //   image: uddeshyaProgramCard,
-  //   link: '/uddeshya',
-  //   cta: 'ENROLL NOW'
-  // },
+  { image: prog264, link: '/our-programs', alt: 'Occupational Therapy' },
+  { image: prog265, link: '/our-programs', alt: 'Physiotherapy & Motor Rehabilitation' },
+  { image: prog266, link: '/our-programs', alt: 'Speech Language & Communication Therapy' },
+  { image: prog267, link: '/our-programs', alt: 'Child Psychology (BMT, CBT, PBS)' },
+  { image: prog268, link: '/our-programs', alt: 'School Readiness Program' },
+  // Group 270 is a composite card: Social Integration (right) + Life Skills (left) combined
+  { image: prog270, link: '/our-programs', alt: 'Social Integration Group & Life Skills Training', fullWidth: true },
+  { image: prog263, link: '/our-programs', alt: 'Feeding and Swallowing Therapy' },
+  { image: prog262, link: '/our-programs', alt: 'Home Based Parental Training Program' },
 ];
 
 const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
@@ -262,16 +214,19 @@ export default function Home() {
         <h2 className="home-programs-title">OUR PROGRAMS</h2>
         <div className="home-programs-list">
           {programs.map((prog, i) => (
-            <article className={`home-program-card home-program-${i + 1} ${i % 2 === 0 ? 'home-program-left' : 'home-program-right'}`} key={i}>
-              <img src={prog.image} alt={prog.name} className="home-program-bg" />
-              <div className="home-program-copy">
-                <h3 className="home-program-name">{prog.name}</h3>
-                <p className="home-program-description">{prog.description}</p>
-                <Link to={prog.link} className={`home-program-cta ${prog.cta === 'ENROLL NOW' ? 'home-program-cta-enroll' : ''}`}>
-                  {prog.cta} &gt;
-                </Link>
-              </div>
-            </article>
+            <Link
+              to={prog.link}
+              className={`home-program-card home-program-${i + 1} ${
+                prog.fullWidth
+                  ? 'home-program-full'
+                  : i % 2 === 0
+                  ? 'home-program-left'
+                  : 'home-program-right'
+              }`}
+              key={i}
+            >
+              <img src={prog.image} alt={prog.alt} className="home-program-bg" />
+            </Link>
           ))}
         </div>
       </section>
