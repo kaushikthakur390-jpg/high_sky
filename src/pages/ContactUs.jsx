@@ -85,7 +85,7 @@ export default function ContactUs() {
         <div className="branch-detail reverse">
           <div className="branch-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8!2d78.3664!3d17.4600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93!2sKondapur!5e0!3m2!1sen!2sin!4v1700000000001!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d7611.876014550069!2d78.352538!3d17.462681!3m2!1i1024!2i768!4f13.1!2m1!1s5A%2C%205th%20floor%2C%20Mansa%20Residency%2C%20Botanical%20Garden%20Rd%2C%20beside%20Aparna%20Heights%202%2C%20Laxmi%20Nagar%2C%20Hyderabad%2C%20Kondapur%2C%20Telangana%C2%A0500084!5e0!3m2!1sen!2sus!4v1780657717961!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}

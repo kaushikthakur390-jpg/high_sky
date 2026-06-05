@@ -47,7 +47,7 @@ export default function AboutUs() {
   return (
     <div className="about-journey-page">
       <section className="journey-canvas">
-         <h1 className="journey-title">OUR JOURNEY!</h1>
+        <h1 className="journey-title">OUR JOURNEY!</h1>
 
         <div className="journey-row journey-row-1">
           <img className="journey-frame" src={swoosh} alt="Journey photo frame" />
@@ -69,7 +69,7 @@ export default function AboutUs() {
           <img className="journey-frame" src={frameA} alt="Journey photo frame" />
           <img className="journey-ribbon" src={ribbon} alt="" aria-hidden="true" />
         </div>
-</section>
+      </section>
 
       <section className="team-divider-section" aria-hidden="true">
         <img className="team-divider-wave" src={frameDivider} alt="" />

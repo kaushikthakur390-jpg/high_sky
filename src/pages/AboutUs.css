@@ -376,7 +376,9 @@
 
   .journey-title {
     font-size: 1.8rem;
-    margin-top: 80px;
+    margin-top: 0px;
+    top: 10px;
+    position: relative;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
   }
@@ -400,6 +402,8 @@
 
   .journey-row-1 {
     margin-top: 0;
+    position: relative;
+    left: 10px;
   }
 
   /*
@@ -417,6 +421,27 @@
     margin: 0;
   }
 
+  .journey-row-3 .journey-frame {
+    left: 10px;
+    position: relative;
+  }
+
+  .journey-row-2 .journey-bubble {
+    right: 10px;
+    position: relative;
+  }
+
+  .journey-row-3 .journey-bubble {
+    right: -10px;
+    position: relative;
+  }
+
+  .journey-row-4 .journey-bubble {
+    right: 10px;
+    position: relative;
+  }
+
+
   .journey-row-1 .journey-bubble,
   .journey-row-2 .journey-bubble,
   .journey-row-3 .journey-bubble,
@@ -432,6 +457,8 @@
   .journey-row-1 .journey-frame,
   .journey-row-3 .journey-frame {
     margin-left: -1vw;
+    right: 10px;
+    position: relative;
   }
 
   /* Rows 2 & 4: frame ends at right screen edge */

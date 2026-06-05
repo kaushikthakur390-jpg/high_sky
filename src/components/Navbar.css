@@ -186,6 +186,13 @@
     padding: 0 20px;
   }
 
+  /* FIX LOGO POSITION */
+  .navbar-logo {
+    right: 0;
+    left: 0;
+    gap: 0;
+  }
+
   .nav-cloud {
     width: 100vw;
     top: -5px;
@@ -197,7 +204,11 @@
   }
 
   .navbar-logo-img {
-    height: 100px;
+    height: 70px;
+    width: auto;
+    display: block;
+    position: relative;
+    right: 20px;
   }
 
   /* Show hamburger on mobile */
@@ -232,12 +243,10 @@
 
   .navbar-links.show {
     display: flex;
-
   }
 
   .navbar-links li {
     width: 100%;
-
   }
 
   .navbar-links li a {
