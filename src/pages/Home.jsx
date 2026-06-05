@@ -85,10 +85,10 @@ const programs = [
 const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
 const reviews = [
   {
-    name: "Upasna Potlapalli",
+    name: "Swati Ganti",
     review:
-      "It's a nice place. My children are changing after joining here. Therapists are really friendly and very helpful. My son got good marks this time. A very very big thank you to Priyanka Mam and all the therapists there.",
-    link: "PASTE_GOOGLE_REVIEW_LINK_1_HERE"
+      "My son diagnosed with ASD, ADHD ,he also has sensory issues which brought feeding issues. Priyanka ji, taking my child as a challenge helped him feed independently. They do all the types of assessments needed to understand the child … ",
+    link: "https://maps.app.goo.gl/8hQC5on1wA1G8bE87"
   },
 
   {

@@ -1192,87 +1192,70 @@
     display: none;
   }
 
-  /* Each block is a row: photo on one side, text on the other */
+  /* Each block: full column — text first, polaroid below */
   .commitment-text-block {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 24px 14px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 28px 20px;
   }
 
-
-  /* Left blocks: photo on the LEFT, text on the RIGHT */
-  .commitment-block-left {
-    flex-direction: row;
-  }
-
-  /* Right blocks: photo on the RIGHT, text on the LEFT */
+  /* No left/right distinction needed — all centre-stacked */
+  .commitment-block-left,
   .commitment-block-right {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 
-  /* Show the inline photo on mobile */
+  /* Show the inline photo on mobile, full width below the text */
   .commitment-inline-photo {
     display: block;
-    flex-shrink: 0;
-  }
-
-  .commitment-text-block:nth-child(1) .commitment-inline-photo {
-    width: 80px;
-  }
-
-  .commitment-text-block:nth-child(2) .commitment-inline-photo {
-    width: 110px;
-  }
-
-  .commitment-text-block:nth-child(3) .commitment-inline-photo {
-    width: 115px;
+    width: 85% !important;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .commitment-inline-photo img {
     width: 100%;
     height: auto;
     display: block;
-    /* Slight rotation for the polaroid feel */
+    border-radius: 4px;
   }
 
-  /* Left polaroid: slight left tilt */
-  .commitment-block-left .commitment-inline-photo img {
-    transform: rotate(-3deg);
-  }
-
-  /* Right polaroid: slight right tilt */
+  /* Remove tilt on mobile — looks cleaner in full-width column */
+  .commitment-block-left .commitment-inline-photo img,
   .commitment-block-right .commitment-inline-photo img {
-    transform: rotate(3deg);
+    transform: none;
   }
 
-  /* Text content fills remaining space */
+  /* Text content: centred, full width */
   .commitment-block-content {
-    flex: 1;
-    min-width: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 5px;
+    padding: 0;
+    text-align: center;
   }
 
   .commitment-heading {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.1;
     font-weight: 900;
-    text-align: left;
+    text-align: center;
+    margin-top: 0;
   }
 
   .commitment-desc {
-    font-size: 0.65rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.55;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto;
     color: #a02c7d;
     font-weight: 800;
+    text-align: center;
   }
 
   .achievements-banner {
@@ -1365,7 +1348,7 @@
   }
 
   .unique-cloud-divider {
-    bottom: -65px;
+    bottom: -140px;
   }
 
   /* --- PROGRAMS SECTION --- */
@@ -1475,14 +1458,19 @@
     transform: scale(1.08);
   }
 
-  /* 3 cards in a row on mobile — compact */
+  /* 2 cards in a row on mobile — fits without overflow */
   .testimonials-scrolls {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 6px;
     padding: 0 4px;
     margin-bottom: 20px;
+  }
+
+  /* Hide 3rd card on mobile — arrows cycle through the rest */
+  .testimonials-scrolls .testimonial-paper:nth-child(3) {
+    display: none;
   }
 
   .testimonial-paper {
