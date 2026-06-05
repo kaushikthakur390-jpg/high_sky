@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import HeroCarousel from "../components/HeroCarousel";
@@ -82,8 +83,81 @@ const programs = [
 ];
 
 const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
+const reviews = [
+  {
+    name: "Upasna Potlapalli",
+    review:
+      "It's a nice place. My children are changing after joining here. Therapists are really friendly and very helpful. My son got good marks this time. A very very big thank you to Priyanka Mam and all the therapists there.",
+    link: "PASTE_GOOGLE_REVIEW_LINK_1_HERE"
+  },
 
+  {
+    name: "Syamala reddy",
+    review:
+      "We have joined our Baby at 2.11 years now she is 3.3 months there is a drastic changes happened with Highsky therapy center, what ever we have expected they have fulfilled and very cooperative when ever we request for some changes we can immediately feel that happens. The team Dr. Priyanka’s is highly qualified & talented to deal kids appropriately 🎉Niw my kid is enjoying at school with lot is kids and more🎉Thanks & Best Wishes 🫶🏻",
+    link: "https://maps.app.goo.gl/WSQDPZ4pxqM7TnKA9"
+  },
+
+  {
+    name: "Kavita S",
+    review:
+      "My son was diagnosed with mild autism and we started his therapy when he was around 2.3 yrs old at Priyanka's Highsky center from mid December 2022. At first he would only attend OT sessions. He had very poor eye contact, name call response, few sensory issues, no social play, his fine motor skills too needed improvement. With regular OT sessions and home therapy exercise shared by her team we could see good improvement in our son. His eye contact improved, name call response so much better now, plays with other kids and is comfortable to have kids around too. He is 2.8 yrs now. Two months back we started speech therapy and Behavior therapy as well. He has now started identifying as well as pointing and speaking animals, birds, vehicles, few other tasks of daily living, follows commands too. He also says Mamma now. We are very much happy with our sons progress till date.",
+    link: "https://maps.app.goo.gl/UL2TPPQRLS5ASCsv6"
+  },
+
+  {
+    name: "Nirvign Karthi",
+    review:
+      "My Son has been attending Occupational and behavioral therapy at Priyanka's mam high sky center for the past 4 months and the progress we have seen is incredible…",
+    link: "https://share.google/lmDvKMmZ9CsPZlh4c"
+  },
+
+  {
+    name: "rajasekhar reddy",
+    review:
+      "It’s been 6months since we joined our kid here. All the therapists are very well certified. As per my personal experience the way they handle each and every kid is so good when compared to my previous Centres. Thanks a lot to Priyanka Mam …",
+    link: "https://share.google/dp9Eejs2t0WwNbzMS"
+  },
+
+  {
+    name: "Ankita Verma",
+    review:
+      "After starting therapy sessions with Dr. Priyanka at HighSky Child Development Centre, we slowly began noticing positive changes in our child’s behaviour and communication. The care, patience, and guidance throughout the journey truly meant a lot to our family",
+    link: "https://share.google/qplMLVFu9Tx2U6Yta"
+  },
+
+  {
+    name: "Geet Verma",
+    review:
+      "My 5-year-old son has been attending this occupational and behavioral therapy at Priyanka ma’am’s High sky center for the past , six months and the progress we’ve seen has been incredible. The therapists are not only highly trained and …",
+    link: "https://share.google/6JfiqpzwAxhPIuzhs"
+  }
+];
 export default function Home() {
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const reviewsPerPage = 3;
+
+  const totalPages = Math.ceil(
+    reviews.length / reviewsPerPage
+  );
+
+  const visibleReviews = reviews.slice(
+    currentPage * reviewsPerPage,
+    currentPage * reviewsPerPage + reviewsPerPage
+  );
+
+  const nextReviews = () => {
+    setCurrentPage((prev) =>
+      prev === totalPages - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevReviews = () => {
+    setCurrentPage((prev) =>
+      prev === 0 ? totalPages - 1 : prev - 1
+    );
+  };
   return (
     <div className="home-page">
       {/* <div className="home-top-nav-cloud" aria-hidden="true" /> */}
@@ -216,13 +290,12 @@ export default function Home() {
           {programs.map((prog, i) => (
             <Link
               to={prog.link}
-              className={`home-program-card home-program-${i + 1} ${
-                prog.fullWidth
-                  ? 'home-program-full'
-                  : i % 2 === 0
+              className={`home-program-card home-program-${i + 1} ${prog.fullWidth
+                ? 'home-program-full'
+                : i % 2 === 0
                   ? 'home-program-left'
                   : 'home-program-right'
-              }`}
+                }`}
               key={i}
             >
               <img src={prog.image} alt={prog.alt} className="home-program-bg" />
@@ -234,14 +307,23 @@ export default function Home() {
       {/* ===== HAPPY PARENTS ===== */}
       <section className="testimonials-section">
         <div className="testimonials-cloud-top">
-          <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 L0,50 Q60,80 120,45 Q180,10 240,52 Q300,94 360,48 Q420,2 480,50 Q540,98 600,50 Q660,2 720,50 Q780,98 840,50 Q900,2 960,52 Q1020,98 1080,50 Q1140,5 1200,50 Q1260,95 1320,48 Q1380,2 1440,50 L1440,0 Z" fill="#ffffff" />
+          <svg
+            viewBox="0 0 1440 90"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0,0 L0,50 Q60,80 120,45 Q180,10 240,52 Q300,94 360,48 Q420,2 480,50 Q540,98 600,50 Q660,2 720,50 Q780,98 840,50 Q900,2 960,52 Q1020,98 1080,50 Q1140,5 1200,50 Q1260,95 1320,48 Q1380,2 1440,50 L1440,0 Z"
+              fill="#ffffff"
+            />
           </svg>
         </div>
+
         <div className="testimonials-body">
           <h2 className="section-title-white">HAPPY PARENTS!</h2>
+
           <div className="testimonials-screen-wrap">
-            <img src={projector} className="testimonials-projector" alt="" />
+            {/* <img src={projector} className="testimonials-projector" alt="" /> */}
             <div className="testimonials-video">
               <iframe
                 src="https://www.youtube.com/embed/S75Zh55Srd4"
@@ -252,32 +334,79 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="testimonials-scrolls">
-            <div className="testimonial-paper">
-              <img src={pic4} alt="Avatar" className="testi-avatar" />
-              <p>"High Sky CDC has been a blessing. The therapists are amazing and my child has made incredible progress!"</p>
-              <div className="testi-stars">★★★★★</div>
+          <div className="testimonials-slider-wrapper">
+
+            <button
+              className="testimonial-arrow left"
+              onClick={prevReviews}
+            >
+              &#10094;
+            </button>
+
+            <div className="testimonials-scrolls">
+
+              {visibleReviews.map((review, index) => (
+                <a
+                  key={index}
+                  href={review.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="testimonial-paper"
+                >
+                  <div className="testi-avatar">
+                    👤
+                  </div>
+
+                  <h4 className="testi-name">
+                    {review.name}
+                  </h4>
+
+                  <p>"{review.review}"</p>
+
+                  <div className="testi-stars">
+                    ★★★★★
+                  </div>
+
+                  <div className="google-review-link">
+                    Read on Google →
+                  </div>
+                </a>
+              ))}
+
             </div>
-            <div className="testimonial-paper">
-              <img src={pic5} alt="Avatar" className="testi-avatar" />
-              <p>"We couldn't ask for a better environment. Highly professional and deeply caring staff."</p>
-              <div className="testi-stars">★★★★★</div>
-            </div>
-            <div className="testimonial-paper">
-              <img src={pic6} alt="Avatar" className="testi-avatar" />
-              <p>"A wonderful experience from start to finish. Our family feels supported every single day here."</p>
-              <div className="testi-stars">★★★★★</div>
-            </div>
+
+            <button
+              className="testimonial-arrow right"
+              onClick={nextReviews}
+            >
+              &#10095;
+            </button>
+
           </div>
-          <Link to="/consultation" className="hero-video-cta testimonials-cta">BOOK A CONSULTATION TODAY &gt;</Link>
+
+          <Link
+            to="/consultation"
+            className="hero-video-cta testimonials-cta"
+          >
+            BOOK A CONSULTATION TODAY &gt;
+          </Link>
         </div>
 
         {/* The bottom cloud before the footer */}
-        {/* <div className="testimonials-cloud-bottom">
-            <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0,90 L0,44 Q60,10 120,44 Q180,78 240,35 Q300,-8 360,40 Q420,84 480,36 Q540,-12 600,40 Q660,90 720,40 Q780,-10 840,40 Q900,88 960,38 Q1020,-10 1080,42 Q1140,90 1200,42 Q1260,-6 1320,42 Q1380,88 1440,44 L1440,90 Z" fill="#ffb833" />
-            </svg>
-          </div> */}
+        {/*
+  <div className="testimonials-cloud-bottom">
+    <svg
+      viewBox="0 0 1440 90"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0,90 L0,44 Q60,10 120,44 Q180,78 240,35 Q300,-8 360,40 Q420,84 480,36 Q540,-12 600,40 Q660,90 720,40 Q780,-10 840,40 Q900,88 960,38 Q1020,-10 1080,42 Q1140,90 1200,42 Q1260,-6 1320,42 Q1380,88 1440,44 L1440,90 Z"
+        fill="#ffb833"
+      />
+    </svg>
+  </div>
+  */}
       </section>
 
     </div>

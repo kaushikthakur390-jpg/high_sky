@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './OurPrograms.css';
 
-// SVG Mascots
+// SVG Mascots (kept for potential future use)
 import penguinSvg from '../assets/pages/home/programs/penguin.svg';
 import foxSvg from '../assets/pages/home/programs/fox.svg';
 import cowSvg from '../assets/pages/home/programs/cow.svg';
@@ -11,31 +11,49 @@ import dogSvg from '../assets/pages/home/programs/dog.svg';
 import duckSvg from '../assets/pages/home/programs/duck.svg';
 import owlSvg from '../assets/pages/home/programs/owl.svg';
 import reindeerSvg from '../assets/pages/home/programs/reindeer.svg';
-import test from '../assets/pages/services/test.png';
+
+// ── Service images ──────────────────────────────────────────
+import imgOccupational    from '../assets/pages/services/Paediatric Occupational Therapy.PNG';
+import imgPhysiotherapy   from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.PNG';
+import imgSpeech          from '../assets/pages/services/Paediatric Speech Language and communication therapy.PNG';
+import imgPsychology      from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).PNG';
+import imgNeuroDev        from '../assets/pages/services/Neuro developmental Learning and Academic intervention.PNG';
+import imgSocialInteg     from '../assets/pages/services/Social integration group.PNG';
+import imgLifeSkills      from '../assets/pages/services/Life Skills training.PNG';
+import imgHandwriting     from '../assets/pages/services/Hand writing without tears training.PNG';
+import imgSchoolReady     from '../assets/pages/services/School readiness program.PNG';
+import imgHomeParental    from '../assets/pages/services/Home based parental Training program.PNG';
+
+// ── Approach images ──────────────────────────────────────────
+import imgOralSensory     from '../assets/pages/services/Oral sensory integration.PNG';
+import imgOralMotor       from '../assets/pages/services/oral motor integration.PNG';
+import imgFeeding         from '../assets/pages/services/Feeding and swallowing Therapy.PNG';
+import imgReflex          from '../assets/pages/services/Reflex Integration.PNG';
 
 const services = [
-  "Paediatric Occupational Therapy",
-  "Paediatric Physiotherapy and Motor Rehabilitation",
-  "Paediatric Speech Language and Communication Therapy",
-  "Child Psychology (BMT, CBT, PBS)",
-  "Neuro Developmental Learning and Academic Intervention",
-  "Social Integration Group",
-  "Life Skills Training",
-  "Hand Writing Without Tears Training",
-  "School Readiness Program",
-  "Home Based Parental Training Program"
+  { title: "Paediatric Occupational Therapy",                       img: imgOccupational  },
+  { title: "Paediatric Physiotherapy and Motor Rehabilitation",     img: imgPhysiotherapy },
+  { title: "Paediatric Speech Language and Communication Therapy",  img: imgSpeech        },
+  { title: "Child Psychology (BMT, CBT, PBS)",                      img: imgPsychology    },
+  { title: "Neuro Developmental Learning and Academic Intervention",img: imgNeuroDev      },
+  { title: "Social Integration Group",                              img: imgSocialInteg   },
+  { title: "Life Skills Training",                                  img: imgLifeSkills    },
+  { title: "Hand Writing Without Tears Training",                   img: imgHandwriting   },
+  { title: "School Readiness Program",                              img: imgSchoolReady   },
+  { title: "Home Based Parental Training Program",                  img: imgHomeParental  },
 ];
 
 const approaches = [
-  "Oral Sensory Integration",
-  "Oral Motor Integration",
-  "Feeding and Swallowing Therapy",
-  "Reflex Integration",
-  "Interceptive Sensory Training",
-  "Gravity Sensorimotor Training",
-  "Vestibulo Visual Training",
-  "Parent Coaching"
+  { title: "Oral Sensory Integration",        img: imgOralSensory },
+  { title: "Oral Motor Integration",          img: imgOralMotor   },
+  { title: "Feeding and Swallowing Therapy",  img: imgFeeding     },
+  { title: "Reflex Integration",              img: imgReflex      },
+  { title: "Interceptive Sensory Training",   img: imgOralSensory },
+  { title: "Gravity Sensorimotor Training",   img: imgOralMotor   },
+  { title: "Vestibulo Visual Training",       img: imgFeeding     },
+  { title: "Parent Coaching",                img: imgReflex      },
 ];
+
 export default function OurPrograms() {
   return (
     <div className="programs-page">
@@ -63,13 +81,13 @@ export default function OurPrograms() {
               <div className="program-card" key={index}>
                 <div className="program-card-image">
                   <img
-                    src={test}
-                    alt={service}
+                    src={service.img}
+                    alt={service.title}
                   />
                 </div>
 
                 <div className="program-card-content">
-                  <h3>{service}</h3>
+                  <h3>{service.title}</h3>
 
                   <p>
                     Personalized therapy programs designed to support
@@ -94,13 +112,13 @@ export default function OurPrograms() {
               <div className="program-card" key={index}>
                 <div className="program-card-image">
                   <img
-                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
-                    alt={item}
+                    src={item.img}
+                    alt={item.title}
                   />
                 </div>
 
                 <div className="program-card-content">
-                  <h3>{item}</h3>
+                  <h3>{item.title}</h3>
 
                   <p>
                     Evidence-based intervention approaches tailored

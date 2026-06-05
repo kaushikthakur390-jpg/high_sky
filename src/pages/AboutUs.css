@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 .about-journey-page {
   overflow-x: hidden;
   background: #A02C7D;
@@ -70,6 +73,18 @@
 .journey-row-1 .journey-frame,
 .journey-row-3 .journey-frame {
   justify-self: start;
+}
+
+.journey-row-1 .journey-frame {
+  position: relative;
+  top: -80px;
+
+}
+
+.journey-row-3 .journey-frame {
+  position: relative;
+  top: -60px;
+  left: 60px;
 }
 
 .journey-row-1 .journey-bubble,
@@ -226,14 +241,17 @@
 .about-team-lead-copy h3 {
   margin: 0 0 8px;
   color: #f3a414;
+  font-family: 'Poetsen One', sans-serif;
   font-size: clamp(1.35rem, 2.2vw, 2.8rem);
   line-height: 1.1;
   font-weight: 900;
+
 }
 
 .about-team-lead-copy h4 {
   margin: 0 0 14px;
   color: #a02c7d;
+  font-family: 'Poetsen One', sans-serif;
   font-size: clamp(1.2rem, 2vw, 2.3rem);
   line-height: 1.1;
   font-weight: 900;
@@ -242,6 +260,7 @@
 .about-team-lead-copy p {
   margin: 0;
   color: #4d2a78;
+  font-family: 'Amaranth', sans-serif;
   font-size: clamp(0.95rem, 1.45vw, 1.8rem);
   line-height: 1.15;
   font-weight: 500;
@@ -422,7 +441,21 @@
   }
 
   .journey-row-3 .journey-frame {
-    left: 10px;
+    left: 5px;
+    top: -10px;
+    position: relative;
+  }
+
+  .journey-row-1 .journey-frame {
+
+    top: -45px;
+    position: relative;
+  }
+
+
+  .journey-row-4 .journey-frame {
+    left: -10px;
+    top: 20px;
     position: relative;
   }
 
@@ -431,6 +464,7 @@
     position: relative;
   }
 
+
   .journey-row-3 .journey-bubble {
     right: -10px;
     position: relative;
@@ -438,6 +472,7 @@
 
   .journey-row-4 .journey-bubble {
     right: 10px;
+    top: 40px;
     position: relative;
   }
 
