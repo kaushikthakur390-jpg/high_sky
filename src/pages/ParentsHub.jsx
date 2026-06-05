@@ -1,19 +1,19 @@
 import './ParentsHub.css';
-import pic1 from '../assets/pages/home/pic1.png';
-import pic2 from '../assets/pages/home/pic2.png';
+import blog1 from '../assets/pages/blog/blog1.jpeg';
+import blog2 from '../assets/pages/blog/blog2.jpeg';
 import pic3 from '../assets/pages/home/pic3.png';
 
 const blogs = [
   {
     title: 'Unlocking Potential: Creative Occupational Therapy at Home for Autism You Can Start Today!',
     img: 'https://highskycdc.in/wp-content/uploads/2024/01/blog-1.jpg',
-    fallback: pic1,
+    fallback: blog1,
     link: 'https://highskycdc.in/occupational_therapy_at_home/',
   },
   {
     title: 'Speech Therapy for Children with Autism: Addressing Symptoms, Techniques, & Strategies for Success',
     img: 'https://highskycdc.in/wp-content/uploads/2024/01/blog-2.jpg',
-    fallback: pic2,
+    fallback: blog2,
     link: 'https://highskycdc.in/speech_therapy_for_autism/',
   },
 ];

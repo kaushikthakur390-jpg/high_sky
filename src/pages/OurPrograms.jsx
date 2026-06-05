@@ -13,45 +13,45 @@ import owlSvg from '../assets/pages/home/programs/owl.svg';
 import reindeerSvg from '../assets/pages/home/programs/reindeer.svg';
 
 // ── Service images ──────────────────────────────────────────
-import imgOccupational    from '../assets/pages/services/Paediatric Occupational Therapy.PNG';
-import imgPhysiotherapy   from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.PNG';
-import imgSpeech          from '../assets/pages/services/Paediatric Speech Language and communication therapy.PNG';
-import imgPsychology      from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).PNG';
-import imgNeuroDev        from '../assets/pages/services/Neuro developmental Learning and Academic intervention.PNG';
-import imgSocialInteg     from '../assets/pages/services/Social integration group.PNG';
-import imgLifeSkills      from '../assets/pages/services/Life Skills training.PNG';
-import imgHandwriting     from '../assets/pages/services/Hand writing without tears training.PNG';
-import imgSchoolReady     from '../assets/pages/services/School readiness program.PNG';
-import imgHomeParental    from '../assets/pages/services/Home based parental Training program.PNG';
+import imgOccupational from '../assets/pages/services/Paediatric Occupational Therapy.PNG';
+import imgPhysiotherapy from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.PNG';
+import imgSpeech from '../assets/pages/services/Paediatric Speech Language and communication therapy.PNG';
+import imgPsychology from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).PNG';
+import imgNeuroDev from '../assets/pages/services/Neuro developmental Learning and Academic intervention.PNG';
+import imgSocialInteg from '../assets/pages/services/Social integration group.PNG';
+import imgLifeSkills from '../assets/pages/services/Life Skills training.PNG';
+import imgHandwriting from '../assets/pages/services/Hand writing without tears training.PNG';
+import imgSchoolReady from '../assets/pages/services/School readiness program.PNG';
+import imgHomeParental from '../assets/pages/services/Home based parental Training program.PNG';
 
 // ── Approach images ──────────────────────────────────────────
-import imgOralSensory     from '../assets/pages/services/Oral sensory integration.PNG';
-import imgOralMotor       from '../assets/pages/services/oral motor integration.PNG';
-import imgFeeding         from '../assets/pages/services/Feeding and swallowing Therapy.PNG';
-import imgReflex          from '../assets/pages/services/Reflex Integration.PNG';
+import imgOralSensory from '../assets/pages/services/Oral sensory integration.PNG';
+import imgOralMotor from '../assets/pages/services/oral motor integration.PNG';
+import imgFeeding from '../assets/pages/services/Feeding and swallowing Therapy.PNG';
+import imgReflex from '../assets/pages/services/Reflex Integration.PNG';
 
 const services = [
-  { title: "Paediatric Occupational Therapy",                       img: imgOccupational  },
-  { title: "Paediatric Physiotherapy and Motor Rehabilitation",     img: imgPhysiotherapy },
-  { title: "Paediatric Speech Language and Communication Therapy",  img: imgSpeech        },
-  { title: "Child Psychology (BMT, CBT, PBS)",                      img: imgPsychology    },
-  { title: "Neuro Developmental Learning and Academic Intervention",img: imgNeuroDev      },
-  { title: "Social Integration Group",                              img: imgSocialInteg   },
-  { title: "Life Skills Training",                                  img: imgLifeSkills    },
-  { title: "Hand Writing Without Tears Training",                   img: imgHandwriting   },
-  { title: "School Readiness Program",                              img: imgSchoolReady   },
-  { title: "Home Based Parental Training Program",                  img: imgHomeParental  },
+  { title: "Paediatric Occupational Therapy", img: imgOccupational },
+  { title: "Paediatric Physiotherapy and Motor Rehabilitation", img: imgPhysiotherapy },
+  { title: "Paediatric Speech Language and Communication Therapy", img: imgSpeech },
+  { title: "Child Psychology (BMT, CBT, PBS)", img: imgPsychology },
+  { title: "Neuro Developmental Learning and Academic Intervention", img: imgNeuroDev },
+  { title: "Social Integration Group", img: imgSocialInteg },
+  { title: "Life Skills Training", img: imgLifeSkills },
+  { title: "Hand Writing Without Tears Training", img: imgHandwriting },
+  { title: "School Readiness Program", img: imgSchoolReady },
+  { title: "Home Based Parental Training Program", img: imgHomeParental },
 ];
 
 const approaches = [
-  { title: "Oral Sensory Integration",        img: imgOralSensory },
-  { title: "Oral Motor Integration",          img: imgOralMotor   },
-  { title: "Feeding and Swallowing Therapy",  img: imgFeeding     },
-  { title: "Reflex Integration",              img: imgReflex      },
-  { title: "Interceptive Sensory Training",   img: imgOralSensory },
-  { title: "Gravity Sensorimotor Training",   img: imgOralMotor   },
-  { title: "Vestibulo Visual Training",       img: imgFeeding     },
-  { title: "Parent Coaching",                img: imgReflex      },
+  { title: "Oral Sensory Integration", img: imgOralSensory },
+  { title: "Oral Motor Integration", img: imgOralMotor },
+  { title: "Feeding and Swallowing Therapy", img: imgFeeding },
+  { title: "Reflex Integration", img: imgReflex },
+  { title: "Interceptive Sensory Training", img: imgOralSensory },
+  { title: "Gravity Sensorimotor Training", img: imgOralMotor },
+  { title: "Vestibulo Visual Training", img: imgFeeding },
+  { title: "Parent Coaching", img: imgReflex },
 ];
 
 export default function OurPrograms() {
@@ -66,15 +66,13 @@ export default function OurPrograms() {
 
         <div className="programs-hero-content">
           <h1 className="programs-main-title">
-            Shaping Futures: Discover Our
-            <br />
-            Child-Centric Programs
+            Shaping Futures: Discover Our Child-Centric Programs
           </h1>
         </div>
 
         {/* SERVICES */}
         <section className="programs-section">
-          <h2 className="section-title">Services</h2>
+          {/* <h2 className="section-title">Services</h2> */}
 
           <div className="program-cards-grid">
             {services.map((service, index) => (

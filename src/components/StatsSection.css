@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
+
+/* ── Base ── */
+.stats-section {
+  width: 100%;
+  background: #f7ab00;
+  padding: 48px 60px;
+  margin-top: 60px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.stats-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 0 20px;
+}
+
+.stat-number {
+  color: #ffffff;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  display: block;
+}
+
+.stat-label {
+  color: #ffffff;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  display: block;
+  text-align: center;
+}
+
+.stat-divider {
+  width: 3px;
+  height: 160px;
+  background: #9a2ed7;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .stats-section {
+    padding: 36px 30px;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .stat-divider {
+    height: 120px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 0;
+  }
+
+  /* Switch to single row */
+  .stats-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  /* Hide the flex dividers */
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    flex: 1;
+    padding: 16px 4px;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  /* Right border for left-column cells */
+  .stat-item--left {
+    border-right: 2px solid #9a2ed7;
+  }
+
+  /* Remove bottom borders (no longer needed for rows) */
+  .stat-item--top {
+    border-bottom: none;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.58rem;
+    line-height: 1.2;
+  }
+}

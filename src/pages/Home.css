@@ -16,7 +16,9 @@
 
 /* ===== HERO ===== */
 .hero-section {
-  background: #f5cf0d;
+  background: linear-gradient(180deg,
+      #FFBD3A 100%,
+      #ffaa01 100%);
   position: relative;
   overflow: visible;
   padding-bottom: 0;
@@ -437,7 +439,11 @@
   width: 440px;
 }
 
-.commitment-polaroid-2,
+.commitment-polaroid-2 {
+  width: 365px;
+
+}
+
 .commitment-polaroid-3 {
   width: 480px;
 }
@@ -508,7 +514,7 @@
 .mascot-bird-red {
   position: absolute;
   right: -110px;
-  bottom: -160px;
+  bottom: -243px;
   height: 200px;
   width: 240px;
   z-index: 10;
@@ -757,6 +763,21 @@
   border-radius: 4px;
 }
 
+.home-program-7 {
+  position: relative;
+
+  /* move up */
+  left: 130px;
+  /* nudge right */
+}
+
+.home-program-8 {
+  position: relative;
+
+  /* move up */
+  right: 180px;
+  /* nudge right */
+}
 
 /* ===== HAPPY PARENTS / TESTIMONIALS ===== */
 .testimonials-section {
@@ -1138,6 +1159,7 @@
     height: 72px;
     left: -20px !important;
     top: -10px;
+    visibility: hidden;
     z-index: 10;
   }
 
@@ -1163,9 +1185,9 @@
   }
 
   .mascot-bird-blue {
-    width: 80px;
-    right: 50px;
-    bottom: 10px;
+    width: 120px;
+    right: 20px;
+    bottom: 100px;
   }
 
   /* --- COMMITMENT SECTION --- */
@@ -1207,12 +1229,14 @@
     flex-direction: column;
   }
 
-  /* Show the inline photo on mobile, full width below the text */
+  /* Show the inline photo on mobile, full width BELOW the text */
   .commitment-inline-photo {
     display: block;
     width: 85% !important;
     max-width: 320px;
     margin: 0 auto;
+    order: 2;
+    /* pushes image below the text block */
   }
 
   .commitment-inline-photo img {
@@ -1228,7 +1252,8 @@
     transform: none;
   }
 
-  /* Text content: centred, full width */
+
+  /* Text content: centred, full width — rendered FIRST (above image) */
   .commitment-block-content {
     width: 100%;
     display: flex;
@@ -1236,6 +1261,8 @@
     gap: 10px;
     padding: 0;
     text-align: center;
+    order: 1;
+    /* ensures text appears above the inline photo */
   }
 
   .commitment-heading {
@@ -1247,14 +1274,16 @@
   }
 
   .commitment-desc {
-    font-size: 0.82rem;
+    font-size: 1.4rem;
     line-height: 1.55;
     text-transform: uppercase;
     letter-spacing: 0.2px;
-    max-width: 100%;
+    max-width: 75%;
+    height: auto;
     margin: 0 auto;
-    color: #a02c7d;
-    font-weight: 800;
+    color: #181818;
+    font-family: 'Amaranth', sans-serif;
+
     text-align: center;
   }
 
@@ -1358,9 +1387,36 @@
   }
 
   .home-programs-section::before {
-    background-position: center 70px;
+    background-position: center -60px;
+    position: absolute;
+    bottom: 100px;
     background-size: 145% auto;
   }
+
+  .home-program-7 {
+    position: relative;
+
+    /* move up */
+    left: 10px;
+    /* nudge right */
+  }
+
+  .home-program-8 {
+    position: relative;
+
+    /* move up */
+    left: -25px;
+    /* nudge right */
+  }
+
+  .home-program-1 {
+    position: relative;
+
+    /* move up */
+    left: -50px;
+    /* nudge right */
+  }
+
 
   .home-programs-title {
     font-size: 1.6rem;

@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 import './Home.css';
 import HeroCarousel from "../components/HeroCarousel";
+import StatsSection from "../components/StatsSection";
 // Shared Assets
 import birdBlue from '../assets/shared/mascots/blue-bird.png';
 import birdRed from "../assets/pages/home/red_bird.png"; // Assuming it's red_bird.png
@@ -13,7 +15,7 @@ import sectionDividerThree from '../assets/pages/home/SECTION 3.png';
 import commitmentFrame1 from '../assets/pages/home/homeframe1.png';
 import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
 import commitmentFrame3 from '../assets/pages/home/Frame 50.png';
-import treatedkids from '../assets/pages/home/Group 258.png';
+
 
 // Program cards — full banner images (Group 262-270)
 import prog262 from '../assets/pages/home/Group 262.png';
@@ -247,7 +249,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <img src={treatedkids} alt="achievements" className="achievements-banner" />
+          <StatsSection />
           <img src={birdRed} alt="Red bird mascot" className="mascot-bird-red" />
         </div>
       </section>

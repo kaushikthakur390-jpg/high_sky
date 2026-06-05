@@ -1,16 +1,24 @@
-.parents-hub-page { overflow-x: hidden; background: #fff; }
+.parents-hub-page {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 /* BANNER */
 .hub-banner {
   background: #ffffff;
-  color:  #4a1e7a;
+  color: #a02c7d;
   text-align: center;
+
   padding: 200px 20px 50px;
 }
 
 .hub-banner h1 {
   font-size: 2rem;
   font-weight: 900;
+  font-family: 'Poetsen One', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -55,7 +63,9 @@
   transition: transform 0.2s;
 }
 
-.blog-card:hover { transform: translateY(-4px); }
+.blog-card:hover {
+  transform: translateY(-4px);
+}
 
 .blog-card-img {
   border-radius: 10px;
@@ -91,7 +101,9 @@
   gap: 10px;
 }
 
-.youtube-thumb-link { display: block; }
+.youtube-thumb-link {
+  display: block;
+}
 
 .youtube-thumb-wrap {
   position: relative;
@@ -109,7 +121,7 @@
 .play-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,11 +129,11 @@
 }
 
 .youtube-thumb-link:hover .play-overlay {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .play-btn-circle {
-  background: rgba(255,0,0,0.85);
+  background: rgba(255, 0, 0, 0.85);
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -131,7 +143,9 @@
   transition: transform 0.2s;
 }
 
-.youtube-thumb-link:hover .play-btn-circle { transform: scale(1.1); }
+.youtube-thumb-link:hover .play-btn-circle {
+  transform: scale(1.1);
+}
 
 .play-triangle {
   color: #fff;
@@ -161,7 +175,9 @@
   transition: transform 0.2s;
 }
 
-.webinar-card:hover { transform: translateY(-4px); }
+.webinar-card:hover {
+  transform: translateY(-4px);
+}
 
 .webinar-card-img {
   border-radius: 10px;
@@ -190,6 +206,12 @@
     padding: 108px 16px 36px;
   }
 
-  .hub-section { margin: 20px 16px; }
-  .blogs-grid, .youtube-grid { grid-template-columns: 1fr; }
+  .hub-section {
+    margin: 20px 16px;
+  }
+
+  .blogs-grid,
+  .youtube-grid {
+    grid-template-columns: 1fr;
+  }
 }
