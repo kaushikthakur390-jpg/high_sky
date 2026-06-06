@@ -91,9 +91,12 @@
     gap: 0;
   }
 
-  /* Hide the flex dividers */
+  /* Show all dividers at mobile-friendly height */
   .stat-divider {
-    display: none;
+    display: block;
+    height: 60px;
+    width: 2px;
+    flex-shrink: 0;
   }
 
   .stat-item {
@@ -103,12 +106,11 @@
     min-width: 0;
   }
 
-  /* Right border for left-column cells */
+  /* Remove the border-right workaround — dividers handle it now */
   .stat-item--left {
-    border-right: 2px solid #9a2ed7;
+    border-right: none;
   }
 
-  /* Remove bottom borders (no longer needed for rows) */
   .stat-item--top {
     border-bottom: none;
   }

@@ -1297,20 +1297,20 @@
     /* pushes image below the text block */
   }
 
-  .commitment-inline-photo-3 {
-    display: block;
+  .commitment-text-block:nth-child(3) .commitment-inline-photo {
     width: 85% !important;
     max-width: 320px;
     margin: 0 auto;
-    order: 2;
-    /* pushes image below the text block */
   }
+
 
   .commitment-inline-photo img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 4px;
+    position: relative;
+    left: -30px;
   }
 
   /* Remove tilt on mobile — looks cleaner in full-width column */
@@ -1461,7 +1461,8 @@
     background-position: center -60px;
     position: absolute;
     bottom: 100px;
-    background-size: 145% auto;
+    left: -10px;
+    background-size: 200% auto;
   }
 
   .home-program-7 {
