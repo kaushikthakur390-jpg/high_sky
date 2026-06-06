@@ -29,6 +29,10 @@ import imgOralSensory from '../assets/pages/services/Oral sensory integration.PN
 import imgOralMotor from '../assets/pages/services/oral motor integration.PNG';
 import imgFeeding from '../assets/pages/services/Feeding and swallowing Therapy.PNG';
 import imgReflex from '../assets/pages/services/Reflex Integration.PNG';
+import imgInterceptive from '../assets/pages/services/Interceptive sensory training.PNG';
+import imgGravity from '../assets/pages/services/gravity sensorimotor training.PNG';
+import imgVestibulo from '../assets/pages/services/vestibulo visual training.PNG';
+import imgParentCoaching from '../assets/pages/services/parent coaching.PNG';
 
 const services = [
   { title: "Paediatric Occupational Therapy", img: imgOccupational },
@@ -48,10 +52,10 @@ const approaches = [
   { title: "Oral Motor Integration", img: imgOralMotor },
   { title: "Feeding and Swallowing Therapy", img: imgFeeding },
   { title: "Reflex Integration", img: imgReflex },
-  { title: "Interceptive Sensory Training", img: imgOralSensory },
-  { title: "Gravity Sensorimotor Training", img: imgOralMotor },
-  { title: "Vestibulo Visual Training", img: imgFeeding },
-  { title: "Parent Coaching", img: imgReflex },
+  { title: "Interceptive Sensory Training", img: imgInterceptive },
+  { title: "Gravity Sensorimotor Training", img: imgGravity },
+  { title: "Vestibulo Visual Training", img: imgVestibulo },
+  { title: "Parent Coaching", img: imgParentCoaching },
 ];
 
 export default function OurPrograms() {

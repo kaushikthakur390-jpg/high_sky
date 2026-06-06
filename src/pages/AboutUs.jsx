@@ -17,12 +17,22 @@ import frame44 from '../assets/pages/about us/Frame 44.png';
 import group166 from '../assets/pages/about us/Group 166.png';
 import frame45 from '../assets/pages/about us/Frame 45.png';
 
+// Moment photos
+import moment1 from '../assets/pages/moment/IMG_20260605_021109_034.jpg.jpeg';
+import moment2 from '../assets/pages/moment/IMG_20260606_023319_991.jpg.jpeg';
+import moment3 from '../assets/pages/moment/IMG_20260606_023348_236.jpg.jpeg';
+import moment4 from '../assets/pages/moment/IMG_20260606_023403_481.jpg.jpeg';
+import moment5 from '../assets/pages/moment/IMG_20260606_023425_828.jpg.jpeg';
+import moment6 from '../assets/pages/moment/IMG_20260606_023442_754.jpg.jpeg';
+
 const momentImages = [
-  'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80',
-  'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1600&q=80'
+  moment1,
+  moment2,
+  moment3,
+  moment4,
+  moment5,
+  moment6,
+  moment7,
 ];
 
 export default function AboutUs() {

@@ -13,13 +13,13 @@ export default function Navbar() {
     ? 'route-about-us'
     : location.pathname === '/our-programs'
       ? 'route-our-programs'
-    : location.pathname === '/parents-hub'
-      ? 'route-parents-hub'
-      : location.pathname === '/consultation'
-        ? 'route-consultation'
-        : location.pathname === '/contact-us'
-          ? 'route-contact-us'
-          : 'route-default';
+      : location.pathname === '/parents-hub'
+        ? 'route-parents-hub'
+        : location.pathname === '/consultation'
+          ? 'route-consultation'
+          : location.pathname === '/contact-us'
+            ? 'route-contact-us'
+            : 'route-default';
 
   return (
     <nav className={`navbar ${routeClass}`}>
@@ -44,12 +44,12 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <ul className={`navbar-links ${menuOpen ? 'show' : ''}`}>
-          <li><NavLink to="/" end onClick={() => setMenuOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>HOME</NavLink></li>
-          <li><NavLink to="/about-us" onClick={() => setMenuOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>ABOUT US</NavLink></li>
+          <li><NavLink to="/" end onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink></li>
+          <li><NavLink to="/about-us" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>ABOUT US</NavLink></li>
           {/* <li><NavLink to="/uddeshya" onClick={() => setMenuOpen(false)} className={({isActive}) => isActive ? `active uddeshya-link` : 'uddeshya-link'}>UDDESHYA</NavLink></li> */}
-          <li><NavLink to="/our-programs" onClick={() => setMenuOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>OUR PROGRAMS</NavLink></li>
-          <li><NavLink to="/parents-hub" onClick={() => setMenuOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>PARENTS HUB</NavLink></li>
-          <li><NavLink to="/parents-hub" onClick={() => setMenuOpen(false)} className={({isActive}) => ''}>BLOGS</NavLink></li>
+          <li><NavLink to="/our-programs" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>OUR PROGRAMS</NavLink></li>
+          <li><NavLink to="/parents-hub" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>PARENTS HUB</NavLink></li>
+          {/* <li><NavLink to="/parents-hub" onClick={() => setMenuOpen(false)} className={({isActive}) => ''}>BLOGS</NavLink></li> */}
           <li>
             <NavLink to="/consultation" onClick={() => setMenuOpen(false)} className="btn-nav-consult">
               BOOK A CONSULTATION

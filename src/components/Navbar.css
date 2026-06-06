@@ -27,7 +27,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  right: 122px;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -43,7 +42,6 @@
   position: relative;
   z-index: 1003;
   display: flex;
-  left: 100px;
   align-items: center;
   gap: 10px;
   list-style: none;
@@ -182,7 +180,7 @@
   }
 
   .navbar-inner {
-    top: 8px;
+    top: -6px;
     padding: 0 20px;
   }
 

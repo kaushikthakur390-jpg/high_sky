@@ -133,6 +133,36 @@ const reviews = [
     review:
       "My 5-year-old son has been attending this occupational and behavioral therapy at Priyanka ma’am’s High sky center for the past , six months and the progress we’ve seen has been incredible. The therapists are not only highly trained and …",
     link: "https://share.google/6JfiqpzwAxhPIuzhs"
+  },
+  {
+    name: "Upasna Potlapalli",
+    review:
+      "It's a nice place. My children r changing after joining here. Therapists r really friendly and very helpful. My son got good marks this time. A very very big thank you to Priyanka Mam and to all the therapists there. My husband and myself r very happy.",
+    link: "https://share.google/q4vjcGms6sdwV59Dc"
+  },
+  {
+    name: "Richa Rijhwani",
+    review:
+      "The therapist are so experienced here !!! They take our kids like own the work with parents also !!! They even hold ptm’s so the parent should be aware about the kid level and how to work with kid and also suggest home protocol for kids !! And majorly they are transparent !!",
+    link: "https://share.google/k1t5EIwp1kjEiMp2Z"
+  },
+  {
+    name: "kalvath A",
+    review:
+      "She is one of the best occupation therapists. We saw good improvement in my son. The way she interacts with the kid is really good and my son always look forward to interact with her.She explains the problem to parents clearly and makes sure parents are not frightened.Highly recommended therapist.",
+    link: "https://share.google/XCKX21HdVIKVAqeZC"
+  },
+  {
+    name: "Braja Das",
+    review:
+      "One of the best Child Development center in Manikonda Area. My kid developed speaking within 3 months of time. We have seen a lots of improvements in our Kid in a very short span of time. Therapists are very caring. We have seen the great co-ordination and bonding between therapists.",
+    link: "https://share.google/4cMFdn9f0iaK4OhQQ"
+  },
+  {
+    name: "Akshita Garg",
+    review:
+      "Dr priyanka is passionate n such a wonderful therapist that I ever met online. I am in the US but her protocols and strategies are so different that really worked for my niece. She provides very personal kind of care which was amazing to see.",
+    link: "https://share.google/AtyvbVHJhFZoms8Rd"
   }
 ];
 export default function Home() {
