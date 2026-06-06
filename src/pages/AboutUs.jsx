@@ -32,7 +32,6 @@ const momentImages = [
   moment4,
   moment5,
   moment6,
-  moment7,
 ];
 
 export default function AboutUs() {
@@ -110,11 +109,21 @@ export default function AboutUs() {
 
       <section className="about-solutions-section">
         <img className="about-solutions-bg" src={group166} alt="" aria-hidden="true" />
-        <img
-          className="about-solutions-cards"
-          src={frame44}
-          alt="Comprehensive child development solutions offered by us"
-        />
+        <div className="about-solutions-cards-wrap">
+          <img
+            className="about-solutions-cards"
+            src={frame44}
+            alt="Comprehensive child development solutions offered by us"
+          />
+          {/* Single full-image overlay — any click opens WhatsApp */}
+          <a
+            href="https://wa.me/919100814615"
+            className="solutions-card-overlay"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp about our child development services"
+          />
+        </div>
       </section>
 
       <section className="about-moments-section">

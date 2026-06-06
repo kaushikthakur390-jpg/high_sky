@@ -327,23 +327,32 @@
   pointer-events: none;
 }
 
-.about-solutions-cards {
+/* Wrapper holds image + overlays together */
+.about-solutions-cards-wrap {
   position: relative;
-  z-index: 2;
   display: block;
-  top: 100px;
-  width: min(100%, 1200px);
+  width: min(95%, 1700px);
   margin: 0 auto;
+  z-index: 2;
+  top: 200px;           /* offset moved here so overlays align with image */
 }
 
 .about-solutions-cards {
   position: relative;
   display: block;
-  width: min(95%, 1700px);
-  margin: 0 auto clamp(20px, 2.2vw, 34px);
+  width: 100%;
   height: auto;
-  top: 200px;
+  top: 0;               /* reset — wrapper carries the offset now */
   z-index: 1;
+}
+
+/* ── Full-image WhatsApp click overlay ── */
+.solutions-card-overlay {
+  position: absolute;
+  inset: 0;            /* covers the entire image area */
+  z-index: 10;
+  cursor: pointer;
+  display: block;
 }
 
 .about-moments-section {
@@ -611,11 +620,17 @@
     top: 0;
   }
 
-  .about-solutions-cards {
+  .about-solutions-cards-wrap {
     width: min(108%, 430px);
     top: 20px;
     transform: translateX(-2%);
     margin-bottom: 0;
+  }
+
+  .about-solutions-cards {
+    top: 0;
+    width: 100%;
+    transform: none;
   }
 
   /* --- Moments Section --- */
@@ -674,7 +689,7 @@
     font-size: 1.75rem;
   }
 
-  .about-solutions-cards {
+  .about-solutions-cards-wrap {
     width: min(108%, 460px);
   }
 }
@@ -713,9 +728,12 @@
     font-size: 0.76rem;
   }
 
-  .about-solutions-cards {
+  .about-solutions-cards-wrap {
     width: min(108%, 500px);
     top: 28px;
+  }
+  .about-solutions-cards {
+    top: 0;
   }
 
   .about-moments-slider-wrap {
@@ -823,9 +841,13 @@
     padding: clamp(90px, 13vw, 140px) 0 80px;
   }
 
-  .about-solutions-cards {
+  .about-solutions-cards-wrap {
     width: min(96%, 680px);
     top: 60px;
+  }
+
+  .about-solutions-cards {
+    top: 0;
   }
 
   .about-moments-section {

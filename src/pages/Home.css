@@ -1297,6 +1297,15 @@
     /* pushes image below the text block */
   }
 
+  .commitment-inline-photo-3 {
+    display: block;
+    width: 85% !important;
+    max-width: 320px;
+    margin: 0 auto;
+    order: 2;
+    /* pushes image below the text block */
+  }
+
   .commitment-inline-photo img {
     width: 100%;
     height: auto;
@@ -1329,6 +1338,10 @@
     font-weight: 900;
     text-align: center;
     margin-top: 0;
+  }
+
+  .commitment-polaroid-3 {
+    width: 100px;
   }
 
   .commitment-desc {
