@@ -334,7 +334,8 @@
   width: min(95%, 1700px);
   margin: 0 auto;
   z-index: 2;
-  top: 200px;           /* offset moved here so overlays align with image */
+  top: 200px;
+  /* offset moved here so overlays align with image */
 }
 
 .about-solutions-cards {
@@ -342,14 +343,16 @@
   display: block;
   width: 100%;
   height: auto;
-  top: 0;               /* reset — wrapper carries the offset now */
+  top: 0;
+  /* reset — wrapper carries the offset now */
   z-index: 1;
 }
 
 /* ── Full-image WhatsApp click overlay ── */
 .solutions-card-overlay {
   position: absolute;
-  inset: 0;            /* covers the entire image area */
+  inset: 0;
+  /* covers the entire image area */
   z-index: 10;
   cursor: pointer;
   display: block;
@@ -621,9 +624,11 @@
   }
 
   .about-solutions-cards-wrap {
-    width: min(108%, 430px);
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
     top: 20px;
-    transform: translateX(-2%);
+    transform: none;
     margin-bottom: 0;
   }
 
@@ -732,6 +737,7 @@
     width: min(108%, 500px);
     top: 28px;
   }
+
   .about-solutions-cards {
     top: 0;
   }

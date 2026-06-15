@@ -25,7 +25,8 @@ import prog265 from '../assets/pages/home/Group 265.png';
 import prog266 from '../assets/pages/home/Group 266.png';
 import prog267 from '../assets/pages/home/Group 267.png';
 import prog268 from '../assets/pages/home/Group 268.png';
-import prog270 from '../assets/pages/home/Group 270.png';
+import prog269 from '../assets/pages/home/Group 269.png';
+import prog271 from '../assets/pages/home/Group 271.png';
 // Photo assets - Real therapy session photos
 import heroPhoto from '../assets/pages/home/Frame 18.png';
 import commitPic1 from '../assets/pages/home/Group 218.jpg';
@@ -73,15 +74,80 @@ const uniqueFeatures = [
 ];
 
 const programs = [
-  { image: prog264, link: '/our-programs', alt: 'Occupational Therapy' },
-  { image: prog265, link: '/our-programs', alt: 'Physiotherapy & Motor Rehabilitation' },
-  { image: prog266, link: '/our-programs', alt: 'Speech Language & Communication Therapy' },
-  { image: prog267, link: '/our-programs', alt: 'Child Psychology (BMT, CBT, PBS)' },
-  { image: prog268, link: '/our-programs', alt: 'School Readiness Program' },
-  // Group 270 is a composite card: Social Integration (right) + Life Skills (left) combined
-  { image: prog270, link: '/our-programs', alt: 'Social Integration Group & Life Skills Training', fullWidth: true },
-  { image: prog263, link: '/our-programs', alt: 'Feeding and Swallowing Therapy' },
-  { image: prog262, link: '/our-programs', alt: 'Home Based Parental Training Program' },
+  {
+    image: prog264,
+    link: '/our-programs',
+    alt: 'Paediatric Occupational Therapy',
+    title: 'Paediatric Occupational Therapy',
+    desc: 'Boost your child\'s independence with expert occupational therapy designed for their unique needs.',
+    mascotSide: 'left',
+  },
+  {
+    image: prog265,
+    link: '/our-programs',
+    alt: 'Physiotherapy & Motor Rehabilitation',
+    title: 'Physiotherapy & Motor Rehabilitation',
+    desc: 'Improve your child\'s strength, balance, and mobility with personalized physiotherapy sessions.',
+    mascotSide: 'right',
+  },
+  {
+    image: prog266,
+    link: '/our-programs',
+    alt: 'Speech Language & Communication Therapy',
+    title: 'Speech Language & Communication Therapy',
+    desc: 'Helping children express themselves with confidence through expert speech and language therapy.',
+    mascotSide: 'left',
+  },
+  {
+    image: prog267,
+    link: '/our-programs',
+    alt: 'Child Psychology (BMT, CBT, PBS)',
+    title: 'Child Psychology (BMT, CBT, PBS)',
+    desc: 'Empowering children with the skills to understand, manage, and express their emotions.',
+    mascotSide: 'right',
+  },
+  {
+    image: prog268,
+    link: '/our-programs',
+    alt: 'School Readiness Program',
+    title: 'School Readiness Program',
+    desc: 'Building the essential skills needed for school success and independence.',
+    mascotSide: 'left',
+  },
+  // Group 269 — Social Integration Group (duck mascot on right)
+  {
+    image: prog269,
+    link: '/our-programs',
+    alt: 'Social Integration Group',
+    title: 'Social Integration Group',
+    desc: 'Helping children build friendships, social skills, and confidence in group settings.',
+    mascotSide: 'right',
+  },
+  // Group 271 — Life Skills Training (dog mascot on left)
+  {
+    image: prog271,
+    link: '/our-programs',
+    alt: 'Life Skills Training',
+    title: 'Life Skills Training',
+    desc: 'Building everyday skills that help children thrive at home, school, and beyond.',
+    mascotSide: 'left',
+  },
+  {
+    image: prog263,
+    link: '/our-programs',
+    alt: 'Feeding and Swallowing Therapy',
+    title: 'Feeding and Swallowing Therapy',
+    desc: 'Helping children develop safe, comfortable, and confident eating skills.',
+    mascotSide: 'right',
+  },
+  {
+    image: prog262,
+    link: '/our-programs',
+    alt: 'Home Based Parental Training Program',
+    title: 'Home Based Parental Training Program',
+    desc: 'Empowering parents with practical strategies to support their child\'s development at home.',
+    mascotSide: 'left',
+  },
 ];
 
 const commitmentFrames = [commitmentFrame1, commitmentFrame2, commitmentFrame3];
@@ -322,15 +388,20 @@ export default function Home() {
           {programs.map((prog, i) => (
             <Link
               to={prog.link}
-              className={`home-program-card home-program-${i + 1} ${prog.fullWidth
-                ? 'home-program-full'
-                : i % 2 === 0
-                  ? 'home-program-left'
-                  : 'home-program-right'
-                }`}
+              className={`home-program-card home-program-${i + 1} ${
+                i % 2 === 0 ? 'home-program-left' : 'home-program-right'
+              }`}
               key={i}
             >
-              <img src={prog.image} alt={prog.alt} className="home-program-bg" />
+              {/* Background banner image (mascot + colored pill) */}
+              <img src={prog.image} alt="" aria-hidden="true" className="home-program-bg" />
+
+              {/* SEO-friendly text overlay */}
+              <div className={`prog-text-overlay prog-text-${prog.mascotSide}`}>
+                <h3 className="prog-card-title">{prog.title}</h3>
+                <p className="prog-card-desc">{prog.desc}</p>
+                <span className="prog-card-btn">LEARN MORE &gt;</span>
+              </div>
             </Link>
           ))}
         </div>

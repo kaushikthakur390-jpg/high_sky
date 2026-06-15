@@ -776,13 +776,15 @@
   padding: 0 24px;
 }
 
-/* Each card is now a Link wrapping a full-bleed image */
+/* Each card: position:relative so overlay can sit on top of the banner image */
 .home-program-card {
   display: block;
   width: min(100%, 1000px);
   margin: 0;
   text-decoration: none;
   transition: transform 0.2s ease, filter 0.2s ease;
+  position: relative;
+  /* overflow:visible so mascots can poke above the card border */
 }
 
 .home-program-card:hover {
@@ -798,14 +800,6 @@
   margin-left: auto;
 }
 
-/* Full-width composite card (Group 270: Social Integration + Life Skills combined) */
-.home-program-full {
-  width: 100%;
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .home-program-bg {
   width: 100%;
   height: auto;
@@ -813,28 +807,92 @@
   border-radius: 4px;
 }
 
-.home-program-7 {
-  position: relative;
-
-  /* move up */
-  left: 130px;
-  /* nudge right */
+/* ══════════════════════════════════════════
+   PROGRAM CARD TEXT OVERLAY
+   Sits on top of the banner image absolutely.
+   The colored pill in each image takes up
+   roughly the bottom 65% of the card height.
+   Left-mascot  → text starts at 24% from left
+   Right-mascot → text ends at 24% from right
+   ══════════════════════════════════════════ */
+.prog-text-overlay {
+  position: absolute;
+  top: 30%;
+  /* clear of mascot head overhang */
+  bottom: 10%;
+  /* clear of card bottom edge */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+  gap: 6px;
 }
 
-.home-program-1 {
-  position: relative;
-
-  /* move up */
-  left: -110px;
-  /* nudge right */
+/* Mascot on LEFT → text occupies right portion */
+.prog-text-left {
+  left: 24%;
+  right: 3%;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 18px 0 12px;
 }
 
-.home-program-8 {
-  position: relative;
+/* Mascot on RIGHT → text occupies left/center portion */
+.prog-text-right {
+  left: 3%;
+  right: 24%;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px 0 18px;
+}
 
-  /* move up */
-  right: 180px;
-  /* nudge right */
+/* ── Title ── */
+.prog-card-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.18;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Description ── */
+.prog-card-desc {
+  font-family: 'Amaranth', sans-serif;
+  font-size: clamp(0.68rem, 1.05vw, 0.88rem);
+  color: rgba(255, 255, 255, 0.96);
+  margin: 0;
+  line-height: 1.4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* ── LEARN MORE button — hidden; each card image already has one baked in ── */
+.prog-card-btn {
+  display: none;
+}
+
+/* ── Tablet (768–1100px) ── */
+@media (min-width: 768px) and (max-width: 1100px) {
+  .prog-text-overlay {
+    top: 26%;
+    bottom: 8%;
+    gap: 3px;
+  }
+
+  .prog-card-title {
+    font-size: clamp(0.82rem, 1.9vw, 1.1rem);
+    line-height: 1.2;
+  }
+
+  .prog-card-desc {
+    font-size: clamp(0.58rem, 1.15vw, 0.75rem);
+  }
+
+  .prog-card-btn {
+    font-size: 0.6rem;
+    padding: 3px 10px;
+  }
 }
 
 /* ===== HAPPY PARENTS / TESTIMONIALS ===== */
@@ -1465,49 +1523,63 @@
     background-size: 200% auto;
   }
 
-  .home-program-7 {
-    position: relative;
-
-    /* move up */
-    left: 10px;
-    /* nudge right */
-  }
-
-  .home-program-8 {
-    position: relative;
-
-    /* move up */
-    left: -25px;
-    /* nudge right */
-  }
-
-  .home-program-1 {
-    position: relative;
-
-    /* move up */
-    left: -50px;
-    /* nudge right */
-  }
-
-
   .home-programs-title {
     font-size: 1.6rem;
     margin-bottom: 18px;
   }
 
   .home-programs-list {
-    gap: 14px;
+    gap: 12px;
     padding: 0 10px;
   }
 
   .home-program-card {
     width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
+    /* keep cards full-width on mobile, no left/right offset */
+    left: auto !important;
+    right: auto !important;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .home-program-bg {
     border-radius: 8px;
+  }
+
+  /* Mobile overlay: text sits inside the pill zone */
+  .prog-text-overlay {
+    top: 28%;
+    bottom: 6%;
+    gap: 2px;
+  }
+
+  /* On mobile the mascot takes ~30% of card width */
+  .prog-text-left {
+    left: 30%;
+    right: 2%;
+    padding: 0 8px 0 6px;
+  }
+
+  .prog-text-right {
+    left: 2%;
+    right: 30%;
+    padding: 0 6px 0 8px;
+  }
+
+  .prog-card-title {
+    font-size: clamp(0.72rem, 3.5vw, 0.9rem);
+    line-height: 1.15;
+  }
+
+  .prog-card-desc {
+    font-size: clamp(0.5rem, 2.2vw, 0.65rem);
+    line-height: 1.3;
+  }
+
+  .prog-card-btn {
+    font-size: clamp(0.42rem, 1.8vw, 0.55rem);
+    padding: 3px 8px;
+    margin-top: 2px;
   }
 
   /* --- TESTIMONIALS --- */

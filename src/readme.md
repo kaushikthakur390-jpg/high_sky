@@ -4,9 +4,9 @@ change whatsappp icon to original icon
 our commitment section ka alignemnt thik kaR
 <!-- our programs ka font change kar -->
 our program section ka bg change kar
-our program ka alignment sahi kar
+<!-- our program ka alignment sahi kar -->
 <!-- happy parents ka font change ka r -->
-{revieww aur daal 
+<!-- {revieww aur daal 
 
 https://share.google/q4vjcGms6sdwV59Dc
 
@@ -17,7 +17,7 @@ https://share.google/XCKX21HdVIKVAqeZC
 https://share.google/4cMFdn9f0iaK4OhQQ
 
 https://share.google/AtyvbVHJhFZoms8Rd
-}
+} -->
 <!-- About us BUBBLE decrease size  -->
 <!-- journey frame pop hover  -->
 <!-- about us team font  -->
