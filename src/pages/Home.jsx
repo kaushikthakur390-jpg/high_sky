@@ -45,32 +45,31 @@ import pic6 from '../assets/pages/home/pic6.png';
 const commitmentBlocks = [
   {
     type: 'left',
-    title: 'OUR COMMITMENT',
+    title: 'Our Mission',
     img: commitPic1,
-    text: 'We are dedicated to empowering young minds in a nurturing, engaging, and inclusive environment. Our mission is to foster every child’s growth by offering personalized learning experiences that promote their cognitive, social, and emotional development.'
+    text: 'We are committed to helping children grow, learn, and thrive through personalized support, evidence-based practices, and an inclusive environment that nurtures cognitive, social, emotional, and developmental growth.'
   },
   {
     type: 'right',
-    title: 'WHERE WE\'RE HEADED!',
-
+    title: 'Where We\'re Headed',
     img: commitPic2,
-    text: 'Our vision is to become the premier child development centre in Hyderabad, renowned for our innovative approach to early childhood education and our commitment to helping every child thrive. We strive to set the standard for excellence in developmental programs, supporting children with diverse needs and empowering families along the journey.'
+    text: 'Our vision is to create a future where every child has access to the support, opportunities, and guidance they need to reach their full potential and lead a confident, independent life. We strive to be a trusted child development center in Hyderabad, empowering children with diverse needs and supporting families at every stage of their journey.'
   },
   {
     type: 'left',
-    title: 'OUR PILLARS',
+    title: 'Our Core Values',
     img: commitPic3,
-    text: 'We believe that every child is unique, and we are passionate about designing individualized programs that highlight their strengths, address their challenges, and ignite a lifelong love of learning. Our child-centric approach prioritizes holistic development, making us the trusted choice for parents seeking quality early education and intervention services in Hyderabad.'
+    text: 'Our child-centric approach prioritizes holistic development, supporting children through meaningful learning experiences that encourage growth, independence, and lifelong success. This is why High Sky is a preferred child development center in Hyderabad for families seeking quality early intervention and developmental care, helping their children grow with confidence and clarity.'
   }
 ];
 
 const uniqueFeatures = [
-  { img: uni1, title: 'MULTIDISCIPLINARY APPROACH', desc: 'Our team includes occupational therapists, speech pathologists, and special educators who collaborate closely for every child. This integrated planning helps us design therapy goals that are practical, connected, and tailored to each child\'s unique developmental profile.' },
-  { img: uni2, title: 'EVIDENCE-BASED PRACTICES', desc: 'We use current research and proven therapeutic methods to guide each session with purpose. Progress is reviewed regularly so interventions stay engaging, measurable, and aligned with the best possible outcomes for children and families.' },
-  { img: uni3, title: 'NEURODIVERSITY ACCEPTANCE', desc: 'We celebrate the strengths of every child and create an inclusive environment where differences are respected. By building confidence, self-awareness, and belonging, we help children grow into their authentic selves with pride.' },
-  { img: uni4, title: 'HOLISTIC DEVELOPMENT', desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child model supports meaningful development that carries into school, home routines, and everyday life.' },
-  { img: uni5, title: 'CAREGIVER-CHILD PARTNERSHIPS', desc: 'We believe parents and caregivers are essential partners in every milestone. Through guidance, home strategies, and regular collaboration, we help families confidently support their child\'s progress outside the therapy room.' },
-  { img: uni6, title: 'HIGH-TECH EQUIPMENT', desc: 'Our centre features advanced therapeutic tools, sensory resources, and child-friendly learning setups. These resources make sessions safer, more interactive, and better suited to each child\'s learning style and sensory needs.' },
+  { img: uni1, title: 'MULTIDISCIPLINARY APPROACH', desc: 'Our team of occupational therapists, speech pathologists, physiotherapists, and special educators works together for every child. This child development center follows a collaborative approach to create practical, personalized therapy goals tailored to each child\'s needs.' },
+  { img: uni2, title: 'EVIDENCE-BASED PRACTICES', desc: 'We use proven, research-backed methods in child development and early intervention services to guide each session with purpose. Progress is regularly reviewed to ensure therapy remains effective, measurable, and outcome-focused for children and families.' },
+  { img: uni3, title: 'NEURODIVERSITY ACCEPTANCE', desc: 'We value every child\'s strengths and create an inclusive environment that respects neurodiversity. By building confidence, self-awareness, and a strong sense of belonging, we help children grow into their authentic selves with pride.' },
+  { img: uni4, title: 'HOLISTIC DEVELOPMENT', desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child approach helps children apply skills across school, home, and everyday life.' },
+  { img: uni5, title: 'CAREGIVER-CHILD PARTNERSHIPS', desc: 'Parents and caregivers are active partners in every milestone of their child\'s journey. Through guidance and home strategies, we help families confidently support their child\'s progress outside the therapy room.' },
+  { img: uni6, title: 'HIGH-TECH EQUIPMENT', desc: 'Our centre uses advanced therapeutic tools, sensory resources, and child-friendly learning setups designed for effective child development therapy. Sessions are safe, engaging, and tailored to each child\'s needs.' },
 ];
 
 const programs = [
@@ -79,7 +78,7 @@ const programs = [
     link: '/our-programs',
     alt: 'Paediatric Occupational Therapy',
     title: 'Paediatric Occupational Therapy',
-    desc: 'Boost your child\'s independence with expert occupational therapy designed for their unique needs.',
+    desc: 'Boost your child\'s independence through structured occupational therapy designed to improve daily living skills, motor coordination, and functional abilities.',
     mascotSide: 'left',
   },
   {
@@ -87,15 +86,15 @@ const programs = [
     link: '/our-programs',
     alt: 'Physiotherapy & Motor Rehabilitation',
     title: 'Physiotherapy & Motor Rehabilitation',
-    desc: 'Improve your child\'s strength, balance, and mobility with personalized physiotherapy sessions.',
+    desc: 'Improve strength, balance, posture, and mobility through personalized physiotherapy and motor rehabilitation programs for children.',
     mascotSide: 'right',
   },
   {
     image: prog266,
     link: '/our-programs',
-    alt: 'Speech Language & Communication Therapy',
-    title: 'Speech Language & Communication Therapy',
-    desc: 'Helping children express themselves with confidence through expert speech and language therapy.',
+    alt: 'Speech, Language & Communication Therapy',
+    title: 'Speech, Language & Communication Therapy',
+    desc: 'Help children express themselves clearly and confidently through expert speech and language therapy focused on communication development.',
     mascotSide: 'left',
   },
   {
@@ -103,7 +102,7 @@ const programs = [
     link: '/our-programs',
     alt: 'Child Psychology (BMT, CBT, PBS)',
     title: 'Child Psychology (BMT, CBT, PBS)',
-    desc: 'Empowering children with the skills to understand, manage, and express their emotions.',
+    desc: 'Support emotional regulation, behaviour, and mental well-being through structured child psychology interventions.',
     mascotSide: 'right',
   },
   {
@@ -111,41 +110,39 @@ const programs = [
     link: '/our-programs',
     alt: 'School Readiness Program',
     title: 'School Readiness Program',
-    desc: 'Building the essential skills needed for school success and independence.',
+    desc: 'Build essential cognitive, social, and learning skills needed for smooth transition into school and classroom environments.',
     mascotSide: 'left',
   },
-  // Group 269 — Social Integration Group (duck mascot on right)
   {
     image: prog269,
     link: '/our-programs',
     alt: 'Social Integration Group',
     title: 'Social Integration Group',
-    desc: 'Helping children build friendships, social skills, and confidence in group settings.',
+    desc: 'Develop your child\'s social interaction skills, peer engagement, and confidence through structured group-based learning activities.',
     mascotSide: 'right',
   },
-  // Group 271 — Life Skills Training (dog mascot on left)
   {
     image: prog271,
     link: '/our-programs',
     alt: 'Life Skills Training',
     title: 'Life Skills Training',
-    desc: 'Building everyday skills that help children thrive at home, school, and beyond.',
+    desc: 'Equip children with essential everyday skills that help them thrive at home, school, and beyond.',
     mascotSide: 'left',
   },
   {
     image: prog263,
     link: '/our-programs',
-    alt: 'Feeding and Swallowing Therapy',
-    title: 'Feeding and Swallowing Therapy',
-    desc: 'Helping children develop safe, comfortable, and confident eating skills.',
+    alt: 'Feeding & Swallowing Therapy',
+    title: 'Feeding & Swallowing Therapy',
+    desc: 'Support safe and effective eating skills through therapy focused on feeding, swallowing, and oral-motor development.',
     mascotSide: 'right',
   },
   {
     image: prog262,
     link: '/our-programs',
-    alt: 'Home Based Parental Training Program',
-    title: 'Home Based Parental Training Program',
-    desc: 'Empowering parents with practical strategies to support their child\'s development at home.',
+    alt: 'Parent Training & Home Support Program',
+    title: 'Parent Training & Home Support Program',
+    desc: 'Empower parents with practical strategies and guidance to support their child\'s development at home.',
     mascotSide: 'left',
   },
 ];
@@ -231,8 +228,66 @@ const reviews = [
     link: "https://share.google/AtyvbVHJhFZoms8Rd"
   }
 ];
+const conditions = [
+  'Autism Spectrum Disorder (ASD)',
+  'Attention Deficit Hyperactivity Disorder (ADHD)',
+  'Speech & Language Delay',
+  'Developmental Delay / Global Developmental Delay',
+  'Learning Disabilities',
+  'Sensory Processing Disorder',
+  'Social Communication Difficulties',
+  'Behavioural Challenges in Children',
+  'Cerebral Palsy (Developmental & Feeding Support)',
+  'Down Syndrome (Developmental Support)',
+];
+
+const approachSteps = [
+  { num: '01', label: 'Assessment', desc: "Understanding your child's strengths and challenges", color: '#F9D9B0', numColor: '#E8A44A', icon: '📋' },
+  { num: '02', label: 'Goal Setting', desc: 'Defining clear, measurable developmental goals', color: '#C8E6C9', numColor: '#4CAF50', icon: '🎯' },
+  { num: '03', label: 'Therapy Plan', desc: 'Designing personalized intervention strategies', color: '#BBDEFB', numColor: '#5B9BD5', icon: '🧩' },
+  { num: '04', label: 'Parent Collaboration', desc: 'Working closely with families for consistency', color: '#D1C4E9', numColor: '#7E57C2', icon: '👨‍👩‍👧' },
+  { num: '05', label: 'Progress Tracking', desc: 'Regular reviews and adjustments for improvement', color: '#F8BBD9', numColor: '#E91E8C', icon: '📈' },
+];
+
+const faqs = [
+  {
+    q: 'Why do parents trust High Sky Child Development Center?',
+    a: 'Parents choose High Sky Child Development Center because we focus on understanding each child as an individual. Our multidisciplinary team of child development specialists provides evidence-based speech therapy, occupational therapy, physiotherapy, and child psychology support through personalized intervention plans designed to improve communication, learning, behavior, and overall developmental progress.',
+  },
+  {
+    q: 'How do I know if my child needs developmental support?',
+    a: 'If your child is experiencing delays or challenges in communication, learning, social interaction, behavior, emotional regulation, motor skills, feeding, or developmental milestones, a professional assessment can help determine the right support.',
+  },
+  {
+    q: 'What age groups do you work with?',
+    a: "We support children across different developmental stages, tailoring programs to each child's unique needs, abilities, and goals.",
+  },
+  {
+    q: 'How long does therapy take?',
+    a: "Therapy duration varies based on each child's needs and progress. Our team regularly reviews outcomes and updates intervention plans to ensure meaningful development.",
+  },
+  {
+    q: "How does High Sky CDC track my child's progress?",
+    a: 'We conduct regular progress reviews, monitor developmental goals, and work closely with families to ensure consistent improvement and effective intervention planning.',
+  },
+  {
+    q: 'Are therapy plans personalized for each child?',
+    a: "Yes. Every child receives a personalized intervention plan based on their strengths, challenges, developmental profile, and family goals.",
+  },
+  {
+    q: 'What makes High Sky CDC different from other child development centers in Hyderabad?',
+    a: "At High Sky CDC, we don't follow a one-size-fits-all approach. Our team of child development specialists collaborates across therapies to understand each child deeply and design personalized, practical interventions that support growth at home, school, and everyday life.",
+  },
+  {
+    q: 'How do I get started?',
+    a: 'Simply contact our team to schedule an initial consultation. We will guide you through the assessment process and recommend the most suitable support plan for your child.',
+  },
+];
+
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [faqOpen, setFaqOpen] = useState(null);
+  const toggleFaq = (i) => setFaqOpen(faqOpen === i ? null : i);
 
   const reviewsPerPage = 3;
 
@@ -264,12 +319,15 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-left">
-            <h1 className="hero-welcome">WELCOME TO HIGH SKY CDC</h1>
+            <h1 className="hero-welcome"> WELCOME TO HIGH SKY<br></br> CHILD DEVELOPMENT CENTER</h1>
             <p className="hero-subtitle">
-              From Small steps to wide skies, supporting every child to rise
+              From small steps to wide skies, supporting every special child to rise
+            </p>
+            <p className="hero-seo-text">
+              Expert Child Development Specialists Providing Speech Therapy, Occupational Therapy, Physiotherapy, Child Psychology and Early Intervention Services for Children in Hyderabad.
             </p>
             <Link to="/consultation" className="hero-cta">
-              BOOK YOUR CONSULTATION TODAY &gt;
+              Take The First Step Today! &gt;
             </Link>
           </div>
         </div>
@@ -286,13 +344,9 @@ export default function Home() {
       <div className="hero-video-overlap">
         <div className="hero-video-wrap">
           <div className="hero-video-copy">
+            <h2 className="intro-section-h2">Supporting Growth Through Personalized Care</h2>
             <p>
-              Welcome to High sky child developement centre, A place where every childs unique
-              abilities are not just recognized but celebrated.
-            </p>
-            <p>
-              AT out centre, we embrace neurodiversity and provide a nuturing environment where
-              each child's potential is not only enhanced but also developed to the fullest extent.
+              Every child has unique strengths, abilities, and potential waiting to flourish. At High Sky, we don't just recognize each child's uniqueness — we celebrate it and empower them to reach their full potential.
             </p>
             <Link to="/about-us" className="hero-video-cta">KNOW MORE ABOUT HIGH SKY &gt;</Link>
           </div>
@@ -357,10 +411,8 @@ export default function Home() {
           <img src={sectionDividerThree} alt="Section Divider" className="unique-top-divider-img" />
         </div>
         <div className="unique-body">
-          <h2 className="section-title-white">WHAT MAKES US UNIQUE?</h2>
-          <p className="unique-intro">
-            We combine expert-led therapy, family partnership, and a child-first environment to create progress that is meaningful and long-lasting.
-          </p>
+          <h2 className="section-title-white">Why Parents Trust High Sky CDC</h2>
+
           <div className="unique-cards">
             {uniqueFeatures.map((f, i) => (
               <div className="unique-card" key={i}>
@@ -383,14 +435,13 @@ export default function Home() {
 
       {/* ===== PROGRAMS ===== */}
       <section className="home-programs-section">
-        <h2 className="home-programs-title">OUR PROGRAMS</h2>
+        <h2 className="home-programs-title">Child Development Therapies &amp; Programs</h2>
         <div className="home-programs-list">
           {programs.map((prog, i) => (
             <Link
               to={prog.link}
-              className={`home-program-card home-program-${i + 1} ${
-                i % 2 === 0 ? 'home-program-left' : 'home-program-right'
-              }`}
+              className={`home-program-card home-program-${i + 1} ${i % 2 === 0 ? 'home-program-left' : 'home-program-right'
+                }`}
               key={i}
             >
               {/* Background banner image (mascot + colored pill) */}
@@ -404,6 +455,9 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="programs-explore-cta-wrap">
+          <Link to="/our-programs" className="programs-explore-cta">Explore All Programs &gt;</Link>
         </div>
       </section>
 
@@ -423,7 +477,8 @@ export default function Home() {
         </div>
 
         <div className="testimonials-body">
-          <h2 className="section-title-white">HAPPY PARENTS!</h2>
+          <h2 className="section-title-white">Our Reviews Speak For Us!</h2>
+          <h3 className="testimonials-subheading">What Parents Say About High Sky CDC</h3>
 
           <div className="testimonials-screen-wrap">
             {/* <img src={projector} className="testimonials-projector" alt="" /> */}
@@ -512,6 +567,148 @@ export default function Home() {
   */}
       </section>
 
+      {/* ===== CONDITIONS WE SUPPORT ===== */}
+      <section className="conditions-section">
+        <div className="conditions-inner">
+          <h2 className="conditions-title">Conditions We Support</h2>
+          <p className="conditions-subtitle">
+            We provide child development and early intervention support for a wide range of neurodevelopmental and behavioral conditions.
+          </p>
+          <div className="conditions-grid">
+            {conditions.map((c, i) => (
+              <div className="condition-card" key={i}>{c}</div>
+            ))}
+          </div>
+          <div className="conditions-cta-block">
+            <p className="conditions-cta-text">
+              Not sure which condition applies?
+            </p>
+            <Link to="/consultation" className="conditions-cta-btn">
+              Book an Assessment with Our Specialists &gt;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== OUR CHILD-CENTERED APPROACH ===== */}
+      <section className="approach-section">
+        <div className="approach-inner">
+          <h2 className="approach-title">Our Child-Centered Approach</h2>
+          <div
+            className="approach-diagram"
+            role="img"
+            aria-label="Child development process: Assessment, Goal Setting, Therapy Plan, Parent Collaboration, Progress Tracking at High Sky Child Development Center"
+          >
+            {/* 5 petals arranged in a circle */}
+            {approachSteps.map((step, i) => (
+              <div
+                className={`approach-petal approach-petal-${i + 1}`}
+                key={i}
+                style={{ '--petal-color': step.color, '--num-color': step.numColor }}
+              >
+                <div className="petal-num" style={{ background: step.numColor }}>{step.num}</div>
+                <div className="petal-icon">{step.icon}</div>
+                <h3 className="petal-label">{step.label}</h3>
+                <p className="petal-desc">{step.desc}</p>
+              </div>
+            ))}
+            {/* Center circle */}
+            <div className="approach-center">
+              <span className="approach-center-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="24" cy="14" r="7" fill="#a02c7d" />
+                  <path d="M10 38c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="#a02c7d" strokeWidth="3" fill="none" strokeLinecap="round" />
+                  <path d="M24 27l4 6-4-1-4 1 4-6z" fill="#f5a623" />
+                </svg>
+              </span>
+              <p className="approach-center-label">Our<br />Child-Centered<br />Approach</p>
+              <span className="approach-center-heart">♥</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== MAP LOCATIONS ===== */}
+      <section className="locations-section">
+        <div className="locations-inner">
+          <h2 className="locations-title">Serving Families Across Hyderabad for Over 6 Years</h2>
+          <h3 className="locations-subtitle">Our Branches</h3>
+          <div className="locations-grid">
+            <div className="location-card">
+              <div className="location-card-header">
+                <span className="location-pin">📌</span>
+                <div>
+                  <h4 className="location-name">Kondapur Center, Hyderabad</h4>
+                </div>
+              </div>
+              <div className="location-map">
+                <iframe
+                  title="High Sky CDC Kondapur"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7890693428354!2d78.3566!3d17.4678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI4JzA0LjEiTiA3OMKwMjEnMjMuOCJF!5e0!3m2!1sen!2sin!4v1000000000000"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+            <div className="location-card">
+              <div className="location-card-header">
+                <span className="location-pin">📌</span>
+                <div>
+                  <h4 className="location-name">Manikonda Center, Hyderabad</h4>
+                </div>
+              </div>
+              <div className="location-map">
+                <iframe
+                  title="High Sky CDC Manikonda"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.3886!3d17.4035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzEyLjYiTiA3OMKwMjMnMTkuMCJF!5e0!3m2!1sen!2sin!4v1000000000001"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FAQs ===== */}
+      <section className="faq-section">
+        <div className="faq-inner">
+          <h2 className="faq-title">Frequently Asked Questions</h2>
+          <div className="faq-list">
+            {faqs.map((faq, i) => (
+              <div className={`faq-item${faqOpen === i ? ' faq-item--open' : ''}`} key={i}>
+                <button
+                  className="faq-question"
+                  onClick={() => toggleFaq(i)}
+                  aria-expanded={faqOpen === i}
+                >
+                  <h3 className="faq-question-text">{faq.q}</h3>
+                  <span className="faq-chevron">{faqOpen === i ? '▲' : '▼'}</span>
+                </button>
+                <div className="faq-answer">
+                  <p>{faq.a}</p>
+                  {i === 7 && (
+                    <Link to="/contact-us" className="faq-contact-link">Contact Us →</Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="faq-final-cta-wrap">
+            <Link to="/consultation" className="faq-final-cta">BOOK A CONSULTATION TODAY &gt;</Link>
+          </div>
+        </div>
+      </section>
+
     </div>
+
   );
 }

@@ -16,9 +16,9 @@
 
 /* ===== HERO ===== */
 .hero-section {
-  background: linear-gradient(180deg,
-      #FFBD3A 100%,
-      #ffaa01 100%);
+  background: radial-gradient(circle,
+      #FBAE17 26%,
+      #FB8417 100%);
   position: relative;
   overflow: visible;
   padding-bottom: 0;
@@ -51,7 +51,7 @@
 }
 
 .hero-welcome {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: 'Poetsen One', sans-serif;
 
@@ -64,11 +64,6 @@
 
   margin-bottom: 14px;
 
-  /* 3D shadow effect from the design */
-  text-shadow:
-    0px 2px 0px #eeeded,
-    0px 4px 0px #ffffff,
-    0px 6px 10px rgba(0, 0, 0, 0.18);
 }
 
 .hero-subtitle {
@@ -2324,5 +2319,728 @@
   .testimonial-paper {
     min-width: auto;
     width: auto;
+  }
+}
+
+/* ===== HERO SEO TEXT ===== */
+.hero-seo-text {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Amaranth', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+/* ===== INTRO SECTION H2 ===== */
+.intro-section-h2 {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+/* ===== TESTIMONIALS SUBHEADING ===== */
+.testimonials-subheading {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: -10px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* ===== PROGRAMS EXPLORE CTA ===== */
+.programs-explore-cta-wrap {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.programs-explore-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #a02c7d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 14px 40px;
+  min-height: 52px;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease, filter 0.2s ease;
+  box-shadow: 0 4px 14px rgba(160, 44, 125, 0.3);
+}
+
+.programs-explore-cta:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 12px 28px rgba(160, 44, 125, 0.45);
+  filter: brightness(1.06);
+  color: #fff;
+}
+
+/* ===== CONDITIONS WE SUPPORT ===== */
+.conditions-section {
+  background: #ffffff;
+  padding: 80px 40px 70px;
+  position: relative;
+}
+
+.conditions-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conditions-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 900;
+  color: #a02c7d;
+  margin-bottom: 16px;
+}
+
+.conditions-subtitle {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.condition-card {
+  background: #ffffff;
+  border: 2px solid #f0c8e8;
+  border-radius: 50px;
+  padding: 14px 24px;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #a02c7d;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: default;
+}
+
+.condition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(160, 44, 125, 0.18);
+  background: linear-gradient(135deg, #f5e0f5 0%, #ffe8cc 100%);
+}
+
+.conditions-cta-block {
+  background: linear-gradient(90deg, #a02c7d 0%, #c03d9a 100%);
+  border-radius: 20px;
+  padding: 28px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.conditions-cta-text {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-align: left;
+  flex: 1;
+  min-width: 200px;
+}
+
+.conditions-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #f5a623;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.97rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  border-radius: 999px;
+  padding: 12px 28px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(245, 166, 35, 0.4);
+}
+
+.conditions-cta-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(245, 166, 35, 0.5);
+  color: #fff;
+}
+
+/* ===== CHILD-CENTERED APPROACH ===== */
+.approach-section {
+  background: linear-gradient(160deg, #fef9ff 0%, #f0f8ff 100%);
+  padding: 80px 40px 90px;
+}
+
+.approach-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.approach-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 900;
+  color: #a02c7d;
+  margin-bottom: 56px;
+}
+
+/* Circular diagram container */
+.approach-diagram {
+  position: relative;
+  width: 620px;
+  height: 620px;
+  margin: 0 auto;
+}
+
+/* Center circle */
+.approach-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 210px;
+  height: 210px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(160, 44, 125, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border: 3px solid #f0c8e8;
+  gap: 4px;
+}
+
+.approach-center-icon svg {
+  display: block;
+}
+
+.approach-center-label {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #a02c7d;
+  line-height: 1.35;
+  text-align: center;
+  margin: 4px 0 0;
+}
+
+.approach-center-heart {
+  color: #f5a623;
+  font-size: 1.1rem;
+}
+
+/* Each petal */
+.approach-petal {
+  position: absolute;
+  width: 160px;
+  background: var(--petal-color);
+  border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 12px 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.approach-petal:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.petal-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--num-color);
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-family: 'Poetsen One', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.petal-icon {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.petal-label {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 5px;
+  line-height: 1.2;
+}
+
+.petal-desc {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 0.72rem;
+  color: #444;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Petal positions — clock-face layout:
+   01 Assessment  → top (12 o'clock)
+   02 Goal Setting → top-right (2 o'clock)
+   03 Therapy Plan → bottom-right (4 o'clock)
+   04 Parent Collab → bottom-left (8 o'clock)
+   05 Progress Tracking → top-left (10 o'clock)
+*/
+.approach-petal-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.approach-petal-2 {
+  top: 18%;
+  right: 0;
+  border-radius: 50% 50% 50% 50% / 45% 60% 40% 55%;
+}
+
+.approach-petal-3 {
+  bottom: 18%;
+  right: 0;
+  border-radius: 50% 50% 50% 50% / 40% 55% 60% 45%;
+}
+
+.approach-petal-4 {
+  bottom: 18%;
+  left: 0;
+  border-radius: 50% 50% 50% 50% / 45% 40% 55% 60%;
+}
+
+.approach-petal-5 {
+  top: 18%;
+  left: 0;
+  border-radius: 50% 50% 50% 50% / 60% 40% 55% 45%;
+}
+
+.approach-petal-1:hover {
+  transform: translateX(-50%) scale(1.06);
+}
+
+/* ===== MAP LOCATIONS ===== */
+.locations-section {
+  background: #fff;
+  padding: 80px 40px 80px;
+}
+
+.locations-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locations-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.5rem);
+  font-weight: 900;
+  color: #a02c7d;
+  margin-bottom: 12px;
+}
+
+.locations-subtitle {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 36px;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.location-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(160, 44, 125, 0.12);
+  border: 2px solid #f0c8e8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(160, 44, 125, 0.2);
+}
+
+.location-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  background: linear-gradient(90deg, #fdf0f9 0%, #fff8f0 100%);
+  border-bottom: 1px solid #f0c8e8;
+}
+
+.location-pin {
+  font-size: 1.6rem;
+}
+
+.location-name {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #a02c7d;
+  margin: 0;
+}
+
+.location-map {
+  overflow: hidden;
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* ===== FAQs ===== */
+.faq-section {
+  background: linear-gradient(160deg, #a02c7d 0%, #7b1f63 100%);
+  padding: 80px 40px 70px;
+}
+
+.faq-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: background 0.2s ease;
+}
+
+.faq-item--open {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  padding: 20px 24px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question-text {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.faq-chevron {
+  color: #f5a623;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1), padding 0.2s ease;
+  padding: 0 24px;
+}
+
+.faq-item--open .faq-answer {
+  max-height: 500px;
+  padding: 0 24px 20px;
+}
+
+.faq-answer p {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.faq-contact-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f5a623;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.faq-contact-link:hover {
+  opacity: 0.8;
+  color: #f5a623;
+}
+
+.faq-final-cta-wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.faq-final-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5a623;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 14px 44px;
+  min-height: 52px;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease, filter 0.2s ease;
+  box-shadow: 0 4px 14px rgba(245, 166, 35, 0.4);
+}
+
+.faq-final-cta:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 12px 28px rgba(245, 166, 35, 0.55);
+  filter: brightness(1.06);
+  color: #fff;
+}
+
+/* ===== MOBILE RESPONSIVE — NEW SECTIONS ===== */
+@media (max-width: 767.98px) {
+
+  .hero-seo-text {
+    font-size: 0.72rem;
+    max-width: 100%;
+    position: relative;
+    left: 10px;
+    margin-bottom: 12px;
+  }
+
+  .intro-section-h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .testimonials-subheading {
+    font-size: 0.92rem;
+  }
+
+  .programs-explore-cta-wrap {
+    margin-top: 24px;
+  }
+
+  .programs-explore-cta {
+    font-size: 0.88rem;
+    padding: 12px 28px;
+  }
+
+  /* Conditions */
+  .conditions-section {
+    padding: 52px 18px 50px;
+  }
+
+  .conditions-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .conditions-cta-block {
+    flex-direction: column;
+    text-align: center;
+    padding: 22px 20px;
+  }
+
+  .conditions-cta-text {
+    text-align: center;
+  }
+
+  /* Approach */
+  .approach-section {
+    padding: 52px 18px 60px;
+  }
+
+  .approach-diagram {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    position: static;
+  }
+
+  .approach-petal,
+  .approach-petal-1,
+  .approach-petal-2,
+  .approach-petal-3,
+  .approach-petal-4,
+  .approach-petal-5 {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 18px;
+    gap: 14px;
+  }
+
+  .approach-petal:hover {
+    transform: none !important;
+  }
+
+  .approach-center {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    order: -1;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .petal-label {
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .petal-desc {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  .petal-icon {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .petal-num {
+    flex-shrink: 0;
+  }
+
+  /* Locations */
+  .locations-section {
+    padding: 52px 18px 52px;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 52px 18px 52px;
+  }
+
+  .faq-question {
+    padding: 16px 18px;
+  }
+
+  .faq-question-text {
+    font-size: 0.9rem;
+  }
+
+  .faq-item--open .faq-answer {
+    padding: 0 18px 16px;
+  }
+
+  .faq-final-cta {
+    font-size: 0.88rem;
+    padding: 12px 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .conditions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .approach-diagram {
+    width: 500px;
+    height: 500px;
+  }
+
+  .approach-petal {
+    width: 130px;
+  }
+
+  .approach-center {
+    width: 170px;
+    height: 170px;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
