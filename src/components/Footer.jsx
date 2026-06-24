@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutub
 import leftLeaf from '../assets/pages/home/Group.svg';
 import rightLeaf from '../assets/pages/home/Group 51.svg';
 import whatsappIcon from '../assets/pages/icon/whatsapp.svg';
-import YouTubeIcon from '../assets/pages/icon/youtube.png';
+import YouTubeIcon from '../assets/pages/icon/youtube.PNG';
 import './Footer.css';
 
 export default function Footer() {
