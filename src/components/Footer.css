@@ -260,10 +260,11 @@
   position: fixed;
   bottom: 100px;
   /* Placed above WhatsApp (80px + 52px + 10px gap) */
-  right: -20px;
+  right: -10px;
+  bottom: 40px;
   background: transparent;
-  width: 130px;
-  height: 130x;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,11 +282,11 @@
 /* WhatsApp float */
 .whatsapp-float {
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
   background: transparent;
-  width: 52px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;

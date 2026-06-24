@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 .programs-page {
   overflow-x: hidden;
@@ -38,13 +40,11 @@
 }
 
 .programs-main-title {
-  font-size: 1.8rem;
-
-  color: #fff;
-  font-family: 'Poetsen One', sans-serif;
-
-  line-height: 1.35;
-  max-width: 800px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Monsterrat', sans-serif;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -298,9 +298,11 @@
 
 .section-title {
   text-align: center;
-  font-family: 'Poetsen One', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 1200px;
 
   margin-bottom: 50px;
 }
@@ -344,27 +346,28 @@
 
 .program-card-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .program-card-content h3 {
   font-size: 1rem;
-
   color: #A02C7D;
   line-height: 1.4;
-  min-height: 70px;
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .program-card-content p {
   color: #666;
   line-height: 1.6;
+  font-weight: 600;
   font-size: 0.85rem;
-  font-family: 'Amaranth', sans-serif;
-  margin-bottom: 20px;
-  min-height: 80px;
+  text-align: center;
+  font-family: 'lato', sans-serif;
+  margin-bottom: 0;
 }
 
 .program-btn {
@@ -449,5 +452,577 @@
 
   .programs-section {
     padding: 30px 12px;
+  }
+}
+
+/* ===========================
+   NEW CONTENT SECTIONS
+=========================== */
+
+/* Hero Subtitle */
+.programs-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'lato', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 15px auto 0;
+
+}
+
+/* Section Subtitle */
+.section-subtitle-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'lato', sans-serif;
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: -30px auto 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ===========================
+   SECTION 3: CONDITIONS
+=========================== */
+.prog-conditions-section {
+  background: #ffffff;
+  padding: 80px 40px;
+  color: #333;
+}
+
+.prog-conditions-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.prog-conditions-title {
+  text-align: center;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 2.4rem;
+  color: #A02C7D;
+  margin-bottom: 15px;
+}
+
+.prog-conditions-subtitle {
+  text-align: center;
+  font-family: 'lato', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prog-conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.prog-condition-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 4px solid #FB9A17;
+}
+
+.prog-condition-card:hover {
+  transform: translateY(-5px);
+}
+
+.prog-condition-icon {
+  width: 60px;
+  height: 60px;
+  background: #A02C7D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.prog-condition-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.prog-condition-content h3 {
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 1.15rem;
+  color: #A02C7D;
+  margin-bottom: 10px;
+}
+
+.prog-condition-content p {
+  font-family: 'lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===========================
+   WAVE DIVIDER
+=========================== */
+.prog-conditions-wave {
+  background-color: #A02C7D;
+  line-height: 0;
+  margin-top: -1px;
+  /* Prevents minor gaps */
+}
+
+.prog-conditions-wave svg {
+  width: 100%;
+  height: 6vw;
+  min-height: 40px;
+  max-height: 90px;
+  display: block;
+}
+
+.prog-approaches-to-conditions-wave {
+  background-color: #ffffff;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.prog-approaches-to-conditions-wave svg {
+  width: 100%;
+  height: 6vw;
+  min-height: 40px;
+  max-height: 90px;
+  display: block;
+}
+
+.prog-why-us-to-faq-wave {
+  background-color: #ffffff;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.prog-why-us-to-faq-wave svg {
+  width: 100%;
+  height: 6vw;
+  min-height: 40px;
+  max-height: 90px;
+  display: block;
+}
+
+.prog-faq-to-cta-wave {
+  background-color: #A02C7D;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.prog-faq-to-cta-wave svg {
+  width: 100%;
+  height: 6vw;
+  min-height: 40px;
+  max-height: 90px;
+  display: block;
+}
+
+/* ===========================
+   SECTION 4: WHY US
+=========================== */
+.why-us-section {
+  background: #A02C7D;
+  padding: 80px 40px;
+  color: #fff;
+}
+
+.why-us-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-us-title {
+  text-align: center;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.why-us-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s ease;
+}
+
+.why-us-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.why-us-icon {
+  font-size: 1.5rem;
+  color: #FFBD3A;
+  flex-shrink: 0;
+}
+
+.why-us-card span {
+  font-family: 'lato', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* ===========================
+   SECTION 5: APPROACH (Infographic)
+=========================== */
+.prog-approach-section {
+  background: #fff;
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.prog-approach-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.prog-approach-title {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 2.4rem;
+  color: #A02C7D;
+  margin-bottom: 50px;
+}
+
+.prog-approach-infographic-wrap {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.prog-approach-infographic-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Approach Overlays */
+.prog-approach-overlay {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  width: 16%;
+}
+
+.prog-approach-overlay-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.prog-aot-dark {
+  color: #8e1f58;
+}
+
+.prog-aot-light {
+  color: #fff;
+}
+
+.prog-approach-overlay-1 {
+  top: 48%;
+  left: 16.5%;
+}
+
+.prog-approach-overlay-2 {
+  top: 48%;
+  left: 33.5%;
+}
+
+.prog-approach-overlay-3 {
+  top: 48%;
+  left: 50%;
+}
+
+.prog-approach-overlay-4 {
+  top: 48%;
+  left: 66.5%;
+}
+
+.prog-approach-overlay-5 {
+  top: 48%;
+  left: 83%;
+}
+
+
+/* ===========================
+   SECTION 6: FAQS
+=========================== */
+.prog-faq-section {
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.prog-faq-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.prog-faq-title {
+  text-align: center;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 2.2rem;
+  color: #A02C7D;
+  margin-bottom: 40px;
+}
+
+.prog-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.prog-faq-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.prog-faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.prog-faq-question-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 20px;
+  line-height: 1.4;
+}
+
+.prog-faq-chevron {
+  color: #A02C7D;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.prog-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background: #fff;
+  padding: 0 25px;
+}
+
+.prog-faq-answer p {
+  font-family: 'lato', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.prog-faq-item--open .prog-faq-answer {
+  max-height: 500px;
+  padding: 0 25px 20px;
+}
+
+/* ===========================
+   SECTION 7: FINAL CTA
+=========================== */
+.prog-final-cta-section {
+  background: #A02C7D;
+  padding: 80px 40px;
+}
+
+.prog-final-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.prog-final-cta-text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.prog-final-cta-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #A02C7D;
+  margin-bottom: 12px;
+}
+
+.prog-final-cta-subtext {
+  font-family: 'lato', sans-serif;
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.prog-final-cta-btn {
+  display: inline-block;
+  background: radial-gradient(circle,
+      #FBAE17 26%,
+      #FB8417 100%);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 20px rgba(160, 44, 125, 0.4);
+}
+
+.prog-final-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(160, 44, 125, 0.5);
+}
+
+/* Responsive Overrides */
+@media (max-width: 900px) {
+  .prog-final-cta-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .prog-final-cta-text-content {
+    text-align: center;
+  }
+
+  .prog-approach-overlay-title {
+    font-size: 2vw;
+  }
+
+  .prog-conditions-title,
+  .why-us-title,
+  .prog-approach-title,
+  .prog-faq-title,
+  .prog-final-cta-heading {
+    font-size: 1.8rem;
+  }
+
+  .prog-conditions-title {
+    text-align: center;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 2.5rem;
+    color: #A02C7D;
+    position: relative;
+    top: -63px;
+    margin-bottom: 15px;
+  }
+
+  .prog-conditions-subtitle {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    color: #666;
+    position: relative;
+    top: -63px;
+    font-size: 1.125rem;
+    margin-bottom: -20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .why-us-section {
+    background: #A02C7D;
+    padding: 33px 40px;
+    color: #fff;
+  }
+
+  .prog-conditions-section {
+    background: #ffffff;
+    padding: 77px;
+    margin-bottom: -80px;
+    color: #333;
+  }
+
+  .programs-hero-content {
+    text-align: center;
+    padding: 0px 40px 30px;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    margin-top: 139px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'lato', sans-serif;
+    font-size: 1.125rem;
+    max-width: 900px;
+    margin: -30px auto 40px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .prog-faq-section {
+    background: #ffffff;
+    padding: 27px 40px;
+  }
+
+  .prog-final-cta-inner {
+    max-width: 1200px;
+    margin: -50px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 }

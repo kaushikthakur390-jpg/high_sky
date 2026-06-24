@@ -122,12 +122,27 @@
   transform: scale(1.04);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .consult-form-row {
     grid-template-columns: 1fr;
   }
 
   .consult-form-card {
     padding: 30px 20px;
+  }
+
+  .consult-hero {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 108px 20px 50px;
+  }
+
+  .consult-form-card {
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    padding: 50px 48px;
+    box-shadow: 0 12px 50px rgba(91, 45, 142, 0.12);
   }
 }

@@ -1,9 +1,5 @@
 import { useEffect, useState } from 'react';
 import './AboutUs.css';
-import whereItBegan from '../assets/pages/about us/where it began.png';
-import commitment from '../assets/pages/about us/comitment.png';
-import milestones from '../assets/pages/about us/milestone.png';
-import transform from '../assets/pages/about us/transform.png';
 import frameA from '../assets/pages/about us/tmkc.png';
 import frameB from '../assets/pages/about us/Frame 49.png';
 import frameC from '../assets/pages/about us/tmkb.png';
@@ -60,21 +56,33 @@ export default function AboutUs() {
 
         <div className="journey-row journey-row-1">
           <img className="journey-frame" src={swoosh} alt="Journey photo frame" />
-          <img className="journey-bubble" src={whereItBegan} alt="Where It All Began" />
+          <div className="journey-text-card journey-bubble">
+            <h2>WHERE IT ALL BEGAN</h2>
+            <p>High Sky CDC was founded with a simple belief — every child deserves the opportunity to grow, learn, and reach their full potential. Driven by this vision, Dr. Priyanka Gupta created a nurturing space where children and families could receive personalized support, guidance, and care. What began as a small dream has grown into a trusted child development center supporting hundreds of families across Hyderabad through individualized care, evidence-based practices, and a commitment to helping every child shine.</p>
+          </div>
         </div>
 
         <div className="journey-row journey-row-2">
-          <img className="journey-bubble" src={commitment} alt="A Commitment to Inclusion" />
+          <div className="journey-text-card journey-bubble">
+            <h2>A COMMITMENT TO INCLUSION</h2>
+            <p>From the very beginning, High Sky CDC has been built on the belief that every child deserves to feel valued, understood, and supported. We recognize that every developmental journey is unique, which is why we embrace a child-centered approach that celebrates individual strengths while addressing specific challenges. Through early intervention, personalized care, and family collaboration, we strive to create an inclusive environment where children can build confidence, develop essential skills, and thrive in their own way.</p>
+          </div>
           <img className="journey-frame" src={frameB} alt="Journey photo frame" />
         </div>
 
         <div className="journey-row journey-row-3">
           <img className="journey-frame" src={frameC} alt="Journey photo frame" />
-          <img className="journey-bubble" src={milestones} alt="Milestones of Growth" />
+          <div className="journey-text-card journey-bubble">
+            <h2>MILESTONES OF GROWTH</h2>
+            <p>Every child, family, and milestone has played a role in shaping the High Sky story. As our community grew, so did our ability to support more children through our centres in Manikonda and Kondapur. Along the way, we have partnered with schools, educators, and professionals to raise awareness, promote early intervention, and create stronger support systems for children with diverse developmental needs.</p>
+          </div>
         </div>
 
         <div className="journey-row journey-row-4">
-          <img className="journey-bubble" src={transform} alt="Transforming Lives" />
+          <div className="journey-text-card journey-bubble">
+            <h2>TRANSFORMING LIVES</h2>
+            <p>Over the past 6+ years, we have supported 1000+ children and families, each with their own unique strengths, challenges, and achievements. From first steps in communication and social connection to greater independence and confidence, every success story is a reminder of the impact that the right support can make.</p>
+          </div>
           <img className="journey-frame" src={frameA} alt="Journey photo frame" />
           <img className="journey-ribbon" src={ribbon} alt="" aria-hidden="true" />
         </div>

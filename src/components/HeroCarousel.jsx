@@ -9,6 +9,7 @@ const HeroCarousel = () => {
             <div className="hero-card">Behaviour Therapy</div>
             <div className="hero-card">Special Education</div>
             <div className="hero-card">ABA Therapy</div>
+            <div className="hero-card">Physiotherapy</div>
           </div>
         ))}
       </div>

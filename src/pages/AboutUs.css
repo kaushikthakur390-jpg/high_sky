@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 .about-journey-page {
   overflow-x: hidden;
@@ -19,6 +21,7 @@
   margin-top: 50px;
   text-align: center;
   color: #fff;
+  font-family: 'Monsterrat', sans-serif;
   position: relative;
   top: 100px;
   font-size: clamp(2rem, 3.4vw, 3rem);
@@ -133,6 +136,83 @@
   max-width: none;
 }
 
+.journey-text-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  width: clamp(380px, 40vw, 650px) !important;
+  max-width: 650px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cards on the right (row 1, row 3) */
+.journey-row-1 .journey-text-card,
+.journey-row-3 .journey-text-card {
+  border-radius: 60px 20px 20px 60px;
+}
+
+/* Cards on the left (row 2, row 4) */
+.journey-row-2 .journey-text-card,
+.journey-row-4 .journey-text-card {
+  border-radius: 20px 60px 60px 20px;
+}
+
+.journey-text-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #A02C7D;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.journey-text-card p {
+  font-family: 'Lato', sans-serif;
+  color: #d19a15;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .journey-text-card {
+    padding: 20px 15px;
+    border-radius: 30px !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+  }
+
+  .journey-text-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .journey-text-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-text-card {
+    padding: 10px 15px;
+    border-radius: 20px !important;
+  }
+
+  .journey-text-card h2 {
+    font-size: 1.05rem;
+    margin-bottom: 2px;
+  }
+
+  .journey-text-card p {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+}
+
 .journey-row-1 .journey-frame,
 .journey-row-3 .journey-frame {
   transform: translateX(calc(-1 * var(--journey-edge-bleed))) translateY(8px);
@@ -241,7 +321,7 @@
   text-align: center;
   color: #a02c7d;
   font-size: clamp(2rem, 3.4vw, 3.5rem);
-  font-family: 'Poetsen One', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0 0 44px;
@@ -267,7 +347,7 @@
 .about-team-lead-copy h3 {
   margin: 0 0 8px;
   color: #f3a414;
-  font-family: 'Poetsen One', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   font-size: clamp(1.35rem, 2.2vw, 2.8rem);
   line-height: 1.1;
   font-weight: 900;
@@ -277,7 +357,7 @@
 .about-team-lead-copy h4 {
   margin: 0 0 14px;
   color: #a02c7d;
-  font-family: 'Poetsen One', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   font-size: clamp(1.2rem, 2vw, 2.3rem);
   line-height: 1.1;
   font-weight: 900;
@@ -286,7 +366,7 @@
 .about-team-lead-copy p {
   margin: 0;
   color: #4d2a78;
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: clamp(0.95rem, 1.45vw, 1.8rem);
   line-height: 1.15;
   font-weight: 500;
@@ -362,7 +442,7 @@
   position: relative;
   overflow: hidden;
   background: #efefef;
-  padding: clamp(60px, 7vw, 100px) 24px clamp(70px, 8vw, 120px);
+  padding: clamp(60px, 7vw, 10px) 24px clamp(70px, 8vw, 0px);
 }
 
 .about-moments-frame {
@@ -385,11 +465,11 @@
 .about-moments-title {
   margin: 0 0 24px;
   text-align: center;
-  font-family: 'Poetsen One', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   color: #a02c7d;
-  font-size: clamp(1.7rem, 2.8vw, 2.9rem);
-  font-weight: 900;
-  letter-spacing: 0.5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+
 }
 
 .about-moments-slider-wrap {
@@ -456,7 +536,7 @@
     letter-spacing: 0.5px;
   }
 
-  /* Base row: flex layout */
+  /* Base row: Overlapping side-by-side layout for mobile */
   .journey-row,
   .journey-row-1,
   .journey-row-2,
@@ -464,70 +544,75 @@
   .journey-row-4 {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
     gap: 0;
-    margin-bottom: 0;
-    margin-top: -65px;
-    position: relative;
-    width: 100%;
-  }
-
-  .journey-row-1 {
+    margin-bottom: 30px;
     margin-top: 0;
     position: relative;
-    left: 10px;
+    width: 100%;
+    justify-content: center;
   }
 
-  /*
-   * .journey-row img { width: 100% } has specificity [0,1,1].
-   * We need [0,2,0]+ to override it. Double-class selectors win.
-   */
   .journey-row-1 .journey-frame,
   .journey-row-2 .journey-frame,
   .journey-row-3 .journey-frame,
   .journey-row-4 .journey-frame {
     width: 40vw;
+    max-width: 200px;
     flex-shrink: 0;
-    transform: translateY(-10px);
+    transform: none;
     justify-self: auto;
     margin: 0;
-  }
-
-  .journey-row-3 .journey-frame {
-    left: 5px;
-    top: -10px;
     position: relative;
+    z-index: 2;
+    /* Frame above text card */
   }
 
   .journey-row-1 .journey-frame {
-
-    top: -45px;
     position: relative;
+    right: 30px;
+    width: 110%;
   }
 
-
-  .journey-row-4 .journey-frame {
-    left: -10px;
-    top: 20px;
+  .journey-row-1 .journey-bubble {
     position: relative;
+    left: 25px;
+  }
+
+  .journey-row-2 .journey-frame {
+    position: relative;
+    left: 35px;
+    top: 10px;
+    width: 110%;
   }
 
   .journey-row-2 .journey-bubble {
-    right: 10px;
     position: relative;
+    right: 14px;
   }
 
+  .journey-row-3 .journey-frame {
+    position: relative;
+    left: -14px;
+    top: -19px;
+    width: 42%;
+  }
 
   .journey-row-3 .journey-bubble {
-    right: -10px;
     position: relative;
+    left: 35px;
+  }
+
+  .journey-row-4 .journey-frame {
+    position: relative;
+    left: 19px;
+    width: 40%;
   }
 
   .journey-row-4 .journey-bubble {
-    right: 10px;
-    top: 40px;
     position: relative;
+    right: 40px;
   }
 
 
@@ -535,25 +620,27 @@
   .journey-row-2 .journey-bubble,
   .journey-row-3 .journey-bubble,
   .journey-row-4 .journey-bubble {
-    flex: 1 1 0%;
-    min-width: 0;
+    width: 55vw !important;
+    max-width: 300px !important;
+    flex: none;
     transform: none;
     justify-self: auto;
     margin: 0;
-  }
-
-  /* Rows 1 & 3: frame starts at left screen edge */
-  .journey-row-1 .journey-frame,
-  .journey-row-3 .journey-frame {
-    margin-left: -1vw;
-    right: 10px;
     position: relative;
+    z-index: 1;
+    /* Text card below frame */
   }
 
-  /* Rows 2 & 4: frame ends at right screen edge */
-  .journey-row-2 .journey-frame,
-  .journey-row-4 .journey-frame {
-    margin-right: -1vw;
+  /* Row 1 & 3: Frame (left) overlaps Card (right) */
+  .journey-row-1 .journey-bubble,
+  .journey-row-3 .journey-bubble {
+    margin-left: -8vw;
+  }
+
+  /* Row 2 & 4: Card (left) overlapped by Frame (right) */
+  .journey-row-2 .journey-bubble,
+  .journey-row-4 .journey-bubble {
+    margin-right: -8vw;
   }
 
   .journey-ribbon,

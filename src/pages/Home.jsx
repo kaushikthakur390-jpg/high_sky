@@ -663,20 +663,18 @@ export default function Home() {
         </div>
 
         {/* The bottom cloud before the footer */}
-        {/*
-  <div className="testimonials-cloud-bottom">
-    <svg
-      viewBox="0 0 1440 90"
-      preserveAspectRatio="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0,90 L0,44 Q60,10 120,44 Q180,78 240,35 Q300,-8 360,40 Q420,84 480,36 Q540,-12 600,40 Q660,90 720,40 Q780,-10 840,40 Q900,88 960,38 Q1020,-10 1080,42 Q1140,90 1200,42 Q1260,-6 1320,42 Q1380,88 1440,44 L1440,90 Z"
-        fill="#ffb833"
-      />
-    </svg>
-  </div>
-  */}
+        <div className="testimonials-cloud-bottom-wave">
+          <svg
+            viewBox="0 0 1440 90"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0,0 L0,50 Q60,80 120,45 Q180,10 240,52 Q300,94 360,48 Q420,2 480,50 Q540,98 600,50 Q660,2 720,50 Q780,98 840,50 Q900,2 960,52 Q1020,98 1080,50 Q1140,5 1200,50 Q1260,95 1320,48 Q1380,2 1440,50 L1440,0 Z"
+              fill="#ffffff"
+            />
+          </svg>
+        </div>
       </section>
 
 

@@ -70,7 +70,7 @@ export default function ContactUs() {
 
       {/* Quick Contact Cards */}
       <div className="quick-contact-cards">
-        <a href="tel:+918169193297" className="qc-card">
+        <a href="tel:+919100814615" className="qc-card">
           <img src={callIcon} alt="Call Us" className="qc-icon" />
           <div className="qc-info">
             <span className="qc-label">Call Us</span>
