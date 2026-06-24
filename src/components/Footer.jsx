@@ -2,6 +2,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaArrowUp } from 'react-icons/fa';
 import leftLeaf from '../assets/pages/home/Group.svg';
 import rightLeaf from '../assets/pages/home/Group 51.svg';
+import whatsappIcon from '../assets/pages/icon/whatsapp.svg';
+import YouTubeIcon from '../assets/pages/icon/youtube.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -18,7 +20,7 @@ export default function Footer() {
           ? 'footer-route-consultation'
           : location.pathname === '/contact-us'
             ? 'footer-route-contact-us'
-          : 'footer-route-default';
+            : 'footer-route-default';
 
   return (
     <footer className={`footer ${routeClass}`}>
@@ -101,9 +103,14 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* YouTube float */}
+      <a href="https://www.youtube.com/@priyankas-occupational_therapy" className="youtube-float" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <img src={YouTubeIcon} alt="YouTube" />
+      </a>
+
       {/* WhatsApp float */}
       <a href="https://wa.me/919100814615" className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.478 2.027 7.793L0 32l8.416-2.008A15.92 15.92 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.07 22.598c-.34.955-1.99 1.827-2.74 1.944-.701.11-1.585.157-2.557-.16-1.59-.524-3.576-2.023-5.036-4.035-1.87-2.574-2.4-5.355-1.347-7.358.522-.998 1.478-1.557 2.06-1.572.5-.013.91.014 1.243.693.382.785 1.224 2.995 1.333 3.213.11.217.181.47.037.745-.144.276-.214.443-.427.683-.214.24-.45.535-.643.72-.214.204-.437.424-.188.83.249.407 1.107 1.83 2.376 2.963 1.63 1.45 3.006 1.9 3.432 2.114.428.213.677.178.928-.107.25-.284 1.073-1.249 1.359-1.678.286-.428.572-.356.963-.214.39.143 2.474 1.167 2.898 1.38.423.213.706.32.81.498.105.178.105 1.024-.235 1.98z"/></svg>
+        <img src={whatsappIcon} alt="WhatsApp" />
       </a>
     </footer>
   );

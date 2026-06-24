@@ -15,6 +15,7 @@ import sectionDividerThree from '../assets/pages/home/SECTION 3.png';
 import commitmentFrame1 from '../assets/pages/home/homeframe1.png';
 import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
 import commitmentFrame3 from '../assets/pages/home/Frame 50.png';
+import infographicImg from '../assets/pages/home/info2.png';
 
 
 // Program cards — full banner images (Group 262-270)
@@ -42,6 +43,29 @@ import pic4 from '../assets/pages/home/pic4.png';
 import pic5 from '../assets/pages/home/pic5.png';
 import pic6 from '../assets/pages/home/pic6.png';
 
+// Conditions icons
+import iconASD from '../assets/pages/home/icons/ASD - W.png';
+import iconADHD from '../assets/pages/home/icons/ADHD - W.png';
+import iconSpeech from '../assets/pages/home/icons/SPEECH - W.png';
+import iconDevDelay from '../assets/pages/home/icons/8.png';
+import iconLearning from '../assets/pages/home/icons/Learning - w.png';
+import iconSensory from '../assets/pages/home/icons/6._Sensory Processing Disorder - W.png';
+import iconSocial from '../assets/pages/home/icons/7._Social Communication -w Difficulties.png';
+import iconBehavior from '../assets/pages/home/icons/Bev - white.png';
+import iconCerebral from '../assets/pages/home/icons/cerebral palsy white.png';
+import iconDown from '../assets/pages/home/icons/dS -W.png';
+import iconASDp from '../assets/pages/home/icons/ASD - P.png';
+import iconADHDp from '../assets/pages/home/icons/ADHD - P.png';
+import iconSpeechp from '../assets/pages/home/icons/SPEECH - P.png';
+import iconDevDelayp from '../assets/pages/home/icons/8.png';
+import iconLearningp from '../assets/pages/home/icons/Learning - p.png';
+import iconSensoryp from '../assets/pages/home/icons/6._Sensory Processing Disorder - P.png';
+import iconSocialp from '../assets/pages/home/icons/7._Social Communication Difficulties- p.png';
+import iconbehaviorp from '../assets/pages/home/icons/Bev - purple.png';
+import iconCerebralp from '../assets/pages/home/icons/cerebral palsy purple.png';
+import iconDownp from '../assets/pages/home/icons/DS- P.png';
+import conditionCloud from '../assets/pages/home/condition-cloud.png';
+
 const commitmentBlocks = [
   {
     type: 'left',
@@ -53,13 +77,13 @@ const commitmentBlocks = [
     type: 'right',
     title: 'Where We\'re Headed',
     img: commitPic2,
-    text: 'Our vision is to create a future where every child has access to the support, opportunities, and guidance they need to reach their full potential and lead a confident, independent life. We strive to be a trusted child development center in Hyderabad, empowering children with diverse needs and supporting families at every stage of their journey.'
+    text: <>Our vision is to create a future where every child has access to the support, opportunities, and guidance they need to reach their full potential and lead a confident, independent life.<br></br>We strive to be a trusted child development center in Hyderabad, empowering children with diverse needs and supporting families at every stage of their journey.</>
   },
   {
     type: 'left',
     title: 'Our Core Values',
     img: commitPic3,
-    text: 'Our child-centric approach prioritizes holistic development, supporting children through meaningful learning experiences that encourage growth, independence, and lifelong success. This is why High Sky is a preferred child development center in Hyderabad for families seeking quality early intervention and developmental care, helping their children grow with confidence and clarity.'
+    text: <>Our child-centric approach prioritizes holistic development, supporting children through meaningful learning experiences that encourage growth, independence, and lifelong success.<br></br> This is why High Sky is a preferred child development center in Hyderabad for families seeking quality early intervention and developmental care, helping their children grow with confidence and clarity.</>
   }
 ];
 
@@ -67,9 +91,17 @@ const uniqueFeatures = [
   { img: uni1, title: 'MULTIDISCIPLINARY APPROACH', desc: 'Our team of occupational therapists, speech pathologists, physiotherapists, and special educators works together for every child. This child development center follows a collaborative approach to create practical, personalized therapy goals tailored to each child\'s needs.' },
   { img: uni2, title: 'EVIDENCE-BASED PRACTICES', desc: 'We use proven, research-backed methods in child development and early intervention services to guide each session with purpose. Progress is regularly reviewed to ensure therapy remains effective, measurable, and outcome-focused for children and families.' },
   { img: uni3, title: 'NEURODIVERSITY ACCEPTANCE', desc: 'We value every child\'s strengths and create an inclusive environment that respects neurodiversity. By building confidence, self-awareness, and a strong sense of belonging, we help children grow into their authentic selves with pride.' },
-  { img: uni4, title: 'HOLISTIC DEVELOPMENT', desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child approach helps children apply skills across school, home, and everyday life.' },
+  {
+    img: uni4, title: <>
+      HOLISTIC
+      <br />
+      DEVELOPMENT
+    </>, desc: 'Our approach goes beyond traditional therapy by addressing emotional, social, cognitive, and physical growth together. This whole-child approach helps children apply skills across school, home, and everyday life.'
+  },
   { img: uni5, title: 'CAREGIVER-CHILD PARTNERSHIPS', desc: 'Parents and caregivers are active partners in every milestone of their child\'s journey. Through guidance and home strategies, we help families confidently support their child\'s progress outside the therapy room.' },
-  { img: uni6, title: 'HIGH-TECH EQUIPMENT', desc: 'Our centre uses advanced therapeutic tools, sensory resources, and child-friendly learning setups designed for effective child development therapy. Sessions are safe, engaging, and tailored to each child\'s needs.' },
+  {
+    img: uni6, title: <>HIGH-TECH <br /> EQUIPMENT </>, desc: 'Our centre uses advanced therapeutic tools, sensory resources, and child-friendly learning setups designed for effective child development therapy. Sessions are safe, engaging, and tailored to each child\'s needs.'
+  },
 ];
 
 const programs = [
@@ -229,16 +261,16 @@ const reviews = [
   }
 ];
 const conditions = [
-  'Autism Spectrum Disorder (ASD)',
-  'Attention Deficit Hyperactivity Disorder (ADHD)',
-  'Speech & Language Delay',
-  'Developmental Delay / Global Developmental Delay',
-  'Learning Disabilities',
-  'Sensory Processing Disorder',
-  'Social Communication Difficulties',
-  'Behavioural Challenges in Children',
-  'Cerebral Palsy (Developmental & Feeding Support)',
-  'Down Syndrome (Developmental Support)',
+  { text: 'Autism Spectrum Disorder (ASD)', icon: iconASD, iconP: iconASDp },
+  { text: 'Attention Deficit Hyperactivity Disorder (ADHD)', icon: iconADHD, iconP: iconADHDp },
+  { text: 'Speech & Language Delay', icon: iconSpeech, iconP: iconSpeechp },
+  { text: 'Developmental Delay / Global Developmental Delay', icon: iconDevDelay, iconP: iconDevDelayp },
+  { text: 'Learning Disabilities', icon: iconLearning, iconP: iconLearningp },
+  { text: 'Sensory Processing Disorder', icon: iconSensory, iconP: iconSensoryp },
+  { text: 'Social Communication Difficulties', icon: iconSocial, iconP: iconSocialp },
+  { text: 'Behavioural Challenges in Children', icon: iconBehavior, iconP: iconbehaviorp },
+  { text: 'Cerebral Palsy (Developmental & Feeding Support)', icon: iconCerebral, iconP: iconCerebralp },
+  { text: 'Down Syndrome (Developmental Support)', icon: iconDown, iconP: iconDownp },
 ];
 
 const approachSteps = [
@@ -319,9 +351,9 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-left">
-            <h1 className="hero-welcome"> WELCOME TO HIGH SKY<br></br> CHILD DEVELOPMENT CENTER</h1>
+            <h1 className="hero-welcome"> Helping children reach<br></br>their full potential</h1>
             <p className="hero-subtitle">
-              From small steps to wide skies, supporting every special child to rise
+              From small steps to wide skies, supporting every special child to rise!
             </p>
             <p className="hero-seo-text">
               Expert Child Development Specialists Providing Speech Therapy, Occupational Therapy, Physiotherapy, Child Psychology and Early Intervention Services for Children in Hyderabad.
@@ -345,8 +377,9 @@ export default function Home() {
         <div className="hero-video-wrap">
           <div className="hero-video-copy">
             <h2 className="intro-section-h2">Supporting Growth Through Personalized Care</h2>
-            <p>
-              Every child has unique strengths, abilities, and potential waiting to flourish. At High Sky, we don't just recognize each child's uniqueness — we celebrate it and empower them to reach their full potential.
+            <p className="intro-section-p">
+              Every child has unique strengths, abilities, and potential waiting to flourish.<br></br>
+              At High Sky, we don't just recognize each child's uniqueness we celebrate it and empower them to reach their full potential.
             </p>
             <Link to="/about-us" className="hero-video-cta">KNOW MORE ABOUT HIGH SKY &gt;</Link>
           </div>
@@ -460,6 +493,85 @@ export default function Home() {
           <Link to="/our-programs" className="programs-explore-cta">Explore All Programs &gt;</Link>
         </div>
       </section>
+      {/* ===== CONDITIONS WE SUPPORT ===== */}
+      <section className="conditions-section">
+        <img src={conditionCloud} alt="" className="conditions-cloud-divider" aria-hidden="true" />
+        <div className="conditions-inner">
+          <h2 className="conditions-title">Conditions We Support</h2>
+          <p className="conditions-subtitle">
+            We provide child development and early intervention support for a wide range of neurodevelopmental and behavioral conditions.
+          </p>
+          <div className="conditions-grid">
+            {conditions.map((c, i) => (
+              <div className={`condition-card ${i % 2 === 0 ? 'left' : 'right'}`} key={i}>
+                <div className="condition-dot">
+                  <img src={c.icon} alt="" className="condition-icon-img condition-icon-white" />
+                  <img src={c.iconP} alt="" className="condition-icon-img condition-icon-purple" />
+                </div>
+                <div className="condition-pill">{c.text}</div>
+              </div>
+            ))}
+          </div>
+          <div className="conditions-cta-block">
+            <p className="conditions-cta-text">
+              Not sure which condition applies?
+            </p>
+            <Link to="/consultation" className="conditions-cta-btn">
+              Book an Assessment with Our Specialists &gt;
+            </Link>
+          </div>
+        </div>
+        {/* Wave at bottom of section */}
+        <svg className="conditions-wave-svg" viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,30 C360,90 1080,0 1440,50 L1440,90 L0,90 Z" fill="#ffffff"/>
+        </svg>
+      </section>
+
+      {/* ===== OUR CHILD-CENTERED APPROACH ===== */}
+      <section className="approach-section">
+        <div className="approach-polka-bg" aria-hidden="true" />
+        <div className="approach-inner">
+          <h2 className="approach-title">Our Child-Centered Approach</h2>
+          <div className="approach-infographic-wrap">
+            <img
+              src={infographicImg}
+              alt="Our Child-Centered Approach diagram"
+              className="approach-infographic-img"
+            />
+
+            {/* Step 1 — orange pill */}
+            <div className="approach-overlay approach-overlay-1">
+              <h3 className="approach-overlay-title aot-dark">Assessment</h3>
+              <p className="approach-overlay-desc aod-dark">Understanding your child's strengths and challenges</p>
+            </div>
+
+            {/* Step 2 — magenta pill */}
+            <div className="approach-overlay approach-overlay-2">
+              <h3 className="approach-overlay-title aot-light">Goal Setting</h3>
+              <p className="approach-overlay-desc aod-light">Defining clear, measurable developmental goals</p>
+            </div>
+
+            {/* Step 3 — orange pill */}
+            <div className="approach-overlay approach-overlay-3">
+              <h3 className="approach-overlay-title aot-dark">Therapy Plan</h3>
+              <p className="approach-overlay-desc aod-dark">Designing personalized intervention strategies</p>
+            </div>
+
+            {/* Step 4 — magenta pill */}
+            <div className="approach-overlay approach-overlay-4">
+              <h3 className="approach-overlay-title aot-light">Parent Collaboration</h3>
+              <p className="approach-overlay-desc aod-light">Working closely with families for consistency</p>
+            </div>
+
+            {/* Step 5 — orange pill */}
+            <div className="approach-overlay approach-overlay-5">
+              <h3 className="approach-overlay-title aot-dark">Progress Tracking</h3>
+              <p className="approach-overlay-desc aod-dark">Regular reviews and adjustments for improvement</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* ===== HAPPY PARENTS ===== */}
       <section className="testimonials-section">
@@ -567,66 +679,6 @@ export default function Home() {
   */}
       </section>
 
-      {/* ===== CONDITIONS WE SUPPORT ===== */}
-      <section className="conditions-section">
-        <div className="conditions-inner">
-          <h2 className="conditions-title">Conditions We Support</h2>
-          <p className="conditions-subtitle">
-            We provide child development and early intervention support for a wide range of neurodevelopmental and behavioral conditions.
-          </p>
-          <div className="conditions-grid">
-            {conditions.map((c, i) => (
-              <div className="condition-card" key={i}>{c}</div>
-            ))}
-          </div>
-          <div className="conditions-cta-block">
-            <p className="conditions-cta-text">
-              Not sure which condition applies?
-            </p>
-            <Link to="/consultation" className="conditions-cta-btn">
-              Book an Assessment with Our Specialists &gt;
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== OUR CHILD-CENTERED APPROACH ===== */}
-      <section className="approach-section">
-        <div className="approach-inner">
-          <h2 className="approach-title">Our Child-Centered Approach</h2>
-          <div
-            className="approach-diagram"
-            role="img"
-            aria-label="Child development process: Assessment, Goal Setting, Therapy Plan, Parent Collaboration, Progress Tracking at High Sky Child Development Center"
-          >
-            {/* 5 petals arranged in a circle */}
-            {approachSteps.map((step, i) => (
-              <div
-                className={`approach-petal approach-petal-${i + 1}`}
-                key={i}
-                style={{ '--petal-color': step.color, '--num-color': step.numColor }}
-              >
-                <div className="petal-num" style={{ background: step.numColor }}>{step.num}</div>
-                <div className="petal-icon">{step.icon}</div>
-                <h3 className="petal-label">{step.label}</h3>
-                <p className="petal-desc">{step.desc}</p>
-              </div>
-            ))}
-            {/* Center circle */}
-            <div className="approach-center">
-              <span className="approach-center-icon">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="24" cy="14" r="7" fill="#a02c7d" />
-                  <path d="M10 38c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="#a02c7d" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  <path d="M24 27l4 6-4-1-4 1 4-6z" fill="#f5a623" />
-                </svg>
-              </span>
-              <p className="approach-center-label">Our<br />Child-Centered<br />Approach</p>
-              <span className="approach-center-heart">♥</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ===== MAP LOCATIONS ===== */}
       <section className="locations-section">

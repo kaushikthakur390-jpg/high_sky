@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import './ContactUs.css';
 import contactMascot from '../assets/pages/home/bird.png';
+import callIcon from '../assets/pages/home/icons/call icon.png';
+import emailIcon from '../assets/pages/home/icons/mailicon.png';
+import whatsappIcon from '../assets/pages/icon/whatsapp.svg';
+import hoursIcon from '../assets/pages/home/icons/working hours.png';
 
 export default function ContactUs() {
   useEffect(() => {
@@ -32,18 +36,25 @@ export default function ContactUs() {
       {/* Purple Hero */}
       <div className="contact-hero">
         {/* Decorative circles */}
-        <div className="contact-deco-dot yellow"></div>
+        {/* <div className="contact-deco-dot yellow"></div>
         <div className="contact-deco-dot gray"></div>
-        <div className="contact-deco-circle right"></div>
+        <div className="contact-deco-circle right"></div> */}
 
         <div className="contact-hero-inner">
           <div className="contact-hero-left">
-            <h1>CONTACT US</h1>
-            <p className="contact-subtitle">We'd love to hear from you!</p>
+            <h1>Let's Connect</h1>
 
-            {/* Orange speech bubble card */}
+            <p className="contact-subtitle-heading">
+              We'd love to hear from you!
+            </p>
+
+            <p className="contact-subtitle">
+              Whether you're looking to book a consultation, learn more about our programs,
+              or discuss your child's developmental needs, our team is here to guide you.
+            </p>
+
             <div className="contact-bubble">
-              Whether you have a question, feedback, or need assistance, our team is here to help!
+              Reach out to us, and we'll help you find the right support for your child.
             </div>
           </div>
           <div className="contact-hero-right">
@@ -55,6 +66,47 @@ export default function ContactUs() {
           </div>
         </div>
 
+      </div>
+
+      {/* Quick Contact Cards */}
+      <div className="quick-contact-cards">
+        <a href="tel:+918169193297" className="qc-card">
+          <img src={callIcon} alt="Call Us" className="qc-icon" />
+          <div className="qc-info">
+            <span className="qc-label">Call Us</span>
+            <span className="qc-value">+91 91008 14615</span>
+          </div>
+        </a>
+        <a href="mailto:info@highskycdc.com" className="qc-card">
+          <img src={emailIcon} alt="Email Us" className="qc-icon" />
+          <div className="qc-info">
+            <span className="qc-label">Email Us</span>
+            <span className="qc-value">info@highskycdc.com</span>
+          </div>
+        </a>
+        <a href="https://wa.me/919100814615" className="qc-card" target="_blank" rel="noopener noreferrer">
+          <img src={whatsappIcon} alt="WhatsApp Us" className="qc-icon qc-icon-wa" />
+          <div className="qc-info">
+            <span className="qc-label">WhatsApp Us</span>
+            <span className="qc-value">+91 91008 14615</span>
+          </div>
+        </a>
+        <div className="qc-card">
+          <img src={hoursIcon} alt="Working Hours" className="qc-icon" />
+          <div className="qc-info">
+            <span className="qc-label">Working Hours</span>
+            <span className="qc-value">Mon - Sat: 9AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Centres Intro */}
+      <div className="centres-intro">
+        <h2 className="centres-heading">Visit Our Centres in Hyderabad</h2>
+        <p className="centres-subtext">
+          With centres in Manikonda and Kondapur, High Sky CDC provides accessible child
+          development, therapy, and early intervention services to families across Hyderabad.
+        </p>
       </div>
 
       {/* Branch Cards */}
@@ -103,6 +155,20 @@ export default function ContactUs() {
               <p>5A, 5th floor, Mansa Residency, Botanical Garden Rd, beside Aparna Heights 2, Laxmi Nagar, Hyderabad, Kondapur, Telangana 500084</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Final CTA */}
+      <div className="contact-cta">
+        <div className="cta-inner">
+          <div className="cta-text">
+            <h2 className="cta-heading">Ready to Take the First Step?</h2>
+            <p className="cta-subtext">
+              Schedule a consultation with our team and discover the right support for your
+              child's unique developmental journey.
+            </p>
+          </div>
+          <a href="/contact" className="cta-btn">Book a Consultation Today →</a>
         </div>
       </div>
 
