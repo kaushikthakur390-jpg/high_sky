@@ -569,9 +569,10 @@ a.qc-card:hover {
     opacity: 0;
     transform: translateY(var(--lift));
     transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
-    width: 79%;
+    width: 90%;
+    margin: 0 auto 30px;
     position: relative;
-    left: 44px;
-    height: 440px;
+    left: auto;
+    height: auto;
   }
 }
