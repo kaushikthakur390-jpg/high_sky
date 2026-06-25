@@ -2192,7 +2192,7 @@
     position: relative;
     left: calc(-50vw + 50%);
     text-align: center;
-    margin: 0;
+    margin: 0 0 20px 0;
     white-space: normal;
   }
 
@@ -2232,31 +2232,37 @@
   }
 
   .hero-seo-text {
-    font-size: clamp(0.85rem, 4.2vw, 1.1rem);
+    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
     margin-bottom: 12px;
     text-align: center;
     padding: 0 15px;
+    font-weight: 800;
   }
 
   /* Commitment inline layout — 360px */
   .commitment-text-block {
     padding: 20px 12px;
     gap: 12px;
+    margin-bottom: 30px;
   }
 
   .commitment-inline-photo {
-    width: 100px;
+    width: 220px;
+    margin: 20px auto 35px;
   }
 
   .commitment-heading {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .commitment-desc {
-    font-size: 0.65rem;
+    font-size: 0.85rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
   }
 
   .unique-card-image-wrap {
@@ -2303,33 +2309,37 @@
   }
 
   .hero-welcome {
-    font-size: 1.5rem;
-    width: 100%;
+    font-size: clamp(1.4rem, 6.5vw, 1.8rem);
+    width: 100vw;
     position: relative;
-    left: 0;
+    left: calc(-50vw + 50%);
     text-align: center;
+    margin: 0 0 20px 0;
+    white-space: normal;
   }
 
   .hero-content {
     padding: 32px 24px 0;
   }
 
-
-
   .hero-subtitle {
-    font-size: 0.88rem;
+    font-size: clamp(0.8rem, 3.8vw, 1rem);
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
     text-align: center;
+    padding: 0 10px;
   }
 
   p.hero-seo-text {
-    font-size: 0.925rem;
-    width: 100%;
-    max-width: 100%;
-    font-weight: 700;
+    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
+    width: 100vw;
     position: relative;
-    left: 0;
+    left: calc(-50vw + 50%);
     margin-bottom: 12px;
     text-align: center;
+    padding: 0 15px;
+    font-weight: 800;
   }
 
   .hero-cta {
@@ -2371,20 +2381,23 @@
   .commitment-text-block {
     padding: 24px 16px;
     gap: 14px;
+    margin-bottom: 30px;
   }
 
   .commitment-inline-photo {
-    width: 114px;
+    width: 250px;
+    margin: 20px auto 35px;
   }
 
   .commitment-heading {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
   }
 
   .commitment-desc {
-    font-size: 0.72rem;
+    font-size: 0.95rem;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
   }
 
   .mascot-bird-red {
@@ -3444,6 +3457,10 @@ p.intro-section-p {
 
 /* ===== MOBILE RESPONSIVE — NEW SECTIONS ===== */
 @media (max-width: 767.98px) {
+  .commitment-section::before {
+    background-size: cover;
+  }
+
   .hero-carousel-group {
     display: flex;
     gap: 18px;
@@ -3465,13 +3482,14 @@ p.intro-section-p {
   }
 
   .hero-seo-text {
-    font-size: 0.72rem;
-    width: 100%;
-    max-width: 100%;
+    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
+    width: 100vw;
     position: relative;
-    left: 0;
+    left: calc(-50vw + 50%);
     margin-bottom: 12px;
     text-align: center;
+    padding: 0 15px;
+    font-weight: 800;
   }
 
   .intro-section-h2 {
@@ -3858,4 +3876,16 @@ p.intro-section-p {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
+
+.conditions-wave-svg {
+  display: block;
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.approach-section {
+  margin-top: -2px;
+  position: relative;
+  z-index: 10;
 }
