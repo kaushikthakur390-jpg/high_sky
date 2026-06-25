@@ -115,22 +115,37 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="about-solutions-section">
+      {/* Section 3 - High Sky at a Glance */}
+      <section className="about-glance-section">
         <img className="about-solutions-bg" src={group166} alt="" aria-hidden="true" />
-        <div className="about-solutions-cards-wrap">
-          <img
-            className="about-solutions-cards"
-            src={frame44}
-            alt="Comprehensive child development solutions offered by us"
-          />
-          {/* Single full-image overlay — any click opens WhatsApp */}
-          <a
-            href="https://wa.me/919100814615"
-            className="solutions-card-overlay"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat on WhatsApp about our child development services"
-          />
+        <div className="about-glance-inner">
+          <h2 className="about-glance-title">High Sky at a Glance</h2>
+          <div className="about-glance-grid">
+            <div className="about-glance-card">
+              <div className="glance-icon">👶</div>
+              <p className="glance-text">1000+ Children Supported</p>
+            </div>
+            <div className="about-glance-card">
+              <div className="glance-icon">📍</div>
+              <p className="glance-text">2 Centers Across Hyderabad<br/>(Kondapur & Manikonda)</p>
+            </div>
+            <div className="about-glance-card">
+              <div className="glance-icon">🗓️</div>
+              <p className="glance-text">6+ Years of Service</p>
+            </div>
+            <div className="about-glance-card">
+              <div className="glance-icon">🤝</div>
+              <p className="glance-text">Experienced Multidisciplinary Team</p>
+            </div>
+            <div className="about-glance-card">
+              <div className="glance-icon">👨‍👩‍👧‍👦</div>
+              <p className="glance-text">Trusted by Families Across Hyderabad</p>
+            </div>
+            <div className="about-glance-card">
+              <div className="glance-icon">🌱</div>
+              <p className="glance-text">Personalized Development Plans</p>
+            </div>
+          </div>
         </div>
       </section>
 

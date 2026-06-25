@@ -16,6 +16,7 @@ import commitmentFrame1 from '../assets/pages/home/homeframe1.png';
 import commitmentFrame2 from '../assets/pages/home/homeframe2.png';
 import commitmentFrame3 from '../assets/pages/home/Frame 50.png';
 import infographicImg from '../assets/pages/home/info2.png';
+import childMobileImg from '../assets/pages/home/child-mobile.png';
 
 
 // Program cards — full banner images (Group 262-270)
@@ -533,11 +534,14 @@ export default function Home() {
         <div className="approach-inner">
           <h2 className="approach-title">Our Child-Centered Approach</h2>
           <div className="approach-infographic-wrap">
-            <img
-              src={infographicImg}
-              alt="Our Child-Centered Approach diagram"
-              className="approach-infographic-img"
-            />
+            <picture>
+              <source media="(max-width: 767.98px)" srcSet={childMobileImg} />
+              <img
+                src={infographicImg}
+                alt="Our Child-Centered Approach diagram"
+                className="approach-infographic-img"
+              />
+            </picture>
 
             {/* Step 1 — orange pill */}
             <div className="approach-overlay approach-overlay-1">

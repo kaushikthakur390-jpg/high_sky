@@ -389,7 +389,9 @@ a.qc-card:hover {
 
 .cta-btn {
   display: inline-block;
-  background: #a02c7d;
+  background: radial-gradient(circle,
+      #FBAE17 26%,
+      #FB8417 100%);
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.88rem;
@@ -407,6 +409,16 @@ a.qc-card:hover {
 .cta-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 28px rgba(160, 44, 125, 0.45);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  h2.centres-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -448,5 +460,118 @@ a.qc-card:hover {
 
   .contact-branches {
     padding: 24px 16px 40px;
+  }
+
+  img.contact-mascot {
+    width: 171px;
+    height: 243px;
+    object-fit: contain;
+    position: relative;
+    left: 110px;
+    top: -72px;
+  }
+
+  .quick-contact-cards {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .qc-card {
+    min-width: 0;
+    width: fit-content;
+    max-width: calc(50% - 5px);
+    padding: 8px 12px 8px 8px;
+    border-radius: 20px;
+  }
+
+  .qc-info {
+    min-width: 0;
+  }
+
+  .qc-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+
+  .qc-icon-wa {
+    padding: 5px;
+  }
+
+  .qc-label {
+    font-size: 0.65rem;
+  }
+
+  .qc-value {
+    font-size: 0.65rem;
+    word-wrap: break-word;
+  }
+
+  p.centres-subtext {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.90rem;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px 24px;
+    border-radius: 47px;
+    height: auto;
+    gap: 16px;
+  }
+
+  .cta-text {
+    width: 100%;
+  }
+
+  h2.cta-heading {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    position: static;
+  }
+
+  p.cta-subtext {
+    font-size: 0.92rem;
+    text-align: center;
+    margin-top: 8px;
+    width: 100%;
+    position: static;
+  }
+
+  a.cta-btn {
+    font-size: 0.75rem;
+    width: fit-content;
+    max-width: 100%;
+    white-space: normal;
+    box-sizing: border-box;
+    position: static;
+    padding: 14px 20px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .branch-detail {
+    --lift: 60px;
+    display: flex;
+    gap: -11px;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 6px 26px rgba(91, 45, 142, 0.12);
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(var(--lift));
+    transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+    width: 79%;
+    position: relative;
+    left: 44px;
+    height: 440px;
   }
 }
