@@ -2187,11 +2187,22 @@
    ───────────────────────────────────────────────────── */
 @media (min-width: 360px) and (max-width: 767.98px) {
   .hero-welcome {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 6.5vw, 1.8rem);
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    text-align: center;
+    margin: 0;
+    white-space: normal;
   }
 
   .hero-subtitle {
-    font-size: 0.78rem;
+    font-size: clamp(0.8rem, 3.8vw, 1rem);
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    text-align: center;
+    padding: 0 10px;
   }
 
   .hero-cta {
@@ -2206,6 +2217,28 @@
   .hero-video-cta {
     font-size: 0.8rem;
     min-height: 46px;
+  }
+
+  p.intro-section-p {
+    font-size: 0.625rem;
+    font-weight: 400;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'lato', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    max-width: 746px;
+  }
+
+  .hero-seo-text {
+    font-size: clamp(0.85rem, 4.2vw, 1.1rem);
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 0 15px;
   }
 
   /* Commitment inline layout — 360px */
@@ -2250,7 +2283,8 @@
   }
 
   .hero-screen-area {
-    max-width: 340px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .hero-projector-img {
@@ -2270,8 +2304,9 @@
 
   .hero-welcome {
     font-size: 1.5rem;
-    width: 176%;
-    left: -144px;
+    width: 100%;
+    position: relative;
+    left: 0;
     text-align: center;
   }
 
@@ -2288,10 +2323,11 @@
 
   p.hero-seo-text {
     font-size: 0.925rem;
-    max-width: 94%;
+    width: 100%;
+    max-width: 100%;
     font-weight: 700;
     position: relative;
-    left: 10px;
+    left: 0;
     margin-bottom: 12px;
     text-align: center;
   }
@@ -2319,8 +2355,10 @@
   }
 
   .hero-screen-area {
-    max-width: 380px;
-    top: 20px;
+    max-width: 100%;
+    top: 28px;
+    left: 0;
+    margin: 0 auto;
   }
 
   .hero-projector-img {
@@ -3428,10 +3466,12 @@ p.intro-section-p {
 
   .hero-seo-text {
     font-size: 0.72rem;
+    width: 100%;
     max-width: 100%;
     position: relative;
-    left: 10px;
+    left: 0;
     margin-bottom: 12px;
+    text-align: center;
   }
 
   .intro-section-h2 {
