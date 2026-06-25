@@ -82,38 +82,32 @@
     padding: 0;
   }
 
-  /* Switch to single row */
+  /* Switch to 2x2 grid */
   .stats-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-evenly;
     gap: 0;
   }
 
-  /* Show all dividers at mobile-friendly height */
+  /* Hide DOM dividers on mobile */
   .stat-divider {
-    display: block;
-    height: 60px;
-    width: 2px;
-    flex-shrink: 0;
+    display: none;
   }
 
   .stat-item {
-    flex: 1;
-    padding: 16px 4px;
-    gap: 2px;
+    padding: 24px 8px;
+    gap: 6px;
     min-width: 0;
   }
 
-  /* Remove the border-right workaround — dividers handle it now */
+  /* Restore border dividers for 2x2 grid */
   .stat-item--left {
-    border-right: none;
+    border-right: 2px solid #9a2ed7;
   }
 
   .stat-item--top {
-    border-bottom: none;
+    border-bottom: 2px solid #9a2ed7;
   }
 
   .stat-number {

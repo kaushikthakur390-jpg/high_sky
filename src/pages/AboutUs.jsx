@@ -12,6 +12,7 @@ import group150 from '../assets/pages/about us/Group 150.png';
 import frame44 from '../assets/pages/about us/Frame 44.png';
 import group166 from '../assets/pages/about us/Group 166.png';
 import frame45 from '../assets/pages/about us/Frame 45.png';
+import newStatsImg from '../assets/pages/about us/new-stats.png';
 
 // Moment photos
 import moment1 from '../assets/pages/moment/IMG_20260605_021109_034.jpg.jpeg';
@@ -120,31 +121,14 @@ export default function AboutUs() {
         <img className="about-solutions-bg" src={group166} alt="" aria-hidden="true" />
         <div className="about-glance-inner">
           <h2 className="about-glance-title">High Sky at a Glance</h2>
-          <div className="about-glance-grid">
-            <div className="about-glance-card">
-              <div className="glance-icon">👶</div>
-              <p className="glance-text">1000+ Children Supported</p>
-            </div>
-            <div className="about-glance-card">
-              <div className="glance-icon">📍</div>
-              <p className="glance-text">2 Centers Across Hyderabad<br/>(Kondapur & Manikonda)</p>
-            </div>
-            <div className="about-glance-card">
-              <div className="glance-icon">🗓️</div>
-              <p className="glance-text">6+ Years of Service</p>
-            </div>
-            <div className="about-glance-card">
-              <div className="glance-icon">🤝</div>
-              <p className="glance-text">Experienced Multidisciplinary Team</p>
-            </div>
-            <div className="about-glance-card">
-              <div className="glance-icon">👨‍👩‍👧‍👦</div>
-              <p className="glance-text">Trusted by Families Across Hyderabad</p>
-            </div>
-            <div className="about-glance-card">
-              <div className="glance-icon">🌱</div>
-              <p className="glance-text">Personalized Development Plans</p>
-            </div>
+          <div className="glance-new-stats-wrapper">
+            <img src={newStatsImg} alt="High Sky Stats" className="glance-new-stats-bg" />
+            <div className="glance-pill pill-1"><span>1000+ Children Supported</span></div>
+            <div className="glance-pill pill-2"><span>2 Centers Across Hyderabad<br />(Kondapur & Manikonda)</span></div>
+            <div className="glance-pill pill-3"><span>6+ Years of Service</span></div>
+            <div className="glance-pill pill-4"><span>Experienced Multidisciplinary Team</span></div>
+            <div className="glance-pill pill-5"><span>Trusted by Families Across Hyderabad</span></div>
+            <div className="glance-pill pill-6"><span>Personalized Development Plans</span></div>
           </div>
         </div>
       </section>

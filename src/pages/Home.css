@@ -1581,7 +1581,6 @@
   .commitment-desc {
     font-size: 1.4rem;
     line-height: 1.55;
-    text-transform: uppercase;
     letter-spacing: 0.2px;
     max-width: 75%;
     height: auto;
@@ -2200,7 +2199,7 @@
     font-size: clamp(0.8rem, 3.8vw, 1rem);
     width: 100vw;
     position: relative;
-    left: calc(-50vw + 50%);
+    left: 2px;
     text-align: center;
     padding: 0 10px;
   }
@@ -2227,12 +2226,12 @@
     font-family: 'lato', sans-serif;
     line-height: 1.4;
     margin-bottom: 20px;
-    text-transform: lowercase;
+    text-transform: none;
     max-width: 746px;
   }
 
   .hero-seo-text {
-    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
+    font-size: clamp(0.75rem, 3.5vw, 0.95rem);
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
@@ -2255,12 +2254,12 @@
   }
 
   .commitment-heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
   }
 
   .commitment-desc {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
   }
@@ -2332,7 +2331,7 @@
   }
 
   p.hero-seo-text {
-    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
+    font-size: clamp(0.75rem, 3.5vw, 0.95rem);
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
@@ -2751,7 +2750,7 @@
 }
 
 p.intro-section-p {
-  font-size: 1.375rem;
+  font-size: 0.865rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
   font-family: 'lato', sans-serif;
@@ -3482,18 +3481,18 @@ p.intro-section-p {
   }
 
   .hero-seo-text {
-    font-size: clamp(0.95rem, 4.8vw, 1.25rem);
+    font-size: clamp(0.75rem, 3.5vw, 0.95rem);
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
     margin-bottom: 12px;
     text-align: center;
     padding: 0 15px;
-    font-weight: 800;
+    font-weight: 650;
   }
 
   .intro-section-h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 

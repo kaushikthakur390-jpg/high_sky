@@ -387,7 +387,13 @@
   position: relative;
   overflow: hidden;
   background: #ffffff;
-  padding: clamp(140px, 11vw, 220px) 24px clamp(100px, 20vw, 200px);
+  padding: clamp(240px, 18vw, 340px) 24px clamp(80px, 10vw, 140px);
+}
+
+@media (max-width: 900px) {
+  .about-glance-section {
+    padding: 140px 24px 30px;
+  }
 }
 
 .about-solutions-bg {
@@ -395,7 +401,8 @@
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 104%;
+  width: 150%;
+  max-width: none;
   height: calc(100% + 20px);
   object-fit: cover;
   object-position: top center;
@@ -408,54 +415,117 @@
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .about-glance-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .about-glance-title {
-  text-align: center;
-  color: #a02c7d;
+  text-align: left;
+  color: #ffffff;
+  left: 200px;
+  position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
   font-weight: 900;
-  margin-bottom: 60px;
+  margin: 0;
+  flex: 0 1 auto;
+  max-width: 300px;
 }
 
-.about-glance-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+@media (max-width: 900px) {
+  .about-glance-title {
+    text-align: center;
+    flex: 1 1 auto;
+    margin-bottom: 30px;
+    left: -10px;
+    position: relative;
+  }
 }
 
-.about-glance-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.glance-new-stats-wrapper {
+  position: relative;
+  width: 100%;
+  flex: 0 0 74%;
+}
+
+.glance-new-stats-bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 60px;
+  display: block;
+}
+
+.glance-pill {
+  position: absolute;
+  left: 42.5%;
+  width: 58%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
-.about-glance-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+/* Vertical centers refined to match the image's baked-in boxes */
+.pill-1 {
+  top: 13.5%;
 }
 
-.glance-icon {
-  font-size: 3rem;
-  line-height: 1;
+.pill-2 {
+  top: 28%;
 }
 
-.glance-text {
+.pill-3 {
+  top: 44%;
+}
+
+.pill-4 {
+  top: 58%;
+}
+
+.pill-5 {
+  top: 72%;
+}
+
+.pill-6 {
+  top: 86.5%;
+}
+
+/* 📱 MOBILE ONLY TWEAKS */
+@media (max-width: 900px) {
+  .glance-new-stats-wrapper {
+    flex: 1 1 auto;
+    max-width: 600px;
+  }
+
+  .glance-new-stats-bg {
+    left: 140px;
+    position: relative;
+    /* Adjust mobile image position here */
+  }
+
+  .glance-pill {
+    left: 57.5%;
+    position: absolute;
+  }
+}
+
+.glance-pill span {
   font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
   font-weight: 700;
   color: #333333;
-  margin: 0;
-  line-height: 1.5;
+  font-size: clamp(0.6rem, 2.2vw, 1.15rem);
+  line-height: 1.3;
 }
 
 .about-moments-section {
@@ -541,6 +611,11 @@
    ABOUT US MOBILE — BASE LAYER (< 768px)
    ───────────────────────────────────────────────────── */
 @media (max-width: 767.98px) {
+
+  .glance-new-stats-wrapper {
+    width: 180%;
+    left: -40%;
+  }
 
   /* --- Journey Canvas --- */
   .journey-canvas {
