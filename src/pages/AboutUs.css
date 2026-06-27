@@ -446,7 +446,7 @@
   .about-glance-title {
     text-align: center;
     flex: 1 1 auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     left: -10px;
     position: relative;
   }
@@ -613,8 +613,13 @@
 @media (max-width: 767.98px) {
 
   .glance-new-stats-wrapper {
-    width: 180%;
-    left: -40%;
+    width: 600px;
+    max-width: none;
+    left: 0;
+    transform: translateX(-120px) scale(0.95);
+    transform-origin: top left;
+    margin-top: 0px;
+    margin-bottom: -50px;
   }
 
   /* --- Journey Canvas --- */
@@ -672,7 +677,7 @@
 
   .journey-row-1 .journey-bubble {
     position: relative;
-    left: 25px;
+    left: 15px;
   }
 
   .journey-row-2 .journey-frame {
@@ -684,7 +689,7 @@
 
   .journey-row-2 .journey-bubble {
     position: relative;
-    right: 14px;
+    right: 5px;
   }
 
   .journey-row-3 .journey-frame {
@@ -696,7 +701,7 @@
 
   .journey-row-3 .journey-bubble {
     position: relative;
-    left: 35px;
+    left: 15px;
   }
 
   .journey-row-4 .journey-frame {
@@ -707,7 +712,7 @@
 
   .journey-row-4 .journey-bubble {
     position: relative;
-    right: 40px;
+    right: 15px;
   }
 
 
@@ -715,7 +720,7 @@
   .journey-row-2 .journey-bubble,
   .journey-row-3 .journey-bubble,
   .journey-row-4 .journey-bubble {
-    width: 55vw !important;
+    width: 48vw !important;
     max-width: 300px !important;
     flex: none;
     transform: none;
