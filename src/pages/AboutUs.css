@@ -388,11 +388,13 @@
   overflow: hidden;
   background: #ffffff;
   padding: clamp(240px, 18vw, 340px) 24px clamp(80px, 10vw, 140px);
+  height: 800px;
 }
 
 @media (max-width: 900px) {
   .about-glance-section {
     padding: 80px 24px 30px;
+    height: auto;
   }
 }
 
@@ -515,7 +517,8 @@
   }
 
   .glance-pill {
-    left: 57.5%;
+    left: 61%;
+    width: 53%;
     position: absolute;
   }
 }
@@ -618,8 +621,8 @@
     left: 0;
     transform: translateX(-120px) scale(0.95);
     transform-origin: top left;
-    margin-top: 0px;
-    margin-bottom: -50px;
+    margin-top: -40px;
+    margin-bottom: -40px;
   }
 
   /* --- Journey Canvas --- */

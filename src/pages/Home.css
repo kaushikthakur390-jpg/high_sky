@@ -941,6 +941,13 @@
   text-align: right;
 }
 
+@media (min-width: 1024px) {
+  .home-program-4 {
+    width: 1080px;
+    transform: translateX(20px);
+  }
+}
+
 .home-program-5 .prog-card-title {
   width: 100%;
   position: relative;
@@ -1127,6 +1134,7 @@
   transition: filter 0.2s;
   position: relative;
   left: 10px;
+  bottom: 20px;
 }
 
 .testimonials-cta:hover {
