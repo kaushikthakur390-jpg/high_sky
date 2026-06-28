@@ -77,11 +77,11 @@ export default function ContactUs() {
             <span className="qc-value">+91 91008 14615</span>
           </div>
         </a>
-        <a href="mailto:info@highskycdc.com" className="qc-card">
+        <a href="mailto:enquiry.hscdc@gmail.com" className="qc-card">
           <img src={emailIcon} alt="Email Us" className="qc-icon" />
           <div className="qc-info">
             <span className="qc-label">Email Us</span>
-            <span className="qc-value">info@highskycdc.com</span>
+            <span className="qc-value">enquiry.hscdc@gmail.com</span>
           </div>
         </a>
         <a href="https://wa.me/919100814615" className="qc-card" target="_blank" rel="noopener noreferrer">
@@ -137,7 +137,7 @@ export default function ContactUs() {
         <div className="branch-detail reverse">
           <div className="branch-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d7611.876014550069!2d78.352538!3d17.462681!3m2!1i1024!2i768!4f13.1!2m1!1s5A%2C%205th%20floor%2C%20Mansa%20Residency%2C%20Botanical%20Garden%20Rd%2C%20beside%20Aparna%20Heights%202%2C%20Laxmi%20Nagar%2C%20Hyderabad%2C%20Kondapur%2C%20Telangana%C2%A0500084!5e0!3m2!1sen!2sus!4v1780657717961!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.914207455965!2d78.34711247414306!3d17.463819900600793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9347a29ec299%3A0x7b3cb191617d18f2!2sHigh%20Sky%20Child%20development%20centre!5e0!3m2!1sen!2sin!4v1782687517410!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

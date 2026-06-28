@@ -60,7 +60,9 @@ export default function Footer() {
             <div className="footer-contact-list">
               <div className="footer-contact-item">
                 <FaPhone style={{ transform: "scaleX(-1)" }} className="footer-icon" />
-                <span>+91 9100814615/ +91 6309275708</span>
+                <span>
+                  <a href="tel:+919100814615">+91 9100814615</a> / <a href="tel:+916309275708">+91 6309275708</a>
+                </span>
               </div>
               <div className="footer-contact-item">
                 <FaEnvelope className="footer-icon" />
@@ -88,9 +90,9 @@ export default function Footer() {
           <p className="footer-social-title">FOLLOW US ON SOCIAL MEDIA</p>
           <div className="footer-socials">
             <a href="https://www.facebook.com/PriyankaGupta.ot.Highsky/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://www.instagram.com/accounts/login/?next=%2Fpriyankagupta.highsky.ot%2F&source=omni_redirect" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.instagram.com/highskycdc?igsh=MTRwdnRncGRhMXJz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://www.youtube.com/@priyankas-occupational_therapy" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
-            <a href="https://www.linkedin.com/in/dr-priyanka-gupta-4a1036301/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/in/priyankaguptaot/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
           <p className="footer-copyright">© 2024 High Sky Child Development Centre. All rights reserved.</p>
         </div>

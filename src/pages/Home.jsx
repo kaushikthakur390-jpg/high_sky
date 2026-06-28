@@ -697,15 +697,15 @@ export default function Home() {
               </div>
               <div className="location-map">
                 <iframe
-                  title="High Sky CDC Kondapur"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7890693428354!2d78.3566!3d17.4678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI4JzA0LjEiTiA3OMKwMjEnMjMuOCJF!5e0!3m2!1sen!2sin!4v1000000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.914207455965!2d78.34711247414306!3d17.463819900600793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9347a29ec299%3A0x7b3cb191617d18f2!2sHigh%20Sky%20Child%20development%20centre!5e0!3m2!1sen!2sin!4v1782687517410!5m2!1sen!2sin"
                   width="100%"
-                  height="220"
+                  height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen=""
+                  allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                />
+                  title="Branch 2 Map"
+                ></iframe>
               </div>
             </div>
             <div className="location-card">
@@ -718,7 +718,7 @@ export default function Home() {
               <div className="location-map">
                 <iframe
                   title="High Sky CDC Manikonda"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.3886!3d17.4035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzEyLjYiTiA3OMKwMjMnMTkuMCJF!5e0!3m2!1sen!2sin!4v1000000000001"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6248744836267!2d78.3664!3d17.3940!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95154ffa2733%3A0xb620054c49d9d633!2sHigh%20Sky%20Child%20Development%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="220"
                   style={{ border: 0 }}

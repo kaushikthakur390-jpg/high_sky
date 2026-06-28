@@ -2211,8 +2211,12 @@
 
   .testimonials-cta {
     transform: none !important;
-    bottom: -35px !important;
-    margin-bottom: 5px;
+    bottom: -10px !important;
+    position: relative;
+    left: 3px;
+
+    margin-bottom: 10px;
+
   }
 }
 
@@ -3123,6 +3127,7 @@ p.intro-section-p {
   color: #fff;
 }
 
+
 /* ===== CHILD-CENTERED APPROACH ===== */
 .approach-section {
   background: #ffffff;
@@ -3953,6 +3958,25 @@ p.intro-section-p {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .approach-overlay-title {
+    font-size: 0.65rem !important;
+    left: 4px !important;
+    top: 0 !important;
+  }
+
+  .approach-infographic-img {
+    width: 99%;
+    height: auto;
+    display: block;
+  }
+
+  .approach-overlay-desc {
+    font-size: 0.55rem !important;
+    left: 4px !important;
+    top: 0 !important;
+    line-height: 1.1 !important;
+  }
+
   .conditions-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3983,6 +4007,14 @@ p.intro-section-p {
   .location-name {
     font-size: 0.95rem;
   }
+}
+
+.mascot-bird-red {
+  display: block;
+  right: 6px;
+  bottom: -76px;
+  width: 170px;
+  height: auto;
 }
 
 .conditions-wave-svg {
