@@ -674,7 +674,7 @@
 
   .journey-row-1 .journey-frame {
     position: relative;
-    right: 30px;
+    right: 35px;
     width: 110%;
   }
 
@@ -699,7 +699,7 @@
     position: relative;
     left: -14px;
     top: -19px;
-    width: 42%;
+    width: 110%;
   }
 
   .journey-row-3 .journey-bubble {
@@ -710,7 +710,7 @@
   .journey-row-4 .journey-frame {
     position: relative;
     left: 19px;
-    width: 40%;
+    width: 110%;
   }
 
   .journey-row-4 .journey-bubble {
