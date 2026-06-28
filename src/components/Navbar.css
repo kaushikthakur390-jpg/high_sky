@@ -192,7 +192,7 @@
   }
 
   .nav-cloud {
-    width: 100vw;
+    width: 100%;
     top: -5px;
   }
 
@@ -347,14 +347,14 @@
 /* ─────────────────────────────────────────────────────
    768px — Tablets
    ───────────────────────────────────────────────────── */
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     margin-bottom: -140px;
   }
 
   .navbar-inner {
     top: 10px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .nav-cloud img {
@@ -362,32 +362,20 @@
   }
 
   .navbar-logo-img {
-    height: 70px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .hamburger span {
-    width: 28px;
-    height: 3px;
-    background: #a02c7d;
+    height: 110px;
   }
 
   .navbar-links {
-    top: calc(100% + 12px);
-    left: 20px;
-    right: 20px;
-    border-radius: 16px;
+    gap: 6px;
   }
 
   .navbar-links li a {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
   }
 
   .btn-nav-consult,
   .btn-nav-contact {
-    font-size: 0.9rem !important;
+    font-size: 0.75rem !important;
+    padding: 8px 12px !important;
   }
 }

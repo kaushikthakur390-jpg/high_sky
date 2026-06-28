@@ -101,7 +101,7 @@ const uniqueFeatures = [
   },
   { img: uni5, title: 'CAREGIVER-CHILD PARTNERSHIPS', desc: 'Parents and caregivers are active partners in every milestone of their child\'s journey. Through guidance and home strategies, we help families confidently support their child\'s progress outside the therapy room.' },
   {
-    img: uni6, title: <>HIGH-TECH <br /> EQUIPMENT </>, desc: 'Our centre uses advanced therapeutic tools, sensory resources, and child-friendly learning setups designed for effective child development therapy. Sessions are safe, engaging, and tailored to each child\'s needs.'
+    img: uni6, title: <>ADVANCED <br /> THEREPY EQUIPMENT </>, desc: 'Our centre uses advanced therapeutic tools, sensory resources, and child-friendly learning setups designed for effective child development therapy. Sessions are safe, engaging, and tailored to each child\'s needs.'
   },
 ];
 
@@ -524,7 +524,7 @@ export default function Home() {
         </div>
         {/* Wave at bottom of section */}
         <svg className="conditions-wave-svg" viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0,30 C360,90 1080,0 1440,50 L1440,90 L0,90 Z" fill="#ffffff"/>
+          <path d="M0,30 C360,90 1080,0 1440,50 L1440,90 L0,90 Z" fill="#ffffff" />
         </svg>
       </section>
 

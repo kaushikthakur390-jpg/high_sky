@@ -388,6 +388,20 @@
   background: #A02C7D;
 }
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .section-title {
+    text-align: center;
+    font-family: 'Monsterrat', sans-serif;
+    color: #fff;
+    position: relative;
+    left: 91px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 1400px) {
   .program-cards-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -595,7 +609,8 @@
 .prog-conditions-wave {
   background-color: #A02C7D;
   line-height: 0;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: -2px;
   /* Prevents minor gaps */
 }
 
@@ -605,12 +620,15 @@
   min-height: 40px;
   max-height: 90px;
   display: block;
+  transform: scale(1.03);
+  transform-origin: center;
 }
 
 .prog-approaches-to-conditions-wave {
   background-color: #ffffff;
   line-height: 0;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
 
 .prog-approaches-to-conditions-wave svg {
@@ -619,12 +637,15 @@
   min-height: 40px;
   max-height: 90px;
   display: block;
+  transform: scale(1.03);
+  transform-origin: center;
 }
 
 .prog-why-us-to-faq-wave {
   background-color: #ffffff;
   line-height: 0;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
 
 .prog-why-us-to-faq-wave svg {
@@ -633,12 +654,15 @@
   min-height: 40px;
   max-height: 90px;
   display: block;
+  transform: scale(1.03);
+  transform-origin: center;
 }
 
 .prog-faq-to-cta-wave {
   background-color: #A02C7D;
   line-height: 0;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
 
 .prog-faq-to-cta-wave svg {
@@ -647,6 +671,8 @@
   min-height: 40px;
   max-height: 90px;
   display: block;
+  transform: scale(1.03);
+  transform-origin: center;
 }
 
 /* ===========================
@@ -944,7 +970,20 @@
 }
 
 /* Responsive Overrides */
-@media (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .prog-final-cta-inner {
+    padding: 30px;
+    gap: 20px;
+  }
+  .prog-final-cta-heading {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  }
+  .prog-conditions-title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+  }
+}
+
+@media (max-width: 767.98px) {
   .prog-final-cta-inner {
     flex-direction: column;
     text-align: center;
@@ -957,6 +996,10 @@
 
   .prog-approach-overlay-title {
     font-size: 2vw;
+  }
+
+  .prog-conditions-title {
+    margin-top: 10px;
   }
 
   .prog-conditions-title,

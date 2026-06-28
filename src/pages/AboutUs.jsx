@@ -11,6 +11,7 @@ import group185 from '../assets/pages/about us/Group 185.jpg';
 import group150 from '../assets/pages/about us/Group 150.png';
 import frame44 from '../assets/pages/about us/Frame 44.png';
 import group166 from '../assets/pages/about us/Group 166.png';
+import group69 from '../assets/pages/about us/Group 69.png';
 import frame45 from '../assets/pages/about us/Frame 45.png';
 import newStatsImg from '../assets/pages/about us/new-stats.png';
 
@@ -118,7 +119,10 @@ export default function AboutUs() {
 
       {/* Section 3 - High Sky at a Glance */}
       <section className="about-glance-section">
-        <img className="about-solutions-bg" src={group166} alt="" aria-hidden="true" />
+        <picture>
+          <source media="(max-width: 900px)" srcSet={group69} />
+          <img className="about-solutions-bg" src={group166} alt="" aria-hidden="true" />
+        </picture>
         <div className="about-glance-inner">
           <h2 className="about-glance-title">High Sky at a Glance</h2>
           <div className="glance-new-stats-wrapper">
