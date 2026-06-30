@@ -31,6 +31,19 @@ export default function ContactUs() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    document.title = "Contact High Sky CDC | Child Development Center in Manikonda & Kondapur";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Have questions about your child's development? Contact High Sky CDC for guidance on speech therapy, occupational therapy, physiotherapy, child psychology, and early intervention services. Visit our centres in Kondapur and Manikonda, Hyderabad, or book a consultation with our team today.");
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = "description";
+      meta.content = "Have questions about your child's development? Contact High Sky CDC for guidance on speech therapy, occupational therapy, physiotherapy, child psychology, and early intervention services. Visit our centres in Kondapur and Manikonda, Hyderabad, or book a consultation with our team today.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <div className="contact-page">
       {/* Purple Hero */}
@@ -60,7 +73,8 @@ export default function ContactUs() {
           <div className="contact-hero-right">
             <img
               src={contactMascot}
-              alt="Contact Mascot"
+              alt=""
+              aria-hidden="true"
               className="contact-mascot"
             />
           </div>

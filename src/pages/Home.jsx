@@ -322,6 +322,19 @@ export default function Home() {
   const [faqOpen, setFaqOpen] = useState(null);
   const toggleFaq = (i) => setFaqOpen(faqOpen === i ? null : i);
 
+  useEffect(() => {
+    document.title = "Child Development Center in Hyderabad | High Sky CDC | Speech & Occupational Therapy";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Expert child development specialists providing speech therapy, occupational therapy, physiotherapy, child psychology, and early intervention services for children in Hyderabad through our centers in Kondapur and Manikonda. High Sky CDC focuses on personalized, evidence-based care to support each child's communication, learning, behavior, and overall developmental progress.");
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = "description";
+      meta.content = "Expert child development specialists providing speech therapy, occupational therapy, physiotherapy, child psychology, and early intervention services for children in Hyderabad through our centers in Kondapur and Manikonda. High Sky CDC focuses on personalized, evidence-based care to support each child's communication, learning, behavior, and overall developmental progress.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   const reviewsPerPage = 3;
 
   const totalPages = Math.ceil(
@@ -366,7 +379,7 @@ export default function Home() {
         </div>
 
         <div className="hero-image-edge">
-          <img src={heroPhoto} alt="Children in therapy session" className="hero-photo" />
+          <img src={heroPhoto} alt="Children receiving therapy at High Sky Child Development Centre, Hyderabad" className="hero-photo" />
         </div>
 
         <HeroCarousel />
@@ -386,9 +399,9 @@ export default function Home() {
           </div>
 
           <div className="hero-screen-area">
-            <img src={projector} alt="Projector" className="hero-projector-img" />
+            <img src={projector} alt="" aria-hidden="true" className="hero-projector-img" />
             <div className="hero-screen-frame">
-              <img src={screen} alt="Screen" className="hero-screen-img" />
+              <img src={screen} alt="" aria-hidden="true" className="hero-screen-img" />
               <div className="hero-video-inner">
                 <iframe
                   src="https://www.youtube.com/embed/m_Maaj7-esE?si=hmk0y_UjISCGdFnC"
@@ -402,9 +415,9 @@ export default function Home() {
         </div>
 
         <div className="hero-bottom-divider">
-          <img src={frameDivider} alt="Section Divider" className="hero-frame-divider" />
+          <img src={frameDivider} alt="" aria-hidden="true" className="hero-frame-divider" />
           {/* Blue bird sitting on screen */}
-          <img src={birdBlue} alt="Blue Bird Mascot" className="mascot-bird-blue" />
+          <img src={birdBlue} alt="" aria-hidden="true" className="mascot-bird-blue" />
         </div>
       </div>
 
@@ -434,7 +447,7 @@ export default function Home() {
             ))}
           </div>
           <StatsSection />
-          <img src={birdRed} alt="Red bird mascot" className="mascot-bird-red" />
+          <img src={birdRed} alt="" aria-hidden="true" className="mascot-bird-red" />
         </div>
       </section>
 
@@ -442,7 +455,7 @@ export default function Home() {
       <section className="unique-section">
         {/* Blue/Purple cloud top divider */}
         <div className="unique-cloud-top">
-          <img src={sectionDividerThree} alt="Section Divider" className="unique-top-divider-img" />
+          <img src={sectionDividerThree} alt="" aria-hidden="true" className="unique-top-divider-img" />
         </div>
         <div className="unique-body">
           <h2 className="section-title-white">Why Parents Trust High Sky CDC</h2>
@@ -463,7 +476,7 @@ export default function Home() {
           </div>
         </div>
         <div className="unique-cloud-divider">
-          <img src={cloudDivider} alt="Cloud Divider" className="unique-cloud-divider-img" />
+          <img src={cloudDivider} alt="" aria-hidden="true" className="unique-cloud-divider-img" />
         </div>
       </section>
 
@@ -506,8 +519,8 @@ export default function Home() {
             {conditions.map((c, i) => (
               <div className={`condition-card ${i % 2 === 0 ? 'left' : 'right'}`} key={i}>
                 <div className="condition-dot">
-                  <img src={c.icon} alt="" className="condition-icon-img condition-icon-white" />
-                  <img src={c.iconP} alt="" className="condition-icon-img condition-icon-purple" />
+                  <img src={c.icon} alt={c.text} className="condition-icon-img condition-icon-white" />
+                  <img src={c.iconP} alt="" aria-hidden="true" className="condition-icon-img condition-icon-purple" />
                 </div>
                 <div className="condition-pill">{c.text}</div>
               </div>
@@ -538,7 +551,7 @@ export default function Home() {
               <source media="(max-width: 767.98px)" srcSet={childMobileImg} />
               <img
                 src={infographicImg}
-                alt="Our Child-Centered Approach diagram"
+                alt="Child-centered therapy approach at High Sky CDC — Assessment, Goal Setting, Therapy Plan, Parent Collaboration, and Progress Tracking in Hyderabad"
                 className="approach-infographic-img"
               />
             </picture>

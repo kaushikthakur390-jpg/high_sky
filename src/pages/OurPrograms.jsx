@@ -5,25 +5,25 @@ import './OurPrograms.css';
 
 // ── Service images ──────────────────────────────────────────
 import imgOccupational from '../assets/pages/services/Paediatric Occupational Therapy.webp';
-import imgPhysiotherapy from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.PNG';
-import imgSpeech from '../assets/pages/services/Paediatric Speech Language and communication therapy.PNG';
-import imgPsychology from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).PNG';
-import imgNeuroDev from '../assets/pages/services/Neuro developmental Learning and Academic intervention.PNG';
-import imgSocialInteg from '../assets/pages/services/Social integration group.PNG';
-import imgLifeSkills from '../assets/pages/services/Life Skills training.PNG';
-import imgHandwriting from '../assets/pages/services/Hand writing without tears training.PNG';
-import imgSchoolReady from '../assets/pages/services/School readiness program.PNG';
-import imgHomeParental from '../assets/pages/services/Home based parental Training program.PNG';
+import imgPhysiotherapy from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.webp';
+import imgSpeech from '../assets/pages/services/Paediatric Speech Language and communication therapy.webp';
+import imgPsychology from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).webp';
+import imgNeuroDev from '../assets/pages/services/Neuro developmental Learning and Academic intervention.webp';
+import imgSocialInteg from '../assets/pages/services/Social integration group.webp';
+import imgLifeSkills from '../assets/pages/services/Life Skills training.webp';
+import imgHandwriting from '../assets/pages/services/Hand writing without tears training.webp';
+import imgSchoolReady from '../assets/pages/services/School readiness program.webp';
+import imgHomeParental from '../assets/pages/services/Home based parental Training program.webp';
 
 // ── Approach images ──────────────────────────────────────────
-import imgOralSensory from '../assets/pages/services/Oral sensory integration.PNG';
-import imgOralMotor from '../assets/pages/services/oral motor integration.PNG';
-import imgFeeding from '../assets/pages/services/Feeding and swallowing Therapy.PNG';
-import imgReflex from '../assets/pages/services/Reflex Integration.PNG';
-import imgInterceptive from '../assets/pages/services/Interceptive sensory training.PNG';
-import imgGravity from '../assets/pages/services/gravity sensorimotor training.PNG';
-import imgVestibulo from '../assets/pages/services/vestibulo visual training.PNG';
-import imgParentCoaching from '../assets/pages/services/parent coaching.PNG';
+import imgOralSensory from '../assets/pages/services/Oral sensory integration.webp';
+import imgOralMotor from '../assets/pages/services/oral motor integration.webp';
+import imgFeeding from '../assets/pages/services/Feeding and swallowing Therapy.webp';
+import imgReflex from '../assets/pages/services/Reflex Integration.webp';
+import imgInterceptive from '../assets/pages/services/Interceptive sensory training.webp';
+import imgGravity from '../assets/pages/services/gravity sensorimotor training.webp';
+import imgVestibulo from '../assets/pages/services/vestibulo visual training.webp';
+import imgParentCoaching from '../assets/pages/services/parent coaching.webp';
 
 // ── Conditions icons (from Home.jsx) ──────────────────────────
 import iconASD from '../assets/pages/home/icons/ASD - W.png';
@@ -46,17 +46,20 @@ const programsList = [
   {
     title: "Paediatric Occupational Therapy",
     desc: "Helping children develop independence in daily activities through personalized occupational therapy focused on sensory processing, motor coordination, attention, self-care skills, and overall child development.",
-    img: imgOccupational
+    img: imgOccupational,
+    alt: "Paediatric occupational therapy for kids at High Sky CDC, Hyderabad"
   },
   {
     title: "Paediatric Physiotherapy & Motor Rehabilitation",
     desc: "Supporting children's physical development through specialized physiotherapy and motor rehabilitation programs designed to improve strength, balance, posture, mobility, coordination, and functional movement skills.",
-    img: imgPhysiotherapy
+    img: imgPhysiotherapy,
+    alt: "Paediatric physiotherapy and motor rehabilitation for children in Hyderabad"
   },
   {
     title: "Paediatric Speech, Language & Communication Therapy",
     desc: "Helping children communicate with confidence by enhancing speech clarity, language development, social communication, and expressive abilities through evidence-based speech and language therapy.",
-    img: imgSpeech
+    img: imgSpeech,
+    alt: "Speech therapy for autism and language delays in children — High Sky CDC, Hyderabad"
   },
   {
     title: "Child Psychology (BMT, CBT, PBS)",
@@ -99,7 +102,8 @@ const therapeuticApproaches = [
   {
     title: "Oral Sensory Integration",
     desc: "Supports children who experience sensory challenges related to eating, oral awareness, speech readiness, and sensory regulation.",
-    img: imgOralSensory
+    img: imgOralSensory,
+    alt: "Oral sensory integration therapy for children at High Sky CDC, Hyderabad"
   },
   {
     title: "Oral Motor Integration",
@@ -234,7 +238,7 @@ export default function OurPrograms() {
             {programsList.map((service, index) => (
               <div className="program-card" key={index}>
                 <div className="program-card-image">
-                  <img src={service.img} alt={service.title} />
+                  <img src={service.img} alt={service.alt || service.title} />
                 </div>
                 <div className="program-card-content">
                   <h3>{service.title}</h3>
@@ -255,7 +259,7 @@ export default function OurPrograms() {
             {therapeuticApproaches.map((item, index) => (
               <div className="program-card" key={index}>
                 <div className="program-card-image">
-                  <img src={item.img} alt={item.title} />
+                  <img src={item.img} alt={item.alt || item.title} />
                 </div>
                 <div className="program-card-content">
                   <h3>{item.title}</h3>
