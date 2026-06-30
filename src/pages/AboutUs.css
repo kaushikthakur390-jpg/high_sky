@@ -384,6 +384,7 @@
   display: block;
   width: 100%;
   height: auto;
+  clip-path: inset(0 0 2px 0);
 }
 
 .about-glance-section {
@@ -404,6 +405,15 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+  }
+
+  .about-team-grid {
+    display: block;
+    width: 74%;
+    position: relative;
+    left: 190px;
+    height: auto;
+    clip-path: inset(0 0 2px 0);
   }
 
   .glance-new-stats-wrapper {
@@ -463,6 +473,12 @@
   }
 }
 
+.about-moments-section {
+  position: relative;
+  overflow: hidden;
+  background: #efefef;
+  padding: clamp(30px, 7vw, 10px) 24px clamp(70px, 8vw, 0px);
+}
 
 .about-solutions-bg {
   position: absolute;
@@ -493,6 +509,11 @@
     object-fit: cover;
     object-position: right top;
   }
+}
+
+.faq-section {
+  background: #A02C7D;
+  padding: 77px 40px 70px;
 }
 
 .about-glance-inner {

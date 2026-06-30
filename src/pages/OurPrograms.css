@@ -400,6 +400,8 @@
     max-width: 1200px;
     margin-bottom: 50px;
   }
+
+
 }
 
 @media (max-width: 1400px) {
@@ -909,7 +911,7 @@
 =========================== */
 .prog-final-cta-section {
   background: #A02C7D;
-  padding: 80px 40px;
+  padding: 77px 40px;
 }
 
 .prog-final-cta-inner {
@@ -975,9 +977,11 @@
     padding: 30px;
     gap: 20px;
   }
+
   .prog-final-cta-heading {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   }
+
   .prog-conditions-title {
     font-size: clamp(1.8rem, 3vw, 2.4rem);
   }

@@ -14,7 +14,7 @@
   width: 100%;
   line-height: 0;
   background: #a02c7d;
-  transform: translateY(-2px);
+  margin-bottom: -2px;
 }
 
 .footer.footer-route-about-us .footer-wave-top {
