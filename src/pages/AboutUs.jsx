@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './AboutUs.css';
-import frameA from '../assets/pages/about us/tmkc.png';
+import frameA from '../assets/pages/about us/img3.png';
 import frameB from '../assets/pages/about us/Frame 49.png';
-import frameC from '../assets/pages/about us/tmkb.png';
+import frameC from '../assets/pages/about us/img2.png';
 import swoosh from '../assets/pages/about us/Frame 48.png';
 import ribbon from '../assets/pages/about us/ribbon3.png';
 import frameDivider from '../assets/pages/home/Frame 21.svg';
