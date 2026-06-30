@@ -4,7 +4,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import './OurPrograms.css';
 
 // ── Service images ──────────────────────────────────────────
-import imgOccupational from '../assets/pages/services/Paediatric Occupational Therapy.PNG';
+import imgOccupational from '../assets/pages/services/Paediatric Occupational Therapy.webp';
 import imgPhysiotherapy from '../assets/pages/services/Paediatric Physiotherapy and motor rehabilitation.PNG';
 import imgSpeech from '../assets/pages/services/Paediatric Speech Language and communication therapy.PNG';
 import imgPsychology from '../assets/pages/services/Child Psychology (BMT, CBT, PBS).PNG';

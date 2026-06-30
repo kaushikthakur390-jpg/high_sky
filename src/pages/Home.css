@@ -1437,6 +1437,7 @@
     width: 80%;
     position: relative;
     left: 1px;
+    z-index: 20;
   }
 
   .hero-video-copy p {
@@ -1464,6 +1465,11 @@
     max-width: 380px;
     position: relative;
     margin: 0 auto;
+    pointer-events: none;
+  }
+
+  .hero-screen-area iframe {
+    pointer-events: auto;
   }
 
   .hero-projector-img {
@@ -2228,7 +2234,7 @@
     font-size: clamp(1.1rem, 5vw, 1.6rem);
     width: 100%;
     position: relative;
-    left: calc(-50vw + 50%);
+    left: 0;
     text-align: center;
     margin: 0 0 20px 0;
     white-space: normal;
@@ -2269,11 +2275,11 @@
     max-width: 746px;
   }
 
-  .hero-seo-text {
+  p.hero-seo-text {
     font-size: clamp(0.75rem, 3.5vw, 0.95rem);
     width: 100%;
     position: relative;
-    left: calc(-50vw + 50%);
+    left: 0;
     margin-bottom: 12px;
     text-align: center;
     padding: 0 15px;

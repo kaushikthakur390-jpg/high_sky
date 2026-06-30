@@ -123,6 +123,46 @@
   transform: scale(1.04);
 }
 
+.consult-submit-btn--loading,
+.consult-submit-btn:disabled {
+  background: #c8a96e;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.8;
+}
+
+/* ── Status Banners ── */
+.consult-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 24px;
+  animation: consult-fade-in 0.3s ease;
+}
+
+.consult-banner--success {
+  background: #edfaf2;
+  color: #1a7e41;
+  border: 1.5px solid #a8e6c1;
+}
+
+.consult-banner--error {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1.5px solid #f5b7b1;
+}
+
+@keyframes consult-fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
 @media (max-width: 767.98px) {
   .consult-form-row {
     grid-template-columns: 1fr;

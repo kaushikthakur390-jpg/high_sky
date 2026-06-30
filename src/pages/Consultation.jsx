@@ -1,14 +1,83 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Consultation.css';
 
+const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+const ASSESSMENT_LABELS = {
+  ot:     'Occupational Therapy',
+  physio: 'Physiotherapy',
+  speech: 'Speech Therapy',
+  psych:  'Psychological Assessment (Developmental Assessment)',
+  school: 'School Readiness Assessment',
+};
+
+const THERAPY_LABELS = {
+  ot:          'Occupational Therapy',
+  speech:      'Speech Therapy',
+  behavioural: 'Behavioral Therapy',
+  physio:      'Physiotherapy',
+  'special-ed':'Special Education',
+  uddeshya:    'Uddeshya',
+  feeding:     'Feeding Therapy',
+};
+
+const SERVICE_LABELS = {
+  consultation: 'Consultation',
+  assessments:  'Assessments',
+  therapy:      'Therapy',
+};
+
+const CONSULT_TYPE_LABELS = {
+  online:       'Online Consultation',
+  'face-to-face':'Face to Face Consultation',
+};
+
 export default function Consultation() {
+  const formRef = useRef(null);
+
   const [form, setForm] = useState({
     fullName: '', email: '', phone: '', age: '',
     service: '', consultationType: '', assessmentType: '', therapyType: ''
   });
 
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => { e.preventDefault(); alert('Your consultation request has been submitted! We will contact you soon.'); };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    // Build a human-readable summary for the email template
+    const templateParams = {
+      to_email:         'kaushikthakur390@gmail.com',
+      child_name:       form.fullName,
+      parent_email:     form.email,
+      phone:            form.phone,
+      child_age:        form.age,
+      service:          SERVICE_LABELS[form.service]       || form.service       || '—',
+      consultation_type: CONSULT_TYPE_LABELS[form.consultationType] || form.consultationType || '—',
+      assessment_type:  ASSESSMENT_LABELS[form.assessmentType] || form.assessmentType || '—',
+      therapy_type:     THERAPY_LABELS[form.therapyType]   || form.therapyType   || '—',
+      submitted_at:     new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      setStatus('success');
+      // Reset form after success
+      setForm({
+        fullName: '', email: '', phone: '', age: '',
+        service: '', consultationType: '', assessmentType: '', therapyType: ''
+      });
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setStatus('error');
+    }
+  };
 
   return (
     <div className="consultation-page">
@@ -21,7 +90,22 @@ export default function Consultation() {
       <div className="consult-form-wrap">
         <div className="consult-form-card">
           <h2 className="consult-form-title">Consultation Form</h2>
-          <form onSubmit={handleSubmit} className="consult-form">
+
+          {/* ── Success Banner ── */}
+          {status === 'success' && (
+            <div className="consult-banner consult-banner--success">
+              ✅ Your consultation request has been submitted! We will contact you soon.
+            </div>
+          )}
+
+          {/* ── Error Banner ── */}
+          {status === 'error' && (
+            <div className="consult-banner consult-banner--error">
+              ❌ Something went wrong. Please try again or call us directly.
+            </div>
+          )}
+
+          <form ref={formRef} onSubmit={handleSubmit} className="consult-form">
             <div className="consult-form-row">
               <div className="consult-field">
                 <label>Full Name of the Child</label>
@@ -92,7 +176,13 @@ export default function Consultation() {
             </div>
 
             <div className="consult-submit-row">
-              <button type="submit" className="consult-submit-btn">SUBMIT</button>
+              <button
+                type="submit"
+                className={`consult-submit-btn${status === 'sending' ? ' consult-submit-btn--loading' : ''}`}
+                disabled={status === 'sending'}
+              >
+                {status === 'sending' ? 'SENDING…' : 'SUBMIT'}
+              </button>
             </div>
           </form>
         </div>
