@@ -168,7 +168,7 @@ export default function ContactUs() {
               child's unique developmental journey.
             </p>
           </div>
-          <a href="/contact" className="cta-btn">Book a Consultation Today →</a>
+          <a href="/consultation" className="cta-btn">Book a Consultation Today →</a>
         </div>
       </div>
 
